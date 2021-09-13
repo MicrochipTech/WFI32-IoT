@@ -1,0 +1,13 @@
+demo/.gitignore
+demo/pic32mzw1_prov_aws_azure/*
+demo/pic32mzw1_prov_aws_azure_new/*
+demo/cloud_sdk_demo/firmware/azure_sdk_pic32mz_w1_curiosity_freertos.X/*
+demo/cloud_sdk_demo/firmware/aws_sdk_wfi32_iot_freertos.X/build/*
+demo/cloud_sdk_demo/firmware/aws_sdk_wfi32_iot_freertos.X/dist/*
+demo/cloud_sdk_demo/firmware/aws_sdk_wfi32_iot_freertos.X/.generated_files/*.flag
+demo/cloud_sdk_demo/firmware/src/app_azure.*
+demo/cloud_sdk_demo/firmware/src/config/azure_sdk_pic32mz_w1_curiosity_freertos/*
+demo/cloud_sdk_demo/firmware/src/third_party/azure/*
+*.bak
+*.d
+*.o
