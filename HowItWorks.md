@@ -380,6 +380,8 @@ When connecting WFI32-IoT board to a PC using a standard micro-USB cable, it enu
 UART1 supports a set of user commands via command line as follows:
 1. "**rssi**" command: prints current connection RSSI value.
 2. "**unixtime**" command: prints current UNIX time.
-3. "**debug <debug_level>**": sets application debug level (accepted values are 0 through 4).
+3. "**rtcc**" command: prints system up time.
+4. "**debug <debug_level>**": sets application debug level (accepted values are 0 through 4).
+5. "**reboot**": do a system reboot.
 
 **Note**: UART1 and UART3 settings should be 115200 8N1.
