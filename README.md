@@ -4,6 +4,8 @@ Devices: **| PIC32 WFI32E | WFI32 | Trust\&Go (ECC608) |**
 
 Features: **| Secure Cloud Connectivity | Voice Control |**
 
+[![Latest release](https://img.shields.io/github/v/release/MicrochipTech/WFI32-IoT?include_prereleases&sort=semver&style=for-the-badge)](https://github.com/MicrochipTech/WFI32-IoT/releases/latest)
+
 The WFI32-IoT board comes pre-programmed and configured for demonstrating the connectivity to the AWS Cloud IoT Core. The demo uses **AWS C SDK version 4.0** to establish MQTT connection to AWS broker, subscribe to cloud topic/s and publish to the cloud.
 
 <p align="center">
