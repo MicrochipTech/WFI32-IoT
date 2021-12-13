@@ -26,7 +26,7 @@ Please check out our **[Quick Start Guide](https://github.com/amrabdelmoghny/WFI
 7. [Connecting to Your Cloud Instance](#chapter7)
 8. [Re-flash the demo](#chapter8)
 9. [Code generation using Harmony 3](#chapter9)
-10. [Debugging](#chapter10)
+10. [Power Save Modes](#chapter10)
  
 ## 1. Requirements <a name="Chapter1"></a>
 
@@ -372,16 +372,30 @@ The default demo code includes some changes to the generated “net_pres_enc_glu
 
 ---
 
-### 10. Debugging <a name="Chapter10"></a>
-When connecting WFI32-IoT board to a PC using a standard micro-USB cable, it enumerates as a USB MSD (Mass Storage Device) in addition to two other virtual COM ports reflecting UART1 and UART3 of the module where:
-* UART1 is used for application debug logs.
-* UART3 is used for Wi-Fi FW and AWS C SDK logs.
+### 10. Power Save Modes <a name="Chapter10"></a>
+WFI32-IoT OOB demo supports two low power modes: Extreme Deep Sleep mode (XDS) and Deep Sleep mode (DS). 
 
-UART1 supports a set of user commands via command line as follows:
-1. "**rssi**" command: prints current connection RSSI value.
-2. "**unixtime**" command: prints current UNIX time.
-3. "**rtcc**" command: prints system up time.
-4. "**debug <debug_level>**": sets application debug level (accepted values are 0 through 4).
-5. "**reboot**": do a system reboot.
+#### Deep Sleep Mode
+By default, OOB demo is configured to run into deep sleep mode (DS). Power peripheral library configuration details for DS mode is shown below in Harmony3 configurator project graph:
+<p align="center">
+<img src="resources/media/HowItWorks/powerSave1.png" width=800/>
+</p>
+DS mode supports both RTCC and EXT INT0 (SW1 button press) as a wakeup source. By default, RTCC frequency is set to 1 second. RTCC frequency can be changed in the function setup_rtcc(), file app_ctrl.c, line 380:
+<p align="center">
+<img src="resources/media/HowItWorks/rtccConfig.png" width=400/>
+</p>
+Different RTCC frequencies can be found in the file plib_rtcc.h, enum RTCC_ALARM_MASK:
+<p align="center">
+<img src="resources/media/HowItWorks/rtccConfig2.png" width=400/>
+</p>
 
-**Note**: UART1 and UART3 settings should be 115200 8N1.
+#### Extreme Deep Sleep Mode
+In case you want to enable extreme deep sleep mode (XDS), then below modification to Power peripheral library Harmony3 configuration is needed:
+<p align="center">
+<img src="resources/media/HowItWorks/powerSave2.png" width=800/>
+</p>
+XDS mode supports only EXT INT0 (SW1 button press) as a wakeup source.
+
+Following command is used to enter DS/XDS sleep mode:
+
+"**power_mode <power_mode>**": Supported values are in the range 0:3 for future use. As of now, only DS & XDS sleep modes are supported and desired mode should be selected via MHC as mentioned above.

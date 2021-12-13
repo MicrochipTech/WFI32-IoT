@@ -26,7 +26,8 @@ The WFI32-IoT board comes pre-programmed and configured for demonstrating the co
 		2. 	[Via Soft AP](#chapter2.2.2)
 	4.	[Visualizing Cloud Data in Real Time](#chapter2.3)
 	5.	[Voice Control](#chapter2.4)
-3. [Want To Know More?](#chapter3)
+3. [User Commands](#chapter3)
+4. [Want To Know More?](#chapter4)
 
 
 ## 1. Overview <a name="chapter1"></a>
@@ -171,7 +172,21 @@ Please note that supported browsers inlcudes Google Chrome, Mozilla Firefox, Saf
  
 **Note**: Only devices registered to the Microchip Cloud account can be registered for voice control and controlled via the voice skills. In case of registration errors, please contact [Microchip support](http://microchip.com/support)
 
-## 3. Want To Know More? <a name="chapter3"></a>
+## 3. User Commands <a name="Chapter3"></a>
+When connecting WFI32-IoT board to a PC using a standard micro-USB cable, it enumerates as a USB MSD (Mass Storage Device) in addition to two other virtual COM ports reflecting UART1 and UART3 of the module where:
+* UART1 is used for application debug logs.
+* UART3 is used for Wi-Fi FW and AWS C SDK logs.
+
+UART1 supports a set of user commands via command line as follows:
+1. "**rssi**": prints current connection RSSI value.
+2. "**unixtime**": prints current UNIX time.
+3. "**debug <debug_level>**": sets application debug level (accepted values are 0 through 4).
+4. "**power_mode <power_mode>**": sets power save mode (accepted values are 0 to 3).
+5. "**reboot**": Execute a system reboot.
+
+**Note**: UART1 and UART3 settings should be 115200 8N1.
+
+## 4. Want To Know More? <a name="chapter4"></a>
 
 Curious to learn more? ..
 - Check out our **[Deep Dive Guide](https://github.com/amrabdelmoghny/WFI32-IoT/blob/main/HowItWorks.md)** to dive behind the scenes, learn how Connectivity, Security and Cloud are tied together and experience how smooth it is to migrate the demo to your own cloud instance. 
