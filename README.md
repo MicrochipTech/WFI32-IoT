@@ -176,11 +176,11 @@ When connecting WFI32-IoT board to a PC using a standard micro-USB cable, it enu
 * UART1 is used for application debug logs.
 * UART3 is used for Wi-Fi FW and AWS C SDK logs.
 
-UART1 supports a set of user commands via command line as follows:
+UART1 supports a set of user commands via command line as follows (more info about commands usage are available under [Deep Dive Guide](https://github.com/amrabdelmoghny/WFI32-IoT/blob/main/HowItWorks.md#chapter10)):
 1. "**rssi**": prints current connection RSSI value.
 2. "**unixtime**": prints current UNIX time.
 3. "**debug <debug_level>**": sets application debug level (accepted values are 0 through 4).
-4. "**rtcc_freq <rtcc_freq>**": sets RTCC frequency (check command help for accetped values)
+4. "**rtcc_freq <rtcc_freq>**": sets RTCC frequency (check command help for accetped values).
 5. "**power_mode <PIC | WIFI> <power_mode>**": sets power save mode (accepted values are 0 to 3).
 6. "**reboot**": Execute a system reboot.
 
