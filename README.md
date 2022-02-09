@@ -180,7 +180,7 @@ UART1 supports a set of user commands via command line as follows:
 1. "**rssi**": prints current connection RSSI value.
 2. "**unixtime**": prints current UNIX time.
 3. "**debug <debug_level>**": sets application debug level (accepted values are 0 through 4).
-4. "**power_mode <power_mode>**": sets power save mode (accepted values are 0 to 3).
+4. "**power_mode <PIC | WIFI> <power_mode>**": sets power save mode (accepted values are 0 to 3).
 5. "**reboot**": Execute a system reboot.
 
 **Note**: UART1 and UART3 settings should be 115200 8N1.
