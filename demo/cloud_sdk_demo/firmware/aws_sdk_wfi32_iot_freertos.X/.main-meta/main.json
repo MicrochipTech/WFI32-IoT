@@ -1,8 +1,8 @@
 {
-	"metaDataVersion": "1.0.0",
+	"metaDataVersion": "1.3.0",
 	"category": "com.microchip.ide.project",
 	"content": {
-		"metaDataVersion": "1.1.0",
+		"metaDataVersion": "1.3.0",
 		"name": "com.microchip.mcu32.mplabx.WFI32-IoT",
 		"version": "3.6.0",
 		"displayName": "WFI32-IoT AWS C SDK Out-of-box Dem0",
@@ -61,10 +61,10 @@
 		],
 		"additionalData": {
 			"longDescription": {
-				"metaDataVersion": "1.0.0",
+				"metaDataVersion": "1.3.0",
 				"category": "com.microchip.portal.fileRef",
 				"content": {
-					"metaDataVersion": "1.0.0",
+					"metaDataVersion": "1.3.0",
 					"fileName": "./../../../../readme.md",
 					"mimeType": "text/markdown"
 				}
