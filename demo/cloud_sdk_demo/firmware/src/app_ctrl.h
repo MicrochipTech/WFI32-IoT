@@ -175,8 +175,8 @@ void APP_sensorsOff(void);
 int16_t APP_readTemp(void);
 uint32_t APP_readLight(void);
 void APP_manageLed(LED_COLOR, LED_MODE, LED_BLINK_MODE);
-void APP_InitializeCtrl (void);
-void APP_TaskCtrl ( void );
+void APP_CTRL_Initialize (void);
+void APP_CTRL_Tasks ( void );
 
 #endif /* _APP_CTRL_H */
 

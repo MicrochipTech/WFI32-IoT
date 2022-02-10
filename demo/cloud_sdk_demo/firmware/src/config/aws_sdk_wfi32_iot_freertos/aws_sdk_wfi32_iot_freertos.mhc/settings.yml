@@ -5,7 +5,7 @@ frameworkPath: ../../../../microchip/harmony/mh3
 processor: PIC32MZ1025W104132
 projectName: ''
 settings:
-  PackageFilter: azure-rtos-threadx;bootloader;bsp;classb_sam_e5x_d5x;core;core_apps_pic32mz_w1;crypto;cryptoauthlib;cryptoauthlib_apps;csp;csp_apps_pic32mz_w1;dev_packs;ethercat;MPLAB-Harmony-Reference-Apps;net;quick_docs;reference_apps;test;usb;w;wireless;wireless_apps_winc1500;wireless_apps_winc3400;wireless_system_pic32mzw1_wfi32e01;x2c
+  PackageFilter: azure-rtos-threadx;bootloader;bsp;classb_sam_e5x_d5x;core;core_apps_pic32mz_w1;crypto;cryptoauthlib;cryptoauthlib_apps;csp;csp_apps_pic32mz_w1;dev_packs;ethercat;MPLAB-Harmony-Reference-Apps;net;quick_docs;reference_apps;test;usb;w;winteg;wireless_apps_winc1500;wireless_apps_winc3400;wireless_system_pic32mzw1_wfi32e01;wireless_system_pic32mzw1_wfi32e01--;wireless_wifi;x2c
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   TRUSTZONE: 'false'

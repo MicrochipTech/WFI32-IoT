@@ -815,6 +815,7 @@
       <itemPath>../src/app_commands.h</itemPath>
       <itemPath>../src/OLEDB.h</itemPath>
       <itemPath>../src/app_oled.h</itemPath>
+      <itemPath>../src/app_ps.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -1437,6 +1438,7 @@
       <itemPath>../src/app_commands.c</itemPath>
       <itemPath>../src/OLEDB.c</itemPath>
       <itemPath>../src/app_oled.c</itemPath>
+      <itemPath>../src/app_ps.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -1961,6 +1963,7 @@
         <property key="programoptions.preserveprogram.ranges" value="100fffff-100fffff"/>
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
@@ -2017,8 +2020,6 @@
                   value="${communication.interface.default}"/>
         <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="${communication.speed.default}"/>
-        <property key="debugoptions.debug-startup" value="Use system settings"/>
-        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="freeze.timers" value="false"/>
@@ -2036,8 +2037,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="10000000-100fffff"/>
         <property key="memories.rww" value="true"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/microchip/harmony_3/w/apps/rio2_h3_cloudO/cloud_sdk_demo/firmware/aws_sdk_wfi32_iot_freertos.X/debug/aws_sdk_wfi32_iot_freertos/aws_sdk_wfi32_iot_freertos_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

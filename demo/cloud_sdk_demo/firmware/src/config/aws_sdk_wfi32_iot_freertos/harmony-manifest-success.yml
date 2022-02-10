@@ -4,7 +4,7 @@
 
 
 project: cloud_sdk_demo
-creation_date: 2021-12-09T11:03:34.724-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2022-02-10T14:01:34.187-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: v3.8.1
@@ -17,11 +17,11 @@ modules:
     - {name: "csp", version: "v3.10.0"}
     - {name: "usb", version: "v3.8.0"}
     - {name: "wolfssl", version: "v4.7.0"}
-    - {name: "crypto", version: "v3.7.3"}
+    - {name: "crypto", version: "v3.7.4"}
     - {name: "CMSIS-FreeRTOS", version: "v10.3.1"}
     - {name: "core", version: "v3.10.0"}
+    - {name: "wireless_wifi", version: "v3.6.1"}
     - {name: "dev_packs", version: "v3.10.0"}
-    - {name: "wireless", version: "unknown"}
     - {name: "net", version: "v3.7.0"}
     - {name: "bsp", version: "v3.9.0"}
 

@@ -146,7 +146,7 @@ static bool parseWifiConfig()
 
 /* Write data from 'buffer' into 'fileName'*/
 static int8_t writeFile(const char* fileName, const void *buffer, size_t nbyte) {
-    SYS_FS_HANDLE fd = NULL;
+    SYS_FS_HANDLE fd = (SYS_FS_HANDLE)NULL;
     size_t size;
     APP_USB_MSD_PRNT("Creating %s\r\n", fileName);
     fd = SYS_FS_FileOpen(fileName, SYS_FS_FILE_OPEN_WRITE);
@@ -195,7 +195,7 @@ static int8_t getSubjectKeyID(uint8_t* derCert, size_t derCertSz, char* keyID) {
 /*Read Wi-Fi configuration file*/
 static int8_t readWifiConfigFile() {
     SYS_FS_RESULT fsResult = SYS_FS_RES_FAILURE;
-    SYS_FS_HANDLE fd = NULL;
+    SYS_FS_HANDLE fd = (SYS_FS_HANDLE)NULL;
     bool status;
     
     /* Touch the file */
@@ -265,7 +265,7 @@ static int8_t writeWifiConfigFile(char* ssid, char* passphrase, uint8_t auth)
 static int8_t readCloudConfigFile() {
     /*Read the MQTT config now*/
     SYS_FS_RESULT fsResult = SYS_FS_RES_FAILURE;
-    SYS_FS_HANDLE fd = NULL;
+    SYS_FS_HANDLE fd = (SYS_FS_HANDLE)NULL;
     size_t size, rSize;
     
     /* Touch the file */

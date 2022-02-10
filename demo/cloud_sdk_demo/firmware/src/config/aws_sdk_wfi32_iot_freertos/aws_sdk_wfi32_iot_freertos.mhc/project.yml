@@ -2708,13 +2708,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 15AB6693CC2E1EE7AB845EE42A6AC762
-- generatedChecksum: A3525AD74D6D9D2B7ACBC6081652B1EC
+- generatedChecksum: AF304A7C31A4DE9B28E54C9B42060956
   logicalPath: config/aws_sdk_wfi32_iot_freertos
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: A3525AD74D6D9D2B7ACBC6081652B1EC
+  userChecksum: AF304A7C31A4DE9B28E54C9B42060956
 - generatedChecksum: 66CDC9B1DAB0393100A835676816E8BF
   logicalPath: wolfcrypt
   name: cpuid.h

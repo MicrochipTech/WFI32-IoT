@@ -42,7 +42,7 @@ static void wifiConnectCallback(DRV_HANDLE handle, WDRV_PIC32MZW_ASSOC_HANDLE as
     switch (currentState) {
         case WDRV_PIC32MZW_CONN_STATE_DISCONNECTED:
             APP_PRNT("WiFi Reconnecting\r\n");
-            appData.assocHandle = NULL;
+            appData.assocHandle = (uintptr_t)NULL;
             WIFI_DISCONNECTED;
             APP_OLEDNotify(APP_OLED_PARAM_WIFI, false);
             appData.wlanTaskState = APP_WLAN_RECONNECT;
@@ -52,10 +52,15 @@ static void wifiConnectCallback(DRV_HANDLE handle, WDRV_PIC32MZW_ASSOC_HANDLE as
             appData.assocHandle = assocHandle;
             APP_OLEDNotify(APP_OLED_PARAM_WIFI, true);
             WIFI_CONNECTED;
+            
+            WDRV_PIC32MZW_PowerSaveBroadcastTrackingSet(appData.wdrvHandle,true);
+            WDRV_PIC32MZW_PowerSaveModeSet(appData.wdrvHandle,
+                    WDRV_PIC32MZW_POWERSAVE_WSM_MODE,
+                    WDRV_PIC32MZW_POWERSAVE_PIC_ASYNC_MODE);
             break;
         case WDRV_PIC32MZW_CONN_STATE_FAILED:
             APP_PRNT("WiFi connection failed\r\n");
-            appData.assocHandle = NULL;
+            appData.assocHandle = (uintptr_t)NULL;
             WIFI_DISCONNECTED;
             APP_OLEDNotify(APP_OLED_PARAM_WIFI, false);
             appData.wlanTaskState = APP_WLAN_RECONNECT;        
@@ -282,7 +287,9 @@ void APP_Initialize ( void )
 void APP_InitializeWlan ( void )
 {
     appData.wlanTaskState = APP_WLAN_LEDS_START_UP_PATTERN;
-    appData.assocHandle = NULL;
+    appData.assocHandle = (uintptr_t)NULL;
+    appData.wOffRequested = false;
+    appData.wOnRequested = false;
     WIFI_DISCONNECTED;
     NTP_NOT_DONE;
     IP_ADDR_LOST;
@@ -308,6 +315,30 @@ void APP_TaskWlan(void)
     bool status;
     TCPIP_NET_HANDLE netH;
     int i, nNets;
+    WDRV_PIC32MZW_SYS_INIT wdrvPIC32MZW1InitData = {
+     .pCryptRngCtx  = NULL,
+     .pRegDomName   = "GEN",
+     .powerSaveMode = WDRV_PIC32MZW_POWERSAVE_RUN_MODE,
+     .powerSavePICCorrelation = WDRV_PIC32MZW_POWERSAVE_PIC_ASYNC_MODE
+     };
+    
+    if(appData.wOffRequested){
+        if(appData.wlanTaskState != APP_WLAN_DEINIT)
+            appData.wlanTaskState = APP_WLAN_RECONNECT;
+        else{
+            APP_DBG(SYS_ERROR_ERROR, "Wi-Fi already off\r\n");
+            appData.wOffRequested = false;
+        }
+    }
+    else if(appData.wOnRequested){
+        if(appData.wlanTaskState == APP_WLAN_DEINIT){
+            appData.wlanTaskState = APP_WLAN_INIT;
+        }
+        else{
+           APP_DBG(SYS_ERROR_ERROR, "Wi-Fi already on\r\n");
+            appData.wOnRequested = false; 
+        }
+    }
 
     switch (appData.wlanTaskState) 
     {
@@ -322,6 +353,13 @@ void APP_TaskWlan(void)
         /* Wait for Wi-Fi module init */
         case APP_WLAN_INIT:
         {
+
+            if(appData.wOnRequested){
+                PMUCLKCTRLbits.WLDOOFF = 0;
+                sysObj.drvWifiPIC32MZW1 = WDRV_PIC32MZW_Initialize(WDRV_PIC32MZW_SYS_IDX_0, (SYS_MODULE_INIT*)&wdrvPIC32MZW1InitData);
+                appData.wOnRequested = false;
+            }
+                    
             if (SYS_STATUS_READY == WDRV_PIC32MZW_Status(sysObj.drvWifiPIC32MZW1)) {
                 APP_DBG(SYS_ERROR_INFO, "WiFi driver opened!\r\n");
                 appData.wlanTaskState = APP_WLAN_WDRV_INIT_READY;
@@ -434,9 +472,25 @@ void APP_TaskWlan(void)
             TCPIP_STACK_HandlerDeregister(appData.TCPIPEventHandle);
             TCPIP_DHCP_HandlerDeRegister(appData.TCPIPDHCPHandle);
             WDRV_PIC32MZW_Close(appData.wdrvHandle);
-            appData.wlanTaskState = APP_WLAN_INIT;
+            appData.assocHandle = (uintptr_t)NULL;
+            WIFI_DISCONNECTED;
+            APP_OLEDNotify(APP_OLED_PARAM_WIFI, false);
+            APP_manageLed(LED_BLUE, LED_OFF, BLINK_MODE_INVALID);
+            if(appData.wOffRequested){
+                //WDRV_PIC32MZW_Deinitialize(sysObj.drvWifiPIC32MZW1);
+                appData.wOffRequested = false;
+                appData.wlanTaskState = APP_WLAN_DEINIT;
+            }
+            else
+                appData.wlanTaskState = APP_WLAN_INIT;
             break;
-        }      
+        }  
+        
+        /* WLAN De-init */
+        case APP_WLAN_DEINIT:
+        {
+            break;
+        }
         
         /* Error */
         case APP_WLAN_ERROR:

@@ -44,6 +44,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "app_ctrl.h"
 #include "app_usb_msd.h"
 #include "app_oled.h"
+#include "app_ps.h"
 #include "config.h"
 #include <wolfssl/ssl.h>
 #include "task.h"
@@ -60,6 +61,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 static void _APP_Commands_GetUnixTime(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
 static void _APP_Commands_GetRSSI(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
 static void _APP_Commands_GetRTCC(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
+static void _APP_Commands_SetRTCCFreq(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
 static void _APP_Commands_SelfTester(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
 static void _APP_Commands_SetDebugLevel(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
 static void _APP_Commands_SetPowerMode(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
@@ -71,6 +73,7 @@ static const SYS_CMD_DESCRIPTOR appCmdTbl[] = {
     {"unixtime", _APP_Commands_GetUnixTime, ": Unix Time"},
     {"rssi", _APP_Commands_GetRSSI, ": Get current RSSI"},
     {"rtcc", _APP_Commands_GetRTCC, ": Get uptime"},
+    {"rtcc_freq", _APP_Commands_SetRTCCFreq, ": Set RTCC frequency"},
     {"power_mode", _APP_Commands_SetPowerMode, ": Set power mode"},
     {"self_tester", _APP_Commands_SelfTester, ": Show board self tester status"},
     {"debug", _APP_Commands_SetDebugLevel, ": Set debug level"},
@@ -85,7 +88,7 @@ static void rssiCallback(DRV_HANDLE handle, WDRV_PIC32MZW_ASSOC_HANDLE assocHand
 
 //******************************************************************************
 
-bool APP_Commands_Init() {
+ bool APP_Commands_Init() {
     if (!SYS_CMD_ADDGRP(appCmdTbl, sizeof (appCmdTbl) / sizeof (*appCmdTbl), "app", ": app commands")) {
         SYS_ERROR(SYS_ERROR_ERROR, "Failed to create TCPIP Commands\r\n", 0);
         return false;
@@ -103,21 +106,25 @@ void _APP_Commands_SetDebugLevel(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** a
             return;
         }
     }
-    APP_CMD_PRNT("Usage: debug <debug level 0:4>\r\n");
+    APP_CMD_PRNT("debug <level>\r\n");
 }
 
 void _APP_Commands_SetPowerMode(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
     const void* cmdIoParam = pCmdIO->cmdIoParam;
-    if (argc == 2){
-        uint8_t psMode = atoi(argv[1]);    
-        if(LOW_POWER_IDLE_MODE <= psMode && psMode <= LOW_POWER_DEEP_SLEEP_MODE) {
-            APP_CMD_PRNT("Going to XDS/DS mode\r\n");
-            PMD3bits.W24GMD = 1;
-            POWER_LowPowerModeEnter(LOW_POWER_DEEP_SLEEP_MODE);
-            return;
-        }
+    if (argc == 3){
+        uint8_t a = atoi(argv[1]); 
+        uint8_t b = atoi(argv[2]);
+        APP_SetSleepMode(a,b);
+        return;
     }
-    APP_CMD_PRNT("Usage: power_mode <power mode 0:3>\r\n");
+    APP_CMD_PRNT("power_mode <PIC_PM_MODE> <WIFI_PM_MODE>\r\n"
+            "a b : PIC PM + Wi-Fi PM  \r\n"
+            "0 0 : IDLE   + WSM_ON    \r\n"
+            "0 2 : IDLE   + WOFF      \r\n"
+            "1 0 : SLEEP  + WSM_ON    \r\n"
+            "1 2 : SLEEP  + WOFF      \r\n"
+            "3 - : DS/XDS +   -       \r\n"
+            "4 3 :    -   + WON       \r\n");
 }
 
 void _APP_Commands_Reboot(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
@@ -137,6 +144,35 @@ void _APP_Commands_GetRSSI(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
     } else {
         APP_CMD_PRNT("RSSI: WI-Fi not connected.\r\n");
     }
+}
+
+void _APP_Commands_SetRTCCFreq(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
+    const void* cmdIoParam = pCmdIO->cmdIoParam;
+    RTCC_ALARM_MASK mask;
+    if (argc == 2){
+        uint8_t freq = atoi(argv[1]);    
+        if((RTCC_ALARM_MASK_HALF_SECOND <= freq && freq <= RTCC_ALARM_MASK_YEAR)
+                || freq == RTCC_ALARM_MASK_OFF) {
+            APP_CMD_PRNT("Setting RTCC frequency %x\r\n", freq);
+            mask = freq;
+            if (RTCC_AlarmSet(&appCtrlData.rtccData.sysTime, mask) == false) {
+                APP_CTRL_DBG(SYS_ERROR_ERROR, "Error setting alarm\r\n");
+            }
+            return;
+        }
+    }
+    APP_CMD_PRNT("rtcc_freq <freq> \r\n"
+            "Half sec: 0 \r\n"
+            "Sec: 1 \r\n"
+            "10 sec: 2 \r\n"
+            "Min: 3 \r\n"
+            "10 min: 4 \r\n"
+            "Hour: 5 \r\n"
+            "Day: 6 \r\n"
+            "Week: 7 \r\n"
+            "Month: 8 \r\n"
+            "Year: 9 \r\n"
+            "OFF: 255 \r\n");
 }
 
 void _APP_Commands_GetRTCC(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {

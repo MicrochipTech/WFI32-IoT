@@ -66,7 +66,7 @@ extern "C" {
 #define APP_USB_MSD_VOICE_CLICKME_DATA_TEMPLATE "<html><body><script type=\"text/javascript\">window.location.href =\"\
                               https://microchiptech.github.io/mchpiotvoice?thingName=%s&boardType=w1Curiosity\";</script></body></html>"
 #define APP_USB_MSD_KIT_INFO_DATA_TEMPLATE "<html><body><script type=\"text/javascript\">window.location.href =\"\
-                              https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/EV12F11A\";</script></body></html>"
+                              https://www.microchip.com/en-us/development-tool/EV36W50A\";</script></body></html>"
 
 #if !SYS_FS_AUTOMOUNT_ENABLE
     #define SYS_FS_MEDIA_IDX0_MOUNT_NAME_VOLUME_IDX0 			"/mnt/myDrive1"

@@ -5,6 +5,13 @@ children:
 - type: Symbols
   children:
   - type: Integer
+    attributes: {id: SYS_CONSOLE_PRINT_BUFFER_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '400'}
+  - type: Integer
     attributes: {id: SYS_CONSOLE_UART_CONNECTION_COUNTER}
     children:
     - type: Values

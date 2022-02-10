@@ -1,0 +1,74 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.WFI32-IoT",
+		"version": "3.6.0",
+		"displayName": "WFI32-IoT AWS C SDK Out-of-box Dem0",
+		"projectName": "WFI32-IoT",
+		"shortDescription": "This example application uses AWS C SDK v4.0 to report temperature and light values to AWS cloud",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.50.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32MZ-W_DFP",
+			"semverRange": "^1.4.193"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.8.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32MZ1025W104132",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"WFI32-IoT Board"
+			],
+			[
+				"Wireless",
+				"Wi-Fi"
+			]
+		],
+		"peripherals": [
+			"Wi-Fi"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"PIC32MZ1025W104132",
+			"WFI32",
+			"WFI32E01",
+			"PIC32MZ W1 Family",
+			"wireless",
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

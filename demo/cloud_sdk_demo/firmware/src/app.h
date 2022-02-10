@@ -62,6 +62,7 @@ typedef enum
     APP_WLAN_WAIT_FOR_SNTP_INIT,    
     APP_WLAN_IDLE,
     APP_WLAN_RECONNECT,
+    APP_WLAN_DEINIT,
     APP_WLAN_ERROR,
 } APP_TASK_WLAN_STATES;
 
@@ -118,6 +119,9 @@ typedef struct
     TCPIP_DHCP_HANDLE TCPIPDHCPHandle;
     
     uint8_t ValidCrednetials;
+    
+    bool wOffRequested;
+    bool wOnRequested;
 
 } APP_DATA;
 APP_DATA appData;
