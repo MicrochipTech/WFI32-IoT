@@ -3,7 +3,7 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.3.0",
-		"name": "com.microchip.mcu32.mplabx.WFI32-IoT",
+		"name": "com.microchip.mcu32.mplabx.project.WFI32-IoT",
 		"version": "3.6.0",
 		"displayName": "WFI32-IoT AWS C SDK Out-of-box Demo",
 		"projectName": "WFI32-IoT",
@@ -12,12 +12,10 @@
 			"name": "MPLABX",
 			"semverRange": ">=5.50.0"
 		},
-		"compiler": [
-			{
+		"compiler": {
 				"name": "XC32",
 				"semverRange": ">=2.50.0"
-			}
-		],
+			},
 		"dfp": {
 			"name": "PIC32MZ-W_DFP",
 			"semverRange": "^1.4.193"
@@ -37,16 +35,6 @@
 			}
 		},
 		"author": "Microchip",
-		"subcategories": [
-			[
-				"Development Kit",
-				"WFI32-IoT Board"
-			],
-			[
-				"Wireless",
-				"Wi-Fi"
-			]
-		],
 		"peripherals": [
 			"Wi-Fi"
 		],
