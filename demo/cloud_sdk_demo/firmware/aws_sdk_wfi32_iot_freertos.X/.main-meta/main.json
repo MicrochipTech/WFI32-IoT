@@ -57,7 +57,7 @@
 			"WFI32",
 			"WFI32E01",
 			"PIC32MZ W1 Family",
-			"wireless",
+			"wireless"
 		],
 		"additionalData": {
 			"longDescription": {
