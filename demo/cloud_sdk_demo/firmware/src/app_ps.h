@@ -52,7 +52,7 @@ typedef enum {
 
 // *****************************************************************************
 
-void APP_SetSleepMode(POWER_LOW_POWER_MODE, WIFI_SLEEP_MODE);
+void APP_SetSleepMode(uint8_t);
 
 #endif /* _APP_PS_H */
 

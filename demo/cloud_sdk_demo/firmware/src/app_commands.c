@@ -111,20 +111,20 @@ void _APP_Commands_SetDebugLevel(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** a
 
 void _APP_Commands_SetPowerMode(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {
     const void* cmdIoParam = pCmdIO->cmdIoParam;
-    if (argc == 3){
+    if (argc == 2){
         uint8_t a = atoi(argv[1]); 
-        uint8_t b = atoi(argv[2]);
-        APP_SetSleepMode(a,b);
+        APP_SetSleepMode(a);
         return;
     }
-    APP_CMD_PRNT("power_mode <PIC_PM_MODE> <WIFI_PM_MODE>\r\n"
-            "a b : PIC PM + Wi-Fi PM  \r\n"
-            "0 0 : IDLE   + WSM_ON    \r\n"
-            "0 2 : IDLE   + WOFF      \r\n"
-            "1 0 : SLEEP  + WSM_ON    \r\n"
-            "1 2 : SLEEP  + WOFF      \r\n"
-            "3 - : DS/XDS +   -       \r\n"
-            "4 3 :    -   + WON       \r\n");
+    APP_CMD_PRNT("power_mode <val>\r\n"
+            "val| PIC PM | Wi-Fi PM  \r\n"
+            "------------------------\r\n"
+            "0  | IDLE   | WSM_ON    \r\n"
+            "1  | IDLE   | WOFF      \r\n"
+            "2  | SLEEP  | WSM_ON    \r\n"
+            "3  | SLEEP  | WOFF      \r\n"
+            "4  | DS/XDS |   -       \r\n"
+            "5  |    -   | WON       \r\n");
 }
 
 void _APP_Commands_Reboot(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv) {

@@ -170,54 +170,51 @@ static void restoreINTSource()
     //SYS_INT_SourceRestore(INT_SOURCE_CHANGE_NOTICE_A, true);
 }
 
-void APP_SetSleepMode(POWER_LOW_POWER_MODE picSM, WIFI_SLEEP_MODE wifiSM)
+void APP_SetSleepMode(uint8_t val)
 {
-    #define LOW_POWER_NONE  LOW_POWER_DEEP_SLEEP_MODE+1
-
     /* Set RTCC alarm to 10 seconds */
     if (RTCC_AlarmSet(&appCtrlData.rtccData.sysTime, RTCC_ALARM_MASK_10_SECONDS) == false) {
         APP_CTRL_DBG(SYS_ERROR_ERROR, "Error setting alarm\r\n");
         return;
     }
     
-    switch (picSM) {
-        /* PIC DS or XDS mode */
-        case LOW_POWER_DEEP_SLEEP_MODE:
-            PMD3bits.W24GMD = 1;
-            POWER_LowPowerModeEnter(picSM);
-            break;
-
-        /* In PIC sleep & idle modes, Wi-Fi must be in WOFF or WSM */
-        case LOW_POWER_SLEEP_MODE:           
-        case LOW_POWER_IDLE_MODE:
-            if((wifiSM != WIFI_WOFF && wifiSM != WIFI_WSM_ON)
-                    || !MQTT_IS_CONNECTED){
-                APP_PS_PRNT("Invalid PM configuration or MQTT is not connected\r\n");
+    switch (val) {
+        case 0:     /* PIC IDLE + Wi-Fi WSM ON*/
+        case 1:     /* PIC IDLE + Wi-Fi WOFF*/
+        case 2:     /* PIC SLEEP + Wi-Fi WSM ON*/
+        case 3:     /* PIC SLEEP + Wi-Fi WOFF*/
+            if(MQTT_IS_CONNECTED){
+                if(val ==1 || val ==3)
+                    PMUCLKCTRLbits.WLDOOFF = 1;
+                
+                clearINTSource();
+                disableINTSource();
+                if(val == 0 || val ==1)
+                    POWER_LowPowerModeEnter(LOW_POWER_IDLE_MODE);
+                else
+                    POWER_LowPowerModeEnter(LOW_POWER_SLEEP_MODE);
+                restoreINTSource();
+                
+                if(val ==1 || val ==3){
+                    WDRV_PIC32MZW_Deinitialize(sysObj.drvWifiPIC32MZW1);
+                    appData.wOffRequested = true;
+                }
                 break;
             }
+            APP_PS_PRNT("MQTT is not connected\r\n");
+            break;
             
-            if(wifiSM == WIFI_WOFF){
-                PMUCLKCTRLbits.WLDOOFF = 1;
-            }
-            
-            clearINTSource();
-            disableINTSource();
-            POWER_LowPowerModeEnter(picSM);
-            restoreINTSource();
-            
-            if(wifiSM == WIFI_WOFF){
-                WDRV_PIC32MZW_Deinitialize(sysObj.drvWifiPIC32MZW1);
-                appData.wOffRequested = true;
-            }
+        /* PIC DS or XDS mode */
+        case 4:
+            PMD3bits.W24GMD = 1;
+            POWER_LowPowerModeEnter(LOW_POWER_DEEP_SLEEP_MODE);
             break;
             
         /* Wi-Fi WON */
-        case LOW_POWER_NONE:
-            if(MQTT_IS_CONNECTED || wifiSM != WIFI_WON){
-                APP_PS_PRNT("Invalid PM configuration or MQTT is connected\r\n");
-                break;
-            }         
-            appData.wOnRequested = true;
+        case 5:
+            if(!MQTT_IS_CONNECTED)
+                appData.wOnRequested = true;
+            APP_PS_PRNT(" MQTT is connected\r\n");
             break;
         
         default:
