@@ -212,8 +212,10 @@ void APP_SetSleepMode(uint8_t val)
             
         /* Wi-Fi WON */
         case 5:
-            if(!MQTT_IS_CONNECTED)
+            if(!MQTT_IS_CONNECTED){
                 appData.wOnRequested = true;
+                break;
+            }
             APP_PS_PRNT(" MQTT is connected\r\n");
             break;
         
