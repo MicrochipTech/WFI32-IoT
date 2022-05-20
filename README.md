@@ -1,4 +1,4 @@
-# Quick Start Guide: Secure Cloud Connectivity and Voice Control Demo for Microchip WFI32-IoT Board.
+# Quick Start Guide: Secure Cloud Connectivity and Voice Control Demo for Microchip WFI32-IoT Board
 
 Devices: **| PIC32 WFI32E | WFI32 | Trust\&Go (ECC608) |**
 
@@ -62,7 +62,7 @@ If you have an [OLEDB Click board](https://www.mikroe.com/oled-b-click) connecte
 #### 2.2.1 Via WFI32-IoT Webpage <a name="chapter2.2.1"></a>
 <img src="resources/media/webpageWifiConnectionBox.png" width="480"/>
 
-1. The lower left-hand corner of the webpage will show a wireless network connection window.
+1. Scroll down the middle of the webpage. On the left, you will ses a **Wireless Network Login** panel.
 2. Enter your AP credentials and click the **Download Configuration** button. 
 3. A file named **WIFI.CFG** (text) file is downloaded to the host PC. 
 4. Drag and drop the file to the **CURIOSITY drive** to update the Wi-Fi credentials of the board.
@@ -70,7 +70,7 @@ If you have an [OLEDB Click board](https://www.mikroe.com/oled-b-click) connecte
 6. **Fast Blinking BLUE LED** indicates connecting to local AP and **solid BLUE LED** indicates connection is successful.
 
 **Note**: Any information entered in the SSID and password fields is not transmitted over the web or to the Microchip or AWS servers. Instead, the information is used locally (within the browser) to generate the **WIFI.CFG** file.
- 
+
 #### 2.2.2 Via Soft AP <a name="chapter2.2.2"></a>
 1. Download **Microchip Wi-Fi Provisioning** Mobile phone application for [Android](https://play.google.com/store/apps/details?id=com.microchip.wifiapplication&hl=en_US&gl=US) or for [iOS](https://apps.apple.com/us/app/wi-fi-provisioning/id1553255731).
 2. To enter SoftAP mode, hold the **SW1** push button for most of the power up time.
@@ -83,18 +83,18 @@ If you have an [OLEDB Click board](https://www.mikroe.com/oled-b-click) connecte
 7. Mobile app doesn't currently have native support for Wi-Fi provisioning for WPA3 enabled APs. If your AP security mode is WPA3, please jump to [step 14](#step14).
 8. List of available APs is shown. You can press **SCAN** button to refresh.
 
-**Note**: For iPhone/iPad, you have to provide your own AP crednetials as **SCAN** function is not supported due to iOS limitation.
+**Note**: For iPhone/iPad, you have to provide your own AP credentials as **SCAN** function is not supported due to iOS limitation.
 
 **Note**: Make sure you have location service in your phone enabled. Location service is needed by the application to be able to fetch Wi-Fi scan results (Android only), AP name and default Gateway.
 
 <img src="resources/media/mobileApp2.png" width="240"/>
 
-9. Choose one of the scanned APs or provide your own AP crednetials. Data provided is sent to the WFI32-IoT board as you press **SEND**. 
+9. Choose one of the scanned APs or provide your own AP credentials. Data provided is sent to the WFI32-IoT board as you press **SEND**. 
 
 <img src="resources/media/mobileApp3.png" width="240"/>
 <img src="resources/media/mobileApp4.png" width="240"/>
 
-10. Go back in the app and press **YES** when prompted so that the WFI32-IoT board applies the new credentilas.
+10. Go back in the app and press **YES** when prompted so that the WFI32-IoT board applies the new credentials.
 
 <img src="resources/media/mobileApp6.png" width="240"/>
 
@@ -104,10 +104,12 @@ If you have an [OLEDB Click board](https://www.mikroe.com/oled-b-click) connecte
 ##### For WPA3-enabled AP: <a name="step14"></a>
 14. Navigate from **Wi-Fi** tab to **OTHER** tab and type in the following string without the double quotations: "*apply,ssid,password,4*". Please replace *ssid* with your AP name and *password* with your AP password. Press **SEND** when done.
 	
+
 <img src="resources/media/mobileApp7.png" width="240"/>
 	
-15. Go back in the app and press **YES** when prompted so that the WFI32-IoT board applies the new credentilas.
+15. Go back in the app and press **YES** when prompted so that the WFI32-IoT board applies the new credentials.
 	
+
 <img src="resources/media/mobileApp8.png" width="240"/>
 
 **Note**: WFI32-IoT board will NOT apply/use provided credentials unless you go back in the app. This gives you the chance to keep sending new credentials or correct wrongly provided ones as long as you didn't go back in the app.
@@ -125,29 +127,24 @@ If you have an [OLEDB Click board](https://www.mikroe.com/oled-b-click) connecte
 
 <img src="resources/media/webpageGraphs.png" width="720"/>
 
-**Note**: Take note of your Thing Name as it's going to be noted for registering the device for Alexa Voice Control in [section 2.4](#chapter2.4).
+**Note**: Take note of your Thing Name as it's going to be needed for registering the device for Alexa Voice Control in [section 2.4](#chapter2.4).
+
+**Note**: Temperature reported is the PCB temperature not ambient temperature. Accordingly, you may notice always a number that's above your room temperature.
 
 #### Sending messages to the board
-1. Click on **What's Next** button below the Temprature and Light graphs.
-2. Select **Implement a Cloud-Controlled Actuator** to demostrate cloud performed behaviors.
-
-<img src="resources/media/webpageCloudActuator.png" width="720"/>
-
-3. Click on **Learn More** button to expand page interface then Scroll to the bottom of **Step 5** where a panel will read **Control Your Device**.
-
-<img src="resources/media/webpageLearnMore.png" width="720"/>
-
-4. By default only a **Toggle** feature is demostrated. Custom implmentations are described further on above the panel.
+1. Scroll down to **What's Next** section in the webpage.
+2. Select **Implement a Cloud-Controlled Actuator** to demonstrate cloud performed behaviors.
+3. Click on **See more**  then Scroll down the **Control Your Device** panel.
 
 <img src="resources/media/webpageToggle.png" width="720"/>
 
 5. Click on **Send to device** to send **Toggle** button value. 
-6. The **YELLOW LED** will remain on/off for 2 seconds when **Toggle** button is selected/unselected, respectively. After the 2 seocnds, the **YELLOW LED** will go back to its normal functionality; blinking on each successfull message published to the cloud.
+6. The **YELLOW LED** will remain on/off for 2 seconds when **Toggle** button is selected/unselected, respectively. After the 2 seconds, the **YELLOW LED** will go back to its normal functionality; blinking on each successful message published to the cloud.
 
-**Note**: Because Toggle manipulates the desired stat, the state must be changed to observe the behavior.
+**Note**: Because Toggle manipulates the desired state, the state must be changed to observe the behavior.
 
 ### 2.4 Voice Control <a name="chapter2.4"></a>
-Please note that supported browsers inlcudes Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge while Internet Explorer is not supported. Please also note that only devices registered to the Microchip Cloud account can be registered for voice control and controlled via the voice skills. In case of registration errors, please contact [Microchip support](http://microchip.com/support)
+Please note that supported browsers includes Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge while Internet Explorer is not supported. Please also note that only devices registered to the Microchip Cloud account can be registered for voice control and controlled via the voice skills. In case of registration errors, please contact [Microchip support](http://microchip.com/support)
 
 <img src="resources/media/voiceReg1.png" width="1080"/>
 
@@ -165,10 +162,11 @@ Please note that supported browsers inlcudes Google Chrome, Mozilla Firefox, Saf
 > Alexa, turn on the myCuriosity
 6. The **YELLOW LED** will remain on/off for 2 Seconds based on the voice command.
    
+
 **Note**: You can find out more information about connecting a smart home device to Alexa from [this link](http://tinyurl.com/alexa-smart-home)
- 
-**Note**: Supported browsers inlcude Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge while Internet Explorer is not supported. 
- 
+
+**Note**: Supported browsers include Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge while Internet Explorer is not supported. 
+
 **Note**: Only devices registered to the Microchip Cloud account can be registered for voice control and controlled via the voice skills. In case of registration errors, please contact [Microchip support](http://microchip.com/support)
 
 ## 3. User Commands <a name="Chapter3"></a>
@@ -191,7 +189,7 @@ UART1 supports a set of user commands via command line as follows (more info abo
 Curious to learn more? ..
 - Check out our **[Deep Dive Guide](https://github.com/amrabdelmoghny/WFI32-IoT/blob/main/HowItWorks.md)** to dive behind the scenes, learn how Connectivity, Security and Cloud are tied together and experience how smooth it is to migrate the demo to your own cloud instance. 
 - We have gathered some FAQs and troubleshooting tips for you under the **[FAQ and Troubleshooting Page](https://github.com/amrabdelmoghny/WFI32-IoT/blob/main/FAQ.md)**. 
-- Refer to WFI32-IoT board **[HW user guide]()**. 
+- Refer to WFI32-IoT board **[product page](https://www.microchip.com/en-us/development-tool/ev36w50a)** and **[HW user guide](https://ww1.microchip.com/downloads/aemDocuments/documents/WSG/ProductDocuments/UserGuides/EV36W50A-WFI32-IoT-Board-Users-Guide-DS50003262.pdf)**. 
 - Check out **[WFI32E01PC module Product page](https://www.microchip.com/wwwproducts/en/WFI32E01PC)** for tips, guides, knowledge base article, code examples and further more!
 - Check out **[Curisoity Board](https://www.microchip.com/developmenttools/ProductDetails/PartNO/EV12F11A)**; another evaluation board for WFI32E01PC module where you can have access to more module interfaces (i.e Ethernet) and more pins for prototyping. 
-- A very similar and exciting demo for Curisoity Board is available **[here](https://github.com/MicrochipTech/PIC32MZW1_Curiosity_OOB)**.
+- A very similar and exciting demo for Curiosity Board is available **[here](https://github.com/MicrochipTech/PIC32MZW1_Curiosity_OOB)**.

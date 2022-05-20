@@ -11,7 +11,7 @@ Features: **| Secure Cloud connectivity | Voice Control |**
 3. [Why is temperature value reported by the board is higher than my actual room temperature?](#q3)
 5. [What is the flash and RAM usage in normal Vs MicroMIPS modes?](#q4)
 6. [How to enable compiler MicroMIPS modes?](#q5)
- 
+
 #### 1.  The board is not able to connect to the cloud from my office network <a name="q1"></a>
 
 The most common issue in this scenario is the firewall configurations of the office network. Cloud connection is done over the secure MQTT port 8883. Many office firewalls block this port. Please talk to the IT department of your office to allow port 8883 in your firewall.
@@ -31,7 +31,7 @@ When using XC32 compiler normal mode, following is data and program memeory usag
 <img src="resources/media/FAQ/mem_usage.PNG" width=400/>
 </p>
 
-When using XC32 compiler microMIPS mode (needs XC32 license to enable *Os* Optimization level), program memory savings of around **20% (201.2 KB)** can be observed:
+When using XC32 compiler microMIPS mode (needs XC32 license to enable *Os* Optimization level), program memory savings of around **23% (241 KB)** can be observed:
 <p>
 <img src="resources/media/FAQ/mem_usage_opt_Os_uMIPS.PNG" width=400/>
 </p>

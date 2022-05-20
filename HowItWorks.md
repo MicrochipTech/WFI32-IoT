@@ -12,8 +12,8 @@ The WFI32-IoT board comes pre-programmed and configured for demonstrating the co
 <img src="resources/media/board1.png"/ width="480">
 </p>
 
-Please check out our **[Quick Start Guide](https://github.com/amrabdelmoghny/WFI32-IoT/blob/main/README.md)** to experience an out-of-the-box cloud connection to Microchip AWS Sandbox account. We have also gathered some FAQs and troubleshooting tips for you under the **[FAQ and Troubleshooting Page](https://github.com/amrabdelmoghny/WFI32-IoT/blob/main/FAQ.md)**.
- 
+Please check out our **[Quick Start Guide](https://github.com/MicrochipTech/WFI32-IoT/blob/main/README.md)** to experience an out-of-the-box cloud connection to Microchip AWS Sandbox account. We have also gathered some FAQs and troubleshooting tips for you under the **[FAQ and Troubleshooting Page](https://github.com/MicrochipTech/WFI32-IoT/blob/main/FAQ.md)**.
+
 ## Table of Contents
 
 1. [Requirements](#chapter1)
@@ -26,7 +26,7 @@ Please check out our **[Quick Start Guide](https://github.com/amrabdelmoghny/WFI
 8. [Re-flash the demo](#chapter8)
 9. [Code generation using Harmony 3](#chapter9)
 10. [Power Save Modes](#chapter10)
- 
+
 ## 1. Requirements <a name="Chapter1"></a>
 
 * **MPLAB® X Integrated Development Environment (IDE) v5.40 or later**
@@ -43,7 +43,7 @@ The WFI32-IoT board is a compact, easy-to-use development board that supports ra
 ---
 
 ## 2. Application Scope <a name="Chapter2"></a>
-The WFI32-IoT-IoT development board has been created with the intention of demostrating a one source solution for evaluation of existing cloud provider solutions. 
+The WFI32-IoT-IoT development board has been created with the intention of demonstrating a one source solution for evaluation of existing cloud provider solutions. 
 This example end-device leverages the catalog of devices, and libraries provided through Microchip's extensive product line to showcase a basic Internet of Things product connection. Data exchange between server and in field device is implemented using on board sensors for temperature and light value observations. Behavior actions are demonstrated through visual indication of the 'Data' LED as controlled through the Web based APIs. 
 
 General Out-Of-Box operation is as described below:
@@ -70,10 +70,12 @@ The application runs multiple logical modules as follows:
 | ----------------------------- | --------------------- | ------------------------------------------------------------------------------------- |
 | **APP**			| app.c/.h		| The main/central module that manages **Wi-Fi functionality**.              		|
 | **APP_WIFI_PROV**		| app_wifi_prov.c/.h	| Manages **AP provisioning functionality** to provision the device using AP mode	|
-| **APP_USB_MSD**		| app_usb_msd.c/.h	| Manages **Mass Storage Device functionality**  					|
+| **APP_USB_MSD**		| app_usb_msd.c/.h	| Manages **Mass Storage Device functionality**(*) |
 | **APP_CTRL**			| app_ctrl.c.h		| Manages device **Control operations** including LED management and sensors access	|
 | **APP_AWS**			| app_aws.c/.h		| Manages **AWS cloud connection/subscribe/publish functionality**			|
 | **APP_COMMANDS**		| app_commands.c/.h	| Manage **User commands given via command line**					|
+| **APP_OLED**	| app_oled.c/.h	| Manage **OLEDB click board**	|
+| **APP_PS**	| app_ps.c/.h	| Manage different **power save** modes	|
 
 (*) **Mass Storage Device** gives access to:
 * Configure the device for Wi-Fi connection via **WIFI.CFG**.
@@ -108,7 +110,7 @@ The application runs multiple logical modules as follows:
 	       }
 	  }
 	}
-     ```
+  ```
 * Web Interface publishes payload to Device Shadow
 	* topic: ``$aws/things/<thingName>/shadow/update``
 	* payload:
@@ -174,9 +176,10 @@ The application runs multiple logical modules as follows:
 ## 6. Understanding the Device Shadow in AWS <a name="Chapter6"></a>
 
 1. The AWS broker allows for the use of Shadow Topics. The Shadow Topics are used to retain a specific value within the Broker, so End-Device status updates can be managed.
+
  	* Shadow Topics are used to restore the state of variables, or applications.
-	* Shadow Topics retain expected values, and report if Published data reflects a difference in value.
-	* When difference exist, status of the delta is reported to those subscribed to appropriate topic messages.
+ 	* Shadow Topics retain expected values, and report if Published data reflects a difference in value.
+ 	* When difference exist, status of the delta is reported to those subscribed to appropriate topic messages.
 
 2. Updates to the device shadow are published on ``$aws/things/{thingName}/shadow/update`` topic.  When a message is sent to the board by changing the value of the **toggle** button in **Control Your Device** section:
 	* This message is published on the ``$aws/things/{thingName}/shadow/update topic``. 
