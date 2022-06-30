@@ -72,6 +72,9 @@ If you have an [OLEDB Click board](https://www.mikroe.com/oled-b-click) connecte
 **Note**: Any information entered in the SSID and password fields is not transmitted over the web or to the Microchip or AWS servers. Instead, the information is used locally (within the browser) to generate the **WIFI.CFG** file.
 
 #### 2.2.2 Via Soft AP <a name="chapter2.2.2"></a>
+In AP mode, WFI32-IoT board can be provisioned using either a dedicated Mobile app or any socket client app on PC (i.e Python) or Mobile phone.
+
+#### Using Microchip Wi-Fi Provisioning app
 1. Download **Microchip Wi-Fi Provisioning** Mobile phone application for [Android](https://play.google.com/store/apps/details?id=com.microchip.wifiapplication&hl=en_US&gl=US) or for [iOS](https://apps.apple.com/us/app/wi-fi-provisioning/id1553255731).
 2. To enter SoftAP mode, hold the **SW1** push button for most of the power up time.
 3. **Slow Blinking BLUE LED** indicates Soft AP is available.
@@ -113,6 +116,29 @@ If you have an [OLEDB Click board](https://www.mikroe.com/oled-b-click) connecte
 <img src="resources/media/mobileApp8.png" width="240"/>
 
 **Note**: WFI32-IoT board will NOT apply/use provided credentials unless you go back in the app. This gives you the chance to keep sending new credentials or correct wrongly provided ones as long as you didn't go back in the app.
+
+#### Using any socket client app
+The **Microchip Wi-Fi provisioning** app shown above is actually using a TCP client behind the scenes. The TCP client connectes to WFI32-IoT TCP server and sends properly fomratted AP credentials. 
+1. To enter SoftAP mode, hold the **SW1** push button for most of the power up time.
+2. **Slow Blinking BLUE LED** indicates Soft AP is available.
+3. Using a PC, Mobile phone, tablet or any device that's Wi-Fi and TCP client capabale, connect to the **WFI32-IoT** AP.
+4. In the example we are showing below, a Python 2.7 based TCP client is used to connect to WFI32-IoT TCP server.
+
+```python
+import socket
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# WFI32-IoT board runs an AP interface with IP address 192.168.1.1 and a TCP server on port 80
+server_address = ('192.168.1.1', 80)
+# Connect to the TCP socket
+sock.connect(server_address)
+# Send AP credentials over the connected socket to the WFI32-IoT board
+# Replace 'ssid' with your AP SSID and 'password' with your AP password 
+# Replace 'security' with proper value relevant to your AP security mode:
+#0:Open | 1: WAP/WPA2 | 2:WEP | 3:WPA3 | 4:Enterprise
+sock.sendall('apply,ssid,security,password,NULL')
+# Send a 'finish' string over the socket to inform WFI32-IoT board to apply the passed credentials
+sock.sendall('finish')
+```
 
 ### 2.3 Visualizing Cloud Data in Real Time <a name="chapter2.3"></a>
 
