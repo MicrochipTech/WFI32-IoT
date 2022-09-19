@@ -56,7 +56,8 @@
 					"fileName": "./../../../../README.md",
 					"mimeType": "text/markdown"
 				}
-			}
+			},
+			"hexFileNamePath": "./../../../../prebuilt/aws_sdk_wfi32_iot_freertos.X.production.hex"
 		}
 	}
 }
