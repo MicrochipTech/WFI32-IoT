@@ -1,0 +1,56 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.hex.project",
+	"content": {
+		"metaDataVersion": "1.0.0",
+		"name": "com.microchip.mcu32.mplabx.project.WFI32-IoT",
+		"version": "1.8.0",
+		"displayName": "WFI32-IoT AWS C SDK Out-of-box Demo",
+		"projectName": "WFI32-IoT",
+		"shortDescription": "This example application uses AWS C SDK v4.0 to report temperature and light values to AWS cloud",
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32MZ1025W104132",
+				"versionRange": "*"
+			}
+		},
+		"board": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.board",
+				"name": "WFI32_IOT_BOARD",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"peripherals": [
+			"Wi-Fi"
+		],
+		"keywords": [
+			"Wi-Fi",
+			"PIC32MZ1025W104132",
+			"WFI32",
+			"WFI32E01",
+			"PIC32MZ W1 Family",
+			"wireless"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../../../README.md",
+					"mimeType": "text/markdown"
+				}
+			},
+			"hexFileNamePath": "./prebuilt/aws_sdk_wfi32_iot_freertos.X.production.hex"
+		}
+	}
+}
