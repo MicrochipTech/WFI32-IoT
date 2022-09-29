@@ -46,11 +46,11 @@
 				"category": "com.microchip.portal.fileRef",
 				"content": {
 					"metaDataVersion": "1.0.0",
-					"fileName": "./../../../../README.md",
+					"fileName": "./../README.md",
 					"mimeType": "text/markdown"
 				}
 			},
-			"hexFileNamePath": "./prebuilt/aws_sdk_wfi32_iot_freertos.X.production.hex"
+			"hexFileNamePath": "./../prebuilt/aws_sdk_wfi32_iot_freertos.X.production.hex"
 		}
 	}
 }
