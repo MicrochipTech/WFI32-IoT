@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.0.0",
 		"name": "com.microchip.mcu32.mplabx.project.WFI32-IoT",
-		"version": "1.8.0",
+		"version": "2.0.0",
 		"displayName": "WFI32-IoT AWS C SDK Out-of-box Demo",
 		"projectName": "WFI32-IoT",
 		"shortDescription": "This example application uses AWS C SDK v4.0 to report temperature and light values to AWS cloud",
