@@ -62,7 +62,7 @@ extern "C" {
 #define APP_USB_MSD_AZURE_CLOUD_CONFIG_DATA_TEMPLATE "{\r\n\"Endpoint\":\"%s\",\r\n\"ThmbPrnt\":\"%s\"\r\n}"
 #define APP_USB_MSD_AWS_CLOUD_CONFIG_DATA_TEMPLATE "{\r\n\"Endpoint\":\"%s\",\r\n\"ClientID\":\"%s\"\r\n}"
 #define APP_USB_MSD_CLICKME_DATA_TEMPLATE "<html><body><script type=\"text/javascript\">window.location.href =\"\
-                              https://pic-iot.com/pic32mzw1/aws/%s\";</script></body></html>"
+                              https://iot.microchip.com/pic32mzw1/aws/%s\";</script></body></html>"
 #define APP_USB_MSD_VOICE_CLICKME_DATA_TEMPLATE "<html><body><script type=\"text/javascript\">window.location.href =\"\
                               https://microchiptech.github.io/mchpiotvoice?thingName=%s&boardType=w1Curiosity\";</script></body></html>"
 #define APP_USB_MSD_KIT_INFO_DATA_TEMPLATE "<html><body><script type=\"text/javascript\">window.location.href =\"\
