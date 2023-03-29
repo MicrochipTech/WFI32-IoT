@@ -1195,6 +1195,20 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '200000000'}
   - type: Boolean
+    attributes: {id: DMA_CH_NEEDED_FOR_SPI1_Receive}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: Boolean
+    attributes: {id: DMA_CH_NEEDED_FOR_SPI1_Transmit}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: Boolean
     attributes: {id: DMA_CH_NEEDED_FOR_SPI2_Receive}
     children:
     - type: Values
@@ -3479,6 +3493,8 @@ children:
     children:
     - type: Values
       children:
+      - type: Dynamic
+        attributes: {id: drv_usbfs_v1, value: 'true'}
       - type: User
         attributes: {value: 'true'}
   - type: Boolean

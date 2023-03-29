@@ -1,25 +1,25 @@
 files:
-- generatedChecksum: A894C63D65D4275B3B79883DC2A6C7BF
+- generatedChecksum: 7CDB31A66D03B2CD28B76D44AAED12AE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
   name: ATECC608_0.c
   physicalPath: library/cryptoauthlib/hal
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A894C63D65D4275B3B79883DC2A6C7BF
-- generatedChecksum: F58DB2348A0FCE945652B285010E5F8A
+  userChecksum: 7CDB31A66D03B2CD28B76D44AAED12AE
+- generatedChecksum: E4894B6355AF41AED546E4C6C20005C1
   logicalPath: FreeRTOS/Source
   name: FreeRTOS_tasks.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F58DB2348A0FCE945652B285010E5F8A
+  userChecksum: E4894B6355AF41AED546E4C6C20005C1
 - generatedChecksum: 2DF7C661F71182DC8188521EF1ABAA64
   logicalPath: wolfcrypt
   name: aes.c
   physicalPath: ../../third_party/wolfssl/wolfssl/wolfcrypt/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2DF7C661F71182DC8188521EF1ABAA64
+  userChecksum: 1E89B9CE88CB20A647D5D296CEAD9EF7
 - generatedChecksum: null
   logicalPath: ''
   name: app.c
@@ -62,13 +62,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 928C0B9FF116D4D3994879848B3D46F8
-- generatedChecksum: 296C1553168144A2F636B616C80C5472
+- generatedChecksum: ED47FAC6EFA5D80F286B7F781C4475D6
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: arp.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 296C1553168144A2F636B616C80C5472
+  userChecksum: ED47FAC6EFA5D80F286B7F781C4475D6
 - generatedChecksum: 401D3E9C340CBD65F24003D4197C3A54
   logicalPath: wolfcrypt
   name: asm.c
@@ -83,20 +83,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0FB83C68B2F1920F45C6E17FA1AF2E79
-- generatedChecksum: D65C5C51F05EA0B1A7BC93D5F2768C94
+- generatedChecksum: 444781ED6E666671B8BDEE5918176A8E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_basic.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D65C5C51F05EA0B1A7BC93D5F2768C94
-- generatedChecksum: EAC4DB97EA75C9DFE56F3030EFBD1C2D
+  userChecksum: 444781ED6E666671B8BDEE5918176A8E
+- generatedChecksum: 6E4CBB332534E51810441984EF645DCC
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_basic.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EAC4DB97EA75C9DFE56F3030EFBD1C2D
+  userChecksum: 6E4CBB332534E51810441984EF645DCC
 - generatedChecksum: 7A3C7433D5B1A51B74A8924E342D644E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_bool.h
@@ -104,48 +104,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7A3C7433D5B1A51B74A8924E342D644E
-- generatedChecksum: F94BB7807F07FC7C5B1BB1F5CB62294F
+- generatedChecksum: 2DBDFFD8728C4D1D8E369A076C3B357E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_cfgs.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F94BB7807F07FC7C5B1BB1F5CB62294F
-- generatedChecksum: C7D1B750E8EA61EABA06447F1335DEE3
+  userChecksum: 2DBDFFD8728C4D1D8E369A076C3B357E
+- generatedChecksum: F0BFA9CA8C736ED732A529954EBB4CAE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_cfgs.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C7D1B750E8EA61EABA06447F1335DEE3
-- generatedChecksum: 958A2F605D328A1DD679BACBA8AD4AFA
-  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
-  name: atca_command.c
-  physicalPath: library/cryptoauthlib
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 958A2F605D328A1DD679BACBA8AD4AFA
-- generatedChecksum: A699E93A802539F77DC8A54AB9961305
-  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
-  name: atca_command.h
-  physicalPath: library/cryptoauthlib
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: A699E93A802539F77DC8A54AB9961305
-- generatedChecksum: FBD4E05B7F4C8B1C877544FDA0E09A2B
+  userChecksum: F0BFA9CA8C736ED732A529954EBB4CAE
+- generatedChecksum: 3385E1FBFBCD5667C4CAB333B9B6F070
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_compiler.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FBD4E05B7F4C8B1C877544FDA0E09A2B
-- generatedChecksum: 5311664AD46C6A0A4C2B7FC5D5B0EDF6
+  userChecksum: 3385E1FBFBCD5667C4CAB333B9B6F070
+- generatedChecksum: 8500092E7EA1EB920BF9E9DDFF2038F7
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes.h
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5311664AD46C6A0A4C2B7FC5D5B0EDF6
+  userChecksum: 8500092E7EA1EB920BF9E9DDFF2038F7
 - generatedChecksum: 65171793E500AE687BC8CCD3C6049D31
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes_cbc.c
@@ -153,13 +139,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 65171793E500AE687BC8CCD3C6049D31
-- generatedChecksum: 08A64A9051E86869223102BA11C2A0AD
+- generatedChecksum: B44E7013BDEBA9ADA498AC9F61109FFA
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
+  name: atca_crypto_hw_aes_cbcmac.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B44E7013BDEBA9ADA498AC9F61109FFA
+- generatedChecksum: 923D43EF28A3288C01012E1CC37326C0
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
+  name: atca_crypto_hw_aes_ccm.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 923D43EF28A3288C01012E1CC37326C0
+- generatedChecksum: 2B8A1F34423F806543F302408266CD54
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes_cmac.c
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 08A64A9051E86869223102BA11C2A0AD
+  userChecksum: 2B8A1F34423F806543F302408266CD54
 - generatedChecksum: 2524D72F7A43204248272C0893543EB7
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_hw_aes_ctr.c
@@ -167,20 +167,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2524D72F7A43204248272C0893543EB7
-- generatedChecksum: 044125C5B1E3A04BEC183A3F9DEB7832
+- generatedChecksum: 16B6D66A2EDABDACD74461AEF7450F00
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
+  name: atca_crypto_pbkdf2.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 16B6D66A2EDABDACD74461AEF7450F00
+- generatedChecksum: D158412AE4C69A095BE6D235131E5B8D
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_sw.h
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 044125C5B1E3A04BEC183A3F9DEB7832
-- generatedChecksum: 4B532B685AD0C9C275D5D5416B9E0145
+  userChecksum: D158412AE4C69A095BE6D235131E5B8D
+- generatedChecksum: B5EA343D1BC163882E441D84DFFB506F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_sw_ecdsa.c
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4B532B685AD0C9C275D5D5416B9E0145
+  userChecksum: B5EA343D1BC163882E441D84DFFB506F
 - generatedChecksum: A9B48CDA4A6F4AE7EA0421C70C9AA8A2
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_sw_ecdsa.h
@@ -188,13 +195,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A9B48CDA4A6F4AE7EA0421C70C9AA8A2
-- generatedChecksum: 2D568A8FCA40F20A3494C7701A8D56F1
+- generatedChecksum: 48D7E0FFB6075E881511DF73FEAE7AE9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_sw_rand.c
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2D568A8FCA40F20A3494C7701A8D56F1
+  userChecksum: 48D7E0FFB6075E881511DF73FEAE7AE9
 - generatedChecksum: 54B5FFC548BD32AD9DCC330452BF8FBE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_sw_rand.h
@@ -216,20 +223,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A1D4B8DF10B6AB9164B16D14A4E49A32
-- generatedChecksum: 4393D6DEE59D21AC15E8E45B4C173AF8
+- generatedChecksum: 77B63DCBA7374CED0C5D2E8B61FF374C
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_sw_sha2.c
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4393D6DEE59D21AC15E8E45B4C173AF8
-- generatedChecksum: 87C1DA115439D884C952DCE47832318D
+  userChecksum: 77B63DCBA7374CED0C5D2E8B61FF374C
+- generatedChecksum: 2DF89DD03016078326191F5B0452C596
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto
   name: atca_crypto_sw_sha2.h
   physicalPath: library/cryptoauthlib/crypto
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 87C1DA115439D884C952DCE47832318D
+  userChecksum: 2DF89DD03016078326191F5B0452C596
 - generatedChecksum: 367980753E682BFC5D189349D2A8359A
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_debug.c
@@ -244,90 +251,90 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DF024729BA32598B139988DB4C303D52
-- generatedChecksum: 43C5FF2398A4F18A68B28D6F44173072
+- generatedChecksum: 347D15467A95D5FD6182396CFD4F2311
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_device.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 43C5FF2398A4F18A68B28D6F44173072
-- generatedChecksum: 59ADBF11B2812B89C7634CA36FF9C482
+  userChecksum: 347D15467A95D5FD6182396CFD4F2311
+- generatedChecksum: DE8BAD918C7262C675DB9380FECE5A6B
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_device.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 59ADBF11B2812B89C7634CA36FF9C482
-- generatedChecksum: D795A75011D4314A4F797792DD5150FF
+  userChecksum: DE8BAD918C7262C675DB9380FECE5A6B
+- generatedChecksum: 7106109F765A6B18291B237D7A2F5CC4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_devtypes.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D795A75011D4314A4F797792DD5150FF
-- generatedChecksum: 2090A10BE42B2E900D438ACCF45F953E
+  userChecksum: 7106109F765A6B18291B237D7A2F5CC4
+- generatedChecksum: 5B860734C7D386817AC298E2A7ADEE1F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
   name: atca_hal.c
   physicalPath: library/cryptoauthlib/hal
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2090A10BE42B2E900D438ACCF45F953E
-- generatedChecksum: 4419EE88967013244507A13FCAADAFD4
+  userChecksum: 5B860734C7D386817AC298E2A7ADEE1F
+- generatedChecksum: 6B08E62A8B85368F79DCBDC6A9A6BFCA
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
   name: atca_hal.h
   physicalPath: library/cryptoauthlib/hal
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4419EE88967013244507A13FCAADAFD4
-- generatedChecksum: E4D5015B6ED91C69BBF1AA82B29C876B
+  userChecksum: 6B08E62A8B85368F79DCBDC6A9A6BFCA
+- generatedChecksum: E77FDC98556646364B018E2A2468849F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_helpers.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E4D5015B6ED91C69BBF1AA82B29C876B
-- generatedChecksum: 0B1D806FEDFACA63DEDCF4F3A6A8922C
+  userChecksum: E77FDC98556646364B018E2A2468849F
+- generatedChecksum: 4C7F2D4E1754F7D33CADFA1724B68939
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_helpers.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 0B1D806FEDFACA63DEDCF4F3A6A8922C
-- generatedChecksum: 3C0710375DF9A8D43FE5DD313CCB0F27
+  userChecksum: 4C7F2D4E1754F7D33CADFA1724B68939
+- generatedChecksum: EAA41D469D076D0834655C74BE1C6A63
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/host
   name: atca_host.c
   physicalPath: library/cryptoauthlib/host
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3C0710375DF9A8D43FE5DD313CCB0F27
-- generatedChecksum: FD9A5D00825CE29396BBE4306A643286
+  userChecksum: EAA41D469D076D0834655C74BE1C6A63
+- generatedChecksum: 6E89F7C656132778C623E58EEB5CBB73
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/host
   name: atca_host.h
   physicalPath: library/cryptoauthlib/host
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FD9A5D00825CE29396BBE4306A643286
-- generatedChecksum: E09C1465B725BB068B890D02BD6F887E
+  userChecksum: 6E89F7C656132778C623E58EEB5CBB73
+- generatedChecksum: CDCE0CE7DDF817D810F57F3459CA1DEF
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_iface.c
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E09C1465B725BB068B890D02BD6F887E
-- generatedChecksum: 695F23312CCF4E8E69687D8A5C6922EC
+  userChecksum: CDCE0CE7DDF817D810F57F3459CA1DEF
+- generatedChecksum: EB8A484DE63DD14D6E96A05BC0E759B3
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_iface.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 695F23312CCF4E8E69687D8A5C6922EC
-- generatedChecksum: CA051859F3F10276EE04149B20E844AF
+  userChecksum: EB8A484DE63DD14D6E96A05BC0E759B3
+- generatedChecksum: D655FD00126753A8ACF7BA8961A0F83D
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/jwt
   name: atca_jwt.c
   physicalPath: library/cryptoauthlib/jwt
   security: NON_SECURE
   type: SOURCE
-  userChecksum: CA051859F3F10276EE04149B20E844AF
+  userChecksum: D655FD00126753A8ACF7BA8961A0F83D
 - generatedChecksum: F41DD68794903B094FB89C320406C227
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/jwt
   name: atca_jwt.h
@@ -335,20 +342,6 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F41DD68794903B094FB89C320406C227
-- generatedChecksum: 020C76CD6D5D9555C514427B9B3EAC49
-  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
-  name: atca_start_config.h
-  physicalPath: library/cryptoauthlib/hal
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 020C76CD6D5D9555C514427B9B3EAC49
-- generatedChecksum: 020C76CD6D5D9555C514427B9B3EAC49
-  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
-  name: atca_start_iface.h
-  physicalPath: library/cryptoauthlib/hal
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 020C76CD6D5D9555C514427B9B3EAC49
 - generatedChecksum: C44F01BA65C6AC0A0BB2F1F257D2C405
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_status.h
@@ -356,20 +349,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C44F01BA65C6AC0A0BB2F1F257D2C405
-- generatedChecksum: D0A90D167AE776861335A1324E25575A
+- generatedChecksum: 9F6C09BA42D5F83B35F111C330A9131D
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
+  name: atca_utils_sizes.c
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 9F6C09BA42D5F83B35F111C330A9131D
+- generatedChecksum: 06124DB738A3AE73C8E53CA1A6907756
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_version.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D0A90D167AE776861335A1324E25575A
-- generatedChecksum: D30CB6096B1E1D8C53120E6DD8A31374
+  userChecksum: 06124DB738A3AE73C8E53CA1A6907756
+- generatedChecksum: C2F92E7A7552D9F0E52E2040151C15F2
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/wolfssl
   name: atca_wolfssl_interface.c
   physicalPath: library/cryptoauthlib/wolfssl
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D30CB6096B1E1D8C53120E6DD8A31374
+  userChecksum: C2F92E7A7552D9F0E52E2040151C15F2
 - generatedChecksum: 39B479CDDBCD8CEB51C6FDAD2D5D6527
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert.h
@@ -377,13 +377,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 39B479CDDBCD8CEB51C6FDAD2D5D6527
-- generatedChecksum: 211050E83F1EB4D7E5E1B5EFE6693CC1
+- generatedChecksum: F71702CE59B594A4320A4A67E840B735
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_client.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 211050E83F1EB4D7E5E1B5EFE6693CC1
+  userChecksum: F71702CE59B594A4320A4A67E840B735
 - generatedChecksum: 481CEFA6107D950DA2593A78494043C4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_client.h
@@ -391,27 +391,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 481CEFA6107D950DA2593A78494043C4
-- generatedChecksum: E1F6E19BE0F5C1147E9CAEDEDE1866F1
+- generatedChecksum: FACF788182ED6872C37F54136C671611
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_date.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E1F6E19BE0F5C1147E9CAEDEDE1866F1
-- generatedChecksum: E2AD6521ED3BA4CF60934CC5A66A14C2
+  userChecksum: FACF788182ED6872C37F54136C671611
+- generatedChecksum: 97BDFD21248DE60EA44A06564EB4A9E1
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_date.h
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E2AD6521ED3BA4CF60934CC5A66A14C2
-- generatedChecksum: 7EE1A85B7E90E04BAF4BCE9CD912FE79
+  userChecksum: 97BDFD21248DE60EA44A06564EB4A9E1
+- generatedChecksum: 23B3121CC0EACB48AE299C4EFC430AEB
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_def.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7EE1A85B7E90E04BAF4BCE9CD912FE79
+  userChecksum: 23B3121CC0EACB48AE299C4EFC430AEB
 - generatedChecksum: 7E81275CEC5D18195AFAB0069751E90F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_def.h
@@ -419,13 +419,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7E81275CEC5D18195AFAB0069751E90F
-- generatedChecksum: CA5248E40F9A4EA9DD0811D8670F1D08
+- generatedChecksum: 6B6E34A7BD2ED737583C14A8C3C474DB
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_der.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: CA5248E40F9A4EA9DD0811D8670F1D08
+  userChecksum: 6B6E34A7BD2ED737583C14A8C3C474DB
 - generatedChecksum: 78E60FE1968E176C2FAAECFF28F15859
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_der.h
@@ -461,13 +461,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 938C9787ED5322AEC1364D6F77BAE706
-- generatedChecksum: B43120C9C0EBACC26AAE248978D18B77
+- generatedChecksum: C9282574F24F4342FFE533BB667D9103
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_pem.c
   physicalPath: library/cryptoauthlib/atcacert
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B43120C9C0EBACC26AAE248978D18B77
+  userChecksum: C9282574F24F4342FFE533BB667D9103
 - generatedChecksum: DD048659E440B34428ED209F89C42D9D
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atcacert
   name: atcacert_pem.h
@@ -496,20 +496,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2F6CC050E57B9E5BA8A6C6C9A2D8F09A
-- generatedChecksum: 9A9FD6D62B08B8AADBBE32353C46EA78
+- generatedChecksum: D81A0A83EE6097AEEF8B8A524B921BBE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_aes.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9A9FD6D62B08B8AADBBE32353C46EA78
-- generatedChecksum: C9552CA702A3272DF9CD9A0CF3C614FD
+  userChecksum: D81A0A83EE6097AEEF8B8A524B921BBE
+- generatedChecksum: 6C65A1A4857B51BBFD0B4C0D898D2C43
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_aes_gcm.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C9552CA702A3272DF9CD9A0CF3C614FD
+  userChecksum: 6C65A1A4857B51BBFD0B4C0D898D2C43
 - generatedChecksum: EA3115EBE1DA89D1E95D834CAD16F601
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_aes_gcm.h
@@ -517,202 +517,209 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: EA3115EBE1DA89D1E95D834CAD16F601
-- generatedChecksum: C809D89533A3B6A51EC95631AA9DFA8E
+- generatedChecksum: ACB17A8EC9DEA574B08091796F690A03
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_basic.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C809D89533A3B6A51EC95631AA9DFA8E
-- generatedChecksum: B758D2FD47C1126616F90198167BAD6A
+  userChecksum: ACB17A8EC9DEA574B08091796F690A03
+- generatedChecksum: 89AF7751A1190A3508FC8B0130D82824
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_basic.h
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B758D2FD47C1126616F90198167BAD6A
-- generatedChecksum: F3AD226C19171591E360346CFBE434DB
+  userChecksum: 89AF7751A1190A3508FC8B0130D82824
+- generatedChecksum: A884DB08629E4695434C706C4230727C
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_checkmac.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F3AD226C19171591E360346CFBE434DB
-- generatedChecksum: FE323E02A0C96954F9ABE1CE8E232564
+  userChecksum: A884DB08629E4695434C706C4230727C
+- generatedChecksum: B9C2ACA1981DD40242F5DE61494A9DA6
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_command.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FE323E02A0C96954F9ABE1CE8E232564
-- generatedChecksum: 3D5DDF979A720B13C7FC5E8A832DF470
+  userChecksum: B9C2ACA1981DD40242F5DE61494A9DA6
+- generatedChecksum: C647A6D4029CC332EDFF5BFFB89654A8
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_command.h
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3D5DDF979A720B13C7FC5E8A832DF470
-- generatedChecksum: 57E0F240F1B099695D5B6748AB517279
+  userChecksum: C647A6D4029CC332EDFF5BFFB89654A8
+- generatedChecksum: 25C166411F3C2085D29ED53892EBA699
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_counter.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 57E0F240F1B099695D5B6748AB517279
-- generatedChecksum: A051664C0EF95B11F8704C782C386091
+  userChecksum: 25C166411F3C2085D29ED53892EBA699
+- generatedChecksum: 2A92914CEB45FEF801A142E1E2CAA5BA
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_derivekey.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A051664C0EF95B11F8704C782C386091
-- generatedChecksum: DC45ACDF1D3D192E0EA0A87F350CC912
+  userChecksum: 2A92914CEB45FEF801A142E1E2CAA5BA
+- generatedChecksum: 037D62AB95DFF5D98575548E69E78319
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_ecdh.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DC45ACDF1D3D192E0EA0A87F350CC912
-- generatedChecksum: 1A836CBF352441C9485004A883FE2970
+  userChecksum: 037D62AB95DFF5D98575548E69E78319
+- generatedChecksum: C1CF87E8CF2C13F5C34DBFBFAFFC7E5A
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_execution.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1A836CBF352441C9485004A883FE2970
-- generatedChecksum: 6389B47A7BB5B31BB86219D4EEC9C0C6
+  userChecksum: C1CF87E8CF2C13F5C34DBFBFAFFC7E5A
+- generatedChecksum: 88650BB1C64DF85297146DB38F4A9A22
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_execution.h
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 6389B47A7BB5B31BB86219D4EEC9C0C6
-- generatedChecksum: B1D20F8912AAFEC2E7ECFB1893CED53A
+  userChecksum: 88650BB1C64DF85297146DB38F4A9A22
+- generatedChecksum: 5B7A1501266F78F3C790B776043CDFB6
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_gendig.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B1D20F8912AAFEC2E7ECFB1893CED53A
-- generatedChecksum: 9CBB4A5DBEDC7922138C13102BBF427E
+  userChecksum: 5B7A1501266F78F3C790B776043CDFB6
+- generatedChecksum: BDC2785995C64F2543135A7495438421
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_genkey.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9CBB4A5DBEDC7922138C13102BBF427E
-- generatedChecksum: 90CF6B4413C50695A7E34B368B46AF64
+  userChecksum: BDC2785995C64F2543135A7495438421
+- generatedChecksum: 92EBC019E752DDF677D6009355774130
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
+  name: calib_helpers.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 92EBC019E752DDF677D6009355774130
+- generatedChecksum: 38EF4DCFFC7B15BD8C0764468CCF0F54
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_hmac.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 90CF6B4413C50695A7E34B368B46AF64
-- generatedChecksum: 3FCBF4CC558A74D29A81891200F40683
+  userChecksum: 38EF4DCFFC7B15BD8C0764468CCF0F54
+- generatedChecksum: F9821758395246DCA4F13F68A19D8468
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_info.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3FCBF4CC558A74D29A81891200F40683
-- generatedChecksum: 7B5B0E48E616FDB02FC9709D2C5EBE0A
+  userChecksum: F9821758395246DCA4F13F68A19D8468
+- generatedChecksum: 13197C0C3C9664FD455F684139AA3DB9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_kdf.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7B5B0E48E616FDB02FC9709D2C5EBE0A
-- generatedChecksum: EE6DE65AAC0A9C58A36F89440F6E198F
+  userChecksum: 13197C0C3C9664FD455F684139AA3DB9
+- generatedChecksum: F21072D5552F38182BF2CDACFA88D56C
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_lock.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EE6DE65AAC0A9C58A36F89440F6E198F
-- generatedChecksum: 20B46CB8E49C737F4188F4A91EE3F3C5
+  userChecksum: F21072D5552F38182BF2CDACFA88D56C
+- generatedChecksum: 75047A7395A29787E1F153BC53111732
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_mac.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 20B46CB8E49C737F4188F4A91EE3F3C5
-- generatedChecksum: FD90915D431709C286467EC197335B0D
+  userChecksum: 75047A7395A29787E1F153BC53111732
+- generatedChecksum: 0DCA9A9619EC283EDEA0004AC5D64D01
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_nonce.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FD90915D431709C286467EC197335B0D
-- generatedChecksum: 22D727E0045A3270AC4846E6AB874A6B
+  userChecksum: 0DCA9A9619EC283EDEA0004AC5D64D01
+- generatedChecksum: 7E627DF11DB5E2702C9502031A70C2F5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_privwrite.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 22D727E0045A3270AC4846E6AB874A6B
-- generatedChecksum: 8DCA31F01180F4FB97BF8F46A657DBDC
+  userChecksum: 7E627DF11DB5E2702C9502031A70C2F5
+- generatedChecksum: E578C71AEB8AC9418FAFE9AF51E840E8
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_random.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8DCA31F01180F4FB97BF8F46A657DBDC
-- generatedChecksum: 35EE707A04F8CEE2A71C2933E0089399
+  userChecksum: E578C71AEB8AC9418FAFE9AF51E840E8
+- generatedChecksum: 1445CF8CA07C367FE208AE129D571B17
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_read.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 35EE707A04F8CEE2A71C2933E0089399
-- generatedChecksum: FA18A67FB43BAC71855BCC0C7FB362B9
+  userChecksum: 1445CF8CA07C367FE208AE129D571B17
+- generatedChecksum: EE3AF8F403379659507CE05FDC2FBA88
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_secureboot.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FA18A67FB43BAC71855BCC0C7FB362B9
-- generatedChecksum: 798A95E9A2660FC86177026E3A1D9ED3
+  userChecksum: EE3AF8F403379659507CE05FDC2FBA88
+- generatedChecksum: 51138AB4EAFF12235CD3BAF8DF3C542C
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_selftest.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 798A95E9A2660FC86177026E3A1D9ED3
-- generatedChecksum: F388452FB7883443C0D7C19AF8654695
+  userChecksum: 51138AB4EAFF12235CD3BAF8DF3C542C
+- generatedChecksum: 1BDA7F4454FBEED306C258F612363366
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_sha.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F388452FB7883443C0D7C19AF8654695
-- generatedChecksum: 028C40272391E90C59F4CDD124A751C0
+  userChecksum: 1BDA7F4454FBEED306C258F612363366
+- generatedChecksum: E1B8B8CB923D5C236D231EEAD89899B4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_sign.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 028C40272391E90C59F4CDD124A751C0
-- generatedChecksum: 2F4206BBC22EE2931EAC403D8E73281D
+  userChecksum: E1B8B8CB923D5C236D231EEAD89899B4
+- generatedChecksum: B565C2FA644B9FB81FA673BD50D62D60
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_updateextra.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2F4206BBC22EE2931EAC403D8E73281D
-- generatedChecksum: BD4C5133631E08DFD182AA4B3A171DCD
+  userChecksum: B565C2FA644B9FB81FA673BD50D62D60
+- generatedChecksum: 5841CE8DED618FF5E886CC37F2DB47AF
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_verify.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: BD4C5133631E08DFD182AA4B3A171DCD
-- generatedChecksum: B08DAA501FAE836473175CF4F2F3B763
+  userChecksum: 5841CE8DED618FF5E886CC37F2DB47AF
+- generatedChecksum: 0D9A2C359776F1C94B4C84E9418577AA
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib
   name: calib_write.c
   physicalPath: library/cryptoauthlib/calib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B08DAA501FAE836473175CF4F2F3B763
+  userChecksum: 0D9A2C359776F1C94B4C84E9418577AA
 - generatedChecksum: DC58FA7C1211063D58ED28BA66D8297D
   logicalPath: wolfcrypt
   name: camellia.c
@@ -769,13 +776,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 345624AF3359C519F067EA8A3922DB84
-- generatedChecksum: 8ACE0DEBD82F6829438A4674565451FB
+- generatedChecksum: 4490B523D4D89767AF3FE31B825F7F6D
   logicalPath: FreeRTOS/Source
   name: croutine.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8ACE0DEBD82F6829438A4674565451FB
+  userChecksum: 4490B523D4D89767AF3FE31B825F7F6D
 - generatedChecksum: 5ED064BCF98915FC9DFA9C3B24D926FB
   logicalPath: wolfcrypt/port
   name: crypt_aes_sam6149.c
@@ -916,13 +923,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A74371416E1A5A09AF4D7EC71E9EE906
-- generatedChecksum: 390FDC7BC149DBA5FF34402A30961B3A
+- generatedChecksum: FE7621D4C509011330C1FE849EB44D84
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: cryptoauthlib.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 390FDC7BC149DBA5FF34402A30961B3A
+  userChecksum: FE7621D4C509011330C1FE849EB44D84
 - generatedChecksum: E608269FFD2B895BDAEEAD87D5FC1FE5
   logicalPath: wolfcrypt
   name: cryptocb.c
@@ -958,20 +965,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 52711AA2D3A62571F72CB4BEB02FC21C
-- generatedChecksum: 295A36D83C7C4CC419D6EE91297037B0
+- generatedChecksum: 412F30E1E173E8BB91C29F79DACCAF97
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dhcp.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 295A36D83C7C4CC419D6EE91297037B0
-- generatedChecksum: C6CB8C6893C38EA34EEED52155373362
+  userChecksum: 412F30E1E173E8BB91C29F79DACCAF97
+- generatedChecksum: 6F3F7901B635F286D539A7ABF76F7C56
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dhcps.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C6CB8C6893C38EA34EEED52155373362
+  userChecksum: 6F3F7901B635F286D539A7ABF76F7C56
 - generatedChecksum: 65F5B99DAB8ECAC3CB0624E73CA6E0A0
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/hardware_access
   name: diskio.c
@@ -979,13 +986,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 65F5B99DAB8ECAC3CB0624E73CA6E0A0
-- generatedChecksum: 9830A9B89F5408A1259AB2F5BAEC1A1C
+- generatedChecksum: 75776948807707C602A3F619A74C3891
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dns.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9830A9B89F5408A1259AB2F5BAEC1A1C
+  userChecksum: 75776948807707C602A3F619A74C3891
 - generatedChecksum: 7E3142C72C357BC5EB12B612417783DC
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/ba414e/src
   name: drv_ba414e.c
@@ -993,13 +1000,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7E3142C72C357BC5EB12B612417783DC
-- generatedChecksum: 13F062B063A4F4AE0B19CE872943995B
+- generatedChecksum: AE64199B660AA4499B58FCA9D9AD5792
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/i2c
   name: drv_i2c.c
   physicalPath: driver/i2c/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 13F062B063A4F4AE0B19CE872943995B
+  userChecksum: AE64199B660AA4499B58FCA9D9AD5792
 - generatedChecksum: 37780F17759DED907A0F36E28BFB3136
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/i2c
   name: drv_i2c_local.h
@@ -1021,13 +1028,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: AD5CAAD66A56C9B5D17EB7E756C22D0C
-- generatedChecksum: FBF53FFC458037E3BD44D4F66DBDED56
+- generatedChecksum: DFE8170FE334330DF81BAB5456909A21
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: drv_pic32mzw1_crypto.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FBF53FFC458037E3BD44D4F66DBDED56
+  userChecksum: DFE8170FE334330DF81BAB5456909A21
+- generatedChecksum: 1AF4D696CAC799768F3D0D39FDB20069
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
+  name: drv_pic32mzw1_tls.c
+  physicalPath: driver/wifi/pic32mzw1
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 1AF4D696CAC799768F3D0D39FDB20069
 - generatedChecksum: E38994CFEA06A51CB19ABD95D7353D00
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/spi
   name: drv_spi.c
@@ -1042,13 +1056,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 47BD7ACA55670EB30BE38D9F385B2A8F
-- generatedChecksum: F87DDE7DDF931D561BE17418915F16CB
+- generatedChecksum: 7F18BED3C301C3734527B3EC8919EF26
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/sst26
   name: drv_sst26.c
   physicalPath: driver/sst26/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F87DDE7DDF931D561BE17418915F16CB
+  userChecksum: 7F18BED3C301C3734527B3EC8919EF26
+- generatedChecksum: B54781AE0A949D961CF64B237F42B1CD
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/sst26
+  name: drv_sst26_spi_interface.c
+  physicalPath: driver/sst26/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B54781AE0A949D961CF64B237F42B1CD
 - generatedChecksum: E8A25523C8CDDC97F3FD108E97BF4A9F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/usb/usbfs/src
   name: drv_usbfs.c
@@ -1105,13 +1126,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5727C8AC72C90E7B266F8C294C41C7AD
-- generatedChecksum: B3B5445B14BD9B6A35F1C5B995C9BBF7
+- generatedChecksum: 0E0E8AECB67046FEA847B359ACE7A1F6
   logicalPath: FreeRTOS/Source
   name: event_groups.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B3B5445B14BD9B6A35F1C5B995C9BBF7
+  userChecksum: 0E0E8AECB67046FEA847B359ACE7A1F6
 - generatedChecksum: D230A6B646D2E78CEAA6AA924E04FCA0
   logicalPath: config/aws_sdk_wfi32_iot_freertos
   name: exceptions.c
@@ -1140,13 +1161,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 77CC869BC8528641F4CBF2B2A81516B2
-- generatedChecksum: B2ADAD943E1B2BEEFF974468E2509BD5
+- generatedChecksum: D991CF8C9FF9C5452F5D78B4D7BC766E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/file_system
   name: ff.c
   physicalPath: system/fs/fat_fs/file_system
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B2ADAD943E1B2BEEFF974468E2509BD5
+  userChecksum: D991CF8C9FF9C5452F5D78B4D7BC766E
 - generatedChecksum: 9E153A6D4F8E0EA1F6901BAED7DD80FD
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/file_system
   name: ffunicode.c
@@ -1154,13 +1175,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 9E153A6D4F8E0EA1F6901BAED7DD80FD
-- generatedChecksum: B7DBFD6F500AAD4713403E985EB18EAE
+- generatedChecksum: CF89BE92AE72229779903C2E9A760455
   logicalPath: config/aws_sdk_wfi32_iot_freertos
   name: freertos_hooks.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B7DBFD6F500AAD4713403E985EB18EAE
+  userChecksum: CF89BE92AE72229779903C2E9A760455
 - generatedChecksum: 71C659B6678D6C5D384A9AE57B433CCB
   logicalPath: wolfcrypt
   name: ge_448.c
@@ -1182,13 +1203,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5843F589E8328577489D05E58D1A5801
-- generatedChecksum: 0EF9A722499C1902B39A6D2DEBBD659C
+- generatedChecksum: B2E4EECC23A0B08DB18091355D20C5B1
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
   name: hal_freertos.c
   physicalPath: library/cryptoauthlib/hal
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 0EF9A722499C1902B39A6D2DEBBD659C
+  userChecksum: B2E4EECC23A0B08DB18091355D20C5B1
+- generatedChecksum: F0F3ACCCC2C1C2FF47C3153B02D5A531
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
+  name: hal_gpio_harmony.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F0F3ACCCC2C1C2FF47C3153B02D5A531
 - generatedChecksum: 3459AC767423498DA8D92F144580EEC2
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
   name: hal_harmony_init.c
@@ -1196,13 +1224,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3459AC767423498DA8D92F144580EEC2
-- generatedChecksum: A0B02226E8192C9003F47508C980A3FB
+- generatedChecksum: 2C73B489A476FDAEA18D51FD06F29943
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
   name: hal_i2c_harmony.c
   physicalPath: library/cryptoauthlib/hal
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A0B02226E8192C9003F47508C980A3FB
+  userChecksum: 2C73B489A476FDAEA18D51FD06F29943
 - generatedChecksum: 04C90D6C19C62922CD1201770E617AB4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal
   name: hal_pic32_delay.c
@@ -1223,7 +1251,7 @@ files:
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C13333EC95D004AAFF2F78E20CDAC054
+  userChecksum: AFC8BEFD2066DF8A9809B59941885A3A
 - generatedChecksum: 9A555048379522BACA8216BFA898FC4A
   logicalPath: wolfcrypt
   name: hc128.c
@@ -1231,20 +1259,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 9A555048379522BACA8216BFA898FC4A
-- generatedChecksum: 1EA5B9CC1D496CDD236B90D730EF0C5A
+- generatedChecksum: 160569377212ACBF0EC5030CABD0B79C
   logicalPath: FreeRTOS/Source/portable/MemMang
   name: heap_3.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/portable/MemMang
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1EA5B9CC1D496CDD236B90D730EF0C5A
-- generatedChecksum: F47C9E7119EA3074588F2531D1800801
+  userChecksum: 160569377212ACBF0EC5030CABD0B79C
+- generatedChecksum: 10E0F557204916FC4EBA9DEB6F35095F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src/common
   name: helpers.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F47C9E7119EA3074588F2531D1800801
+  userChecksum: 10E0F557204916FC4EBA9DEB6F35095F
 - generatedChecksum: EF20A104939F627E3C0AE7DC97963334
   logicalPath: wolfcrypt
   name: hmac.c
@@ -1252,6 +1280,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: EF20A104939F627E3C0AE7DC97963334
+- generatedChecksum: C800D44007A2294EAD5F791D3018CAC1
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
+  name: icmp.c
+  physicalPath: library/tcpip/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: C800D44007A2294EAD5F791D3018CAC1
 - generatedChecksum: 62951755A45BA873C9775C77F461A8DF
   logicalPath: wolfcrypt
   name: idea.c
@@ -1259,13 +1294,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 62951755A45BA873C9775C77F461A8DF
-- generatedChecksum: 46CADC2D3369C4EA0A4C0219F6EED22E
+- generatedChecksum: 77E241F33EC232300A89D3DB62CEAD75
   logicalPath: config/aws_sdk_wfi32_iot_freertos
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 46CADC2D3369C4EA0A4C0219F6EED22E
+  userChecksum: 77E241F33EC232300A89D3DB62CEAD75
 - generatedChecksum: 479A727027F5AD9CBBDC717FD86D8B5E
   logicalPath: wolfcrypt
   name: integer.c
@@ -1294,13 +1329,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: AA0F68BFDFFC567532CD7EA12D0814FE
-- generatedChecksum: D9070B2F1A4B462F1FC30984FCD71E56
+- generatedChecksum: 519D48597914943C70DCEF6B6D591192
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: ipv4.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D9070B2F1A4B462F1FC30984FCD71E56
+  userChecksum: 519D48597914943C70DCEF6B6D591192
 - generatedChecksum: CBAF0F878E6CDF39AA78EC88E8AE5410
   logicalPath: wolfssl
   name: keys.c
@@ -1308,13 +1343,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: CBAF0F878E6CDF39AA78EC88E8AE5410
-- generatedChecksum: 3FEE521CEF14928AE38E7FA9BF6D75E6
+- generatedChecksum: 47F98BAFD5D2A077AB529D10DB870AFF
   logicalPath: FreeRTOS/Source
   name: list.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3FEE521CEF14928AE38E7FA9BF6D75E6
+  userChecksum: 47F98BAFD5D2A077AB529D10DB870AFF
 - generatedChecksum: EC7D138490803EC5E5AB6AA691A6ADE2
   logicalPath: wolfcrypt
   name: logging.c
@@ -1357,13 +1392,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 52F75EAFA4A39D3765C80411D22A10D4
-- generatedChecksum: E309A74B8FBC0BD4A67A0EA18B305F8E
+- generatedChecksum: 349243C5EF50D83FFB1B84CB265F66D8
   logicalPath: config/aws_sdk_wfi32_iot_freertos/net_pres/pres/src
   name: net_pres.c
   physicalPath: net_pres/pres/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E309A74B8FBC0BD4A67A0EA18B305F8E
+  userChecksum: 349243C5EF50D83FFB1B84CB265F66D8
 - generatedChecksum: FE680FAA0E849D0FC1AFDB1F542CC1EB
   logicalPath: config/aws_sdk_wfi32_iot_freertos/net_pres/pres
   name: net_pres_cert_store.c
@@ -1377,14 +1412,14 @@ files:
   physicalPath: net_pres/pres
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 91A19AFBEDB1F0C142E59270D76F543D
-- generatedChecksum: 417DA77DBD58024F50AC993F8D468570
+  userChecksum: 84F0B86EB1DB05F7FFD5DFACFDE56AE5
+- generatedChecksum: 946EA7D36221F0D461A61610C1FE4716
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: oahash.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 417DA77DBD58024F50AC993F8D468570
+  userChecksum: 946EA7D36221F0D461A61610C1FE4716
 - generatedChecksum: 6694E3C4C6D7826F9546713775119B84
   logicalPath: wolfssl
   name: ocsp.c
@@ -1441,13 +1476,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0DA10C8889278A796D0EE4C6096B57C3
-- generatedChecksum: 73E98753AD4F90D823C4049FCD301F4B
+- generatedChecksum: 4DEEC62588C99107A8DE59A6E6D88277
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 73E98753AD4F90D823C4049FCD301F4B
+  userChecksum: 4DEEC62588C99107A8DE59A6E6D88277
 - generatedChecksum: 2FEFEA0D4E94F5A5F3D76BAEC3D602E5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/coretimer
   name: plib_coretimer.c
@@ -1462,34 +1497,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2EF2F0C8CCCFC74630A409578DAC3C78
-- generatedChecksum: 5C4CFFC53732FEE0D7E6D966ED748C4C
+- generatedChecksum: 19FD4791F736715465B2813B83DAB603
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5C4CFFC53732FEE0D7E6D966ED748C4C
-- generatedChecksum: A0DD613319D0A280DB1DD0B85856B496
+  userChecksum: 19FD4791F736715465B2813B83DAB603
+- generatedChecksum: B86A610558E91708244B4D958BE1DB48
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/i2c/master
   name: plib_i2c1_master.c
   physicalPath: peripheral/i2c/master
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A0DD613319D0A280DB1DD0B85856B496
-- generatedChecksum: 5E3FC9E866FBA5D16AC93497F154C779
+  userChecksum: B86A610558E91708244B4D958BE1DB48
+- generatedChecksum: 9637646B5A6E9B40DB177E9B603B68DD
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/i2c/master
   name: plib_i2c2_master.c
   physicalPath: peripheral/i2c/master
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5E3FC9E866FBA5D16AC93497F154C779
-- generatedChecksum: 2C20D09B52814FB766668FA3B4DC2298
+  userChecksum: 9637646B5A6E9B40DB177E9B603B68DD
+- generatedChecksum: 39CEE43C2497BB88AFEB5BBF207F09A4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/power
   name: plib_power.c
   physicalPath: peripheral/power
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2C20D09B52814FB766668FA3B4DC2298
+  userChecksum: 39CEE43C2497BB88AFEB5BBF207F09A4
 - generatedChecksum: 3395BC7859A61CF74BB26386EF635C14
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/rcon
   name: plib_rcon.c
@@ -1497,13 +1532,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3395BC7859A61CF74BB26386EF635C14
-- generatedChecksum: EC50B7E9E113B9803CC349B46F71D862
+- generatedChecksum: 54B471404872A3991357591CC311D435
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/rtcc
   name: plib_rtcc.c
   physicalPath: peripheral/rtcc
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EC50B7E9E113B9803CC349B46F71D862
+  userChecksum: 54B471404872A3991357591CC311D435
 - generatedChecksum: CA7F2C954C9E5F7F34F3A3E6EC1E3932
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/spi/spi_master
   name: plib_spi1_master.c
@@ -1518,20 +1553,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C2549ECDF995FE53C9D545E42468C8B4
-- generatedChecksum: 7FD2233814045570A93C1D58A8069F0B
+- generatedChecksum: DC0E636F19278FE8CA9E41E17DEA3FF8
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/uart
   name: plib_uart1.c
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7FD2233814045570A93C1D58A8069F0B
-- generatedChecksum: 3A8085264EC615D280B577EF5F3F4AE5
+  userChecksum: DC0E636F19278FE8CA9E41E17DEA3FF8
+- generatedChecksum: 36C4BC95319E8F768DB05C702ADFBCC1
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/uart
   name: plib_uart3.c
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3A8085264EC615D280B577EF5F3F4AE5
+  userChecksum: 36C4BC95319E8F768DB05C702ADFBCC1
 - generatedChecksum: 290251D6FF0845DC4259E0EF74DCB657
   logicalPath: config/aws_sdk_wfi32_iot_freertos
   name: pmu_init.c
@@ -1546,20 +1581,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: BE4CB7367E5A5B3DDA671207F469CA45
-- generatedChecksum: C887913E7F045D65EF8FA7362D0DFDD8
+- generatedChecksum: 496F6DC7F636C475EFD5831B4202C13D
   logicalPath: FreeRTOS/Source/portable/MPLAB/PIC32MZ
   name: port.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C887913E7F045D65EF8FA7362D0DFDD8
-- generatedChecksum: 17FB1DE2D7DF3950AACC03B19F54459C
+  userChecksum: 496F6DC7F636C475EFD5831B4202C13D
+- generatedChecksum: DF45E3DDDEC2F56707A9CBFBE9B8F3FD
   logicalPath: FreeRTOS/Source/portable/MPLAB/PIC32MZ
   name: port_asm.S
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 17FB1DE2D7DF3950AACC03B19F54459C
+  userChecksum: DF45E3DDDEC2F56707A9CBFBE9B8F3FD
 - generatedChecksum: 71175F143BDAB8C0ADEDC5994CAD5E94
   logicalPath: wolfcrypt
   name: pwdbased.c
@@ -1567,13 +1602,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 71175F143BDAB8C0ADEDC5994CAD5E94
-- generatedChecksum: 09041728D74A4E3A32C7D4EAA96C4EE7
+- generatedChecksum: 13259EE43A731BF0F46EA946229027BF
   logicalPath: FreeRTOS/Source
   name: queue.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 09041728D74A4E3A32C7D4EAA96C4EE7
+  userChecksum: 13259EE43A731BF0F46EA946229027BF
 - generatedChecksum: 9E538DAE0C453E5FD33B408C97E589F2
   logicalPath: wolfcrypt
   name: rabbit.c
@@ -1637,20 +1672,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C90FFB67D0F5A79C675FC2AA2F8BAAB9
-- generatedChecksum: F8BB44C367E52E7A3A24643E786055A7
+- generatedChecksum: 6384F6E961B5C4D394D3872576E223A4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/hashes
   name: sha2_routines.c
   physicalPath: library/cryptoauthlib/crypto/hashes
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F8BB44C367E52E7A3A24643E786055A7
-- generatedChecksum: 03F315974E54C941C8B481677BAE592A
+  userChecksum: 6384F6E961B5C4D394D3872576E223A4
+- generatedChecksum: 91BA4A3E87D24FD2FA0F40652F9C4C9A
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/hashes
   name: sha2_routines.h
   physicalPath: library/cryptoauthlib/crypto/hashes
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 03F315974E54C941C8B481677BAE592A
+  userChecksum: 91BA4A3E87D24FD2FA0F40652F9C4C9A
 - generatedChecksum: 124F5CCFA233F5BB30FC876A863DE53F
   logicalPath: wolfcrypt
   name: sha3.c
@@ -1679,13 +1714,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8F3A39B8CD900D10A5066E1A28B55D81
-- generatedChecksum: BB94489C83BEADA47CF76C37D01373D7
+- generatedChecksum: FE249D86453E82583972319043926EA9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: sntp.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: BB94489C83BEADA47CF76C37D01373D7
+  userChecksum: FE249D86453E82583972319043926EA9
 - generatedChecksum: 161756D43AE899EF1056D4C69E185A50
   logicalPath: wolfcrypt
   name: sp_arm32.c
@@ -1763,13 +1798,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: EBDCB29A49EBD9C1AF7BD6FA0178E954
-- generatedChecksum: D6CF30BDCE1A813D9ACF3905EBD6A871
+- generatedChecksum: A9BDA97498BEA85049883F48FB1094A0
   logicalPath: FreeRTOS/Source
   name: stream_buffer.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D6CF30BDCE1A813D9ACF3905EBD6A871
+  userChecksum: A9BDA97498BEA85049883F48FB1094A0
 - generatedChecksum: 47204A328D6218B0241B5993D3198668
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/cache
   name: sys_cache.c
@@ -1777,13 +1812,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 47204A328D6218B0241B5993D3198668
-- generatedChecksum: 844B5535563F8399C03E2105085D14EB
+- generatedChecksum: 75C83AA1697B5EFAA25930859E6BB836
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/command
   name: sys_command.c
   physicalPath: system/command/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 844B5535563F8399C03E2105085D14EB
+  userChecksum: 75C83AA1697B5EFAA25930859E6BB836
 - generatedChecksum: 20C22A19D5DC74DEBFC4CCCA83B6F603
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/console
   name: sys_console.c
@@ -1833,13 +1868,6 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B8C6C7356AC7841AECC7C779040F745C
-- generatedChecksum: 0A6893369C4DA0EE7906866EB6E1D310
-  logicalPath: config/aws_sdk_wfi32_iot_freertos/system/dma
-  name: sys_dma.c
-  physicalPath: system/dma
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 0A6893369C4DA0EE7906866EB6E1D310
 - generatedChecksum: 64197587C5A197FD05E94AB039A2DD66
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs
   name: sys_fs.c
@@ -1868,13 +1896,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C95CE0ABB86E6B11CF77E8891D294510
-- generatedChecksum: 0BFBEF448D06ABA0D13D18E0DEF43218
+- generatedChecksum: 6E907D9AEFDAE88D8E9B23F0668846C6
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system
   name: sys_random_h2_adapter.c
   physicalPath: system
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 0BFBEF448D06ABA0D13D18E0DEF43218
+  userChecksum: 6E907D9AEFDAE88D8E9B23F0668846C6
 - generatedChecksum: 47B584985982B2FF32628D4CB874CB4D
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/reset
   name: sys_reset.c
@@ -1882,13 +1910,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 47B584985982B2FF32628D4CB874CB4D
-- generatedChecksum: 83BDE663A1AAB20C9E52263F22E2ED3C
+- generatedChecksum: B68110221BEC42FE6B718139BA64DA52
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/time
   name: sys_time.c
   physicalPath: system/time/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 83BDE663A1AAB20C9E52263F22E2ED3C
+  userChecksum: B68110221BEC42FE6B718139BA64DA52
 - generatedChecksum: F849420C740D2B32346B4B4D9F46C136
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system
   name: sys_time_h2_adapter.c
@@ -1903,20 +1931,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 150B52A278FEEFE8BE75CDF9F7E7090E
-- generatedChecksum: D1ABB4D71D616179AC47C0D67CFD8CD7
+- generatedChecksum: B8810AC22D73CE43E5661105B6D3C8EB
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcp.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D1ABB4D71D616179AC47C0D67CFD8CD7
-- generatedChecksum: 0FEB82639119926B19E5A42E2686B939
+  userChecksum: B8810AC22D73CE43E5661105B6D3C8EB
+- generatedChecksum: 660C6B07B0D10B664A2D2BA5732EE3E5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_commands.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 0FEB82639119926B19E5A42E2686B939
+  userChecksum: 660C6B07B0D10B664A2D2BA5732EE3E5
 - generatedChecksum: 0911DB28A8AA8D2EDEC039BD1BA1CED1
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_heap_alloc.c
@@ -1924,13 +1952,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0911DB28A8AA8D2EDEC039BD1BA1CED1
-- generatedChecksum: DDF1671B5954B50D77C968B5E36F4C08
+- generatedChecksum: C2A0AE93ECE5BA4B7F1541FB5269D629
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_heap_external.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DDF1671B5954B50D77C968B5E36F4C08
+  userChecksum: C2A0AE93ECE5BA4B7F1541FB5269D629
 - generatedChecksum: 41E9DA13FC2CC263ACF1F2373500E7F4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_helper_c32.S
@@ -1938,20 +1966,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 41E9DA13FC2CC263ACF1F2373500E7F4
-- generatedChecksum: 1CE622F2FD734DFCA1625E009EEED1D3
+- generatedChecksum: 81EADD271AD3FD00D134231272F6692C
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_helpers.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1CE622F2FD734DFCA1625E009EEED1D3
-- generatedChecksum: 59722079372E3453FE76BE41EAC933B7
+  userChecksum: 81EADD271AD3FD00D134231272F6692C
+- generatedChecksum: 541BA14D1493B2522F99B9C35D77D6F2
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_manager.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 59722079372E3453FE76BE41EAC933B7
+  userChecksum: 541BA14D1493B2522F99B9C35D77D6F2
 - generatedChecksum: 5A25A79EFC070534190D40826D08046B
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_notify.c
@@ -1959,13 +1987,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5A25A79EFC070534190D40826D08046B
-- generatedChecksum: D4FC3460FFCC726F3A663E70B0062C3E
+- generatedChecksum: 1B541BCAB76578E4E5ED23B2DB34D608
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_packet.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D4FC3460FFCC726F3A663E70B0062C3E
+  userChecksum: 1B541BCAB76578E4E5ED23B2DB34D608
 - generatedChecksum: 7018715B02E090D5ED53EAE0DF359928
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng
   name: tflxtls_cert_def_4_device.c
@@ -1980,13 +2008,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7456AECE16D5C2AB16D083034728BDD0
-- generatedChecksum: F1B86F6E1527FD59A8713B67564F2898
+- generatedChecksum: 2811D7C532CEFF995F8697FCED6A1C34
   logicalPath: FreeRTOS/Source
   name: timers.c
   physicalPath: ../../third_party/rtos/FreeRTOS/Source
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F1B86F6E1527FD59A8713B67564F2898
+  userChecksum: 2811D7C532CEFF995F8697FCED6A1C34
 - generatedChecksum: 97B96A854FF7808651F567F015658EE2
   logicalPath: wolfssl
   name: tls.c
@@ -2008,13 +2036,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3B25F0E7ED674893CAE3BC36F6A9393F
-- generatedChecksum: AF0BF83C4465F62DA8361E89298E7018
+- generatedChecksum: A9A0029AD183D159401EBE873C1B7322
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng
   name: tng_atcacert_client.c
   physicalPath: library/cryptoauthlib/tng
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AF0BF83C4465F62DA8361E89298E7018
+  userChecksum: A9A0029AD183D159401EBE873C1B7322
 - generatedChecksum: 7BE05B38EAF515050600DE4AE2A26218
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng
   name: tng_root_cert.c
@@ -2064,13 +2092,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 63D0AA27B3E5123BD968C39FDF2F8E86
-- generatedChecksum: AEFF1E63FDF1C6AD4E6980FC756F2280
+- generatedChecksum: DB55FAE083880B4E709ED38EFB14CF98
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: udp.c
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AEFF1E63FDF1C6AD4E6980FC756F2280
+  userChecksum: DB55FAE083880B4E709ED38EFB14CF98
 - generatedChecksum: D2FFA7B8FF0AFC7B18DC164151CA1529
   logicalPath: config/aws_sdk_wfi32_iot_freertos/usb/src
   name: usb_device.c
@@ -2120,27 +2148,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F1955CEEEEFDA0A4DAAB50BBB0E6DC60
-- generatedChecksum: CE786CFA4D2675F116B70FFC45C8C05C
+- generatedChecksum: 0526700698558145119AC8D31EA9EB7D
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: CE786CFA4D2675F116B70FFC45C8C05C
-- generatedChecksum: 5C2A427D83E5CCA5D980D9FEC6D02E5D
+  userChecksum: 0526700698558145119AC8D31EA9EB7D
+- generatedChecksum: 70F5DF92042571B8872F2996EAF7C480
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_assoc.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5C2A427D83E5CCA5D980D9FEC6D02E5D
-- generatedChecksum: 52A08F59B049941DD1BA03E0CDD80357
+  userChecksum: 70F5DF92042571B8872F2996EAF7C480
+- generatedChecksum: 2A0F59D37DAE86288AA7B1C628995E55
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_authctx.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 52A08F59B049941DD1BA03E0CDD80357
+  userChecksum: 2A0F59D37DAE86288AA7B1C628995E55
 - generatedChecksum: 1131500B51F00712A20EF541B1D898F8
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_bssctx.c
@@ -2148,27 +2176,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1131500B51F00712A20EF541B1D898F8
-- generatedChecksum: 6EDDBFF3BB428D4C69EC7633B4FCAFF5
+- generatedChecksum: 986AF624A218C10B21024309FB6DBA91
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_bssfind.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 6EDDBFF3BB428D4C69EC7633B4FCAFF5
-- generatedChecksum: AD0C80A98DDE953B1EE944053106F00D
+  userChecksum: 986AF624A218C10B21024309FB6DBA91
+- generatedChecksum: 6FE4E4384638ACA189FA76B3042D0AC5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_cfg.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AD0C80A98DDE953B1EE944053106F00D
-- generatedChecksum: B60AB572D9C87A15CD157590DD0539DB
+  userChecksum: 6FE4E4384638ACA189FA76B3042D0AC5
+- generatedChecksum: 9761F9CBD700B41F04D9440B86B37243
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_custie.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B60AB572D9C87A15CD157590DD0539DB
+  userChecksum: 9761F9CBD700B41F04D9440B86B37243
+- generatedChecksum: 8ED7CDCFD288F97B81DA325C2FB2E351
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
+  name: wdrv_pic32mzw_ie.c
+  physicalPath: driver/wifi/pic32mzw1
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 8ED7CDCFD288F97B81DA325C2FB2E351
 - generatedChecksum: F77B6BFF992F5CD75D3B2644173ABC49
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_int.c
@@ -2176,34 +2211,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F77B6BFF992F5CD75D3B2644173ABC49
-- generatedChecksum: 544545D61A27F428F86396DF2B341DCF
+- generatedChecksum: ECBC6F0AA950B9D2DA426490BC0DE580
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_ps.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 544545D61A27F428F86396DF2B341DCF
-- generatedChecksum: 43B5981117B70DF6811763F381D74BA2
+  userChecksum: ECBC6F0AA950B9D2DA426490BC0DE580
+- generatedChecksum: 6DBCAD0985CDAE6310C1BCD3B7A578D3
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_regdomain.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 43B5981117B70DF6811763F381D74BA2
-- generatedChecksum: 606A22D5DD232CCE4D08A9938426F7BF
+  userChecksum: 6DBCAD0985CDAE6310C1BCD3B7A578D3
+- generatedChecksum: B55D8D7364F7D858C7BEF4F365A90D52
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_softap.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 606A22D5DD232CCE4D08A9938426F7BF
-- generatedChecksum: 4DF46D44AEC32DB0BA3B78B64F975C4A
+  userChecksum: B55D8D7364F7D858C7BEF4F365A90D52
+- generatedChecksum: FE61CDEF28A250C6B17558F6A1AFF164
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_sta.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4DF46D44AEC32DB0BA3B78B64F975C4A
+  userChecksum: FE61CDEF28A250C6B17558F6A1AFF164
 - generatedChecksum: 9C097D0AA1849F8BF60A0435EB8B7C1A
   logicalPath: wolfcrypt
   name: wolfevent.c
@@ -2225,13 +2260,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A4F262C0B95BF2714B89A586661ED450
-- generatedChecksum: DB5D6981346A30FE7951D66DA5D8EB17
+- generatedChecksum: 25437DB5219E5A3F6076ECB4403821E9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DB5D6981346A30FE7951D66DA5D8EB17
+  userChecksum: 25437DB5219E5A3F6076ECB4403821E9
 - generatedChecksum: BEE21C246D91A27ED51FACBC8C75DF64
   logicalPath: wolfcrypt/port
   name: CryptoLib_CRT_pb.h
@@ -2491,27 +2526,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 67554DF6584E26A928D033E8E0780064
-- generatedChecksum: AF3A8D8AA610E7DFD3E38DDAC5E42074
+- generatedChecksum: 5E06C8C3B681B9398724569B7DC5AFB8
   logicalPath: FreeRTOS/Source/include
   name: FreeRTOS.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: AF3A8D8AA610E7DFD3E38DDAC5E42074
-- generatedChecksum: 40CCF797AD9AF920D22F705655A856EC
+  userChecksum: 5E06C8C3B681B9398724569B7DC5AFB8
+- generatedChecksum: 0A210818DAE01EFAC7597B40DB6FC672
   logicalPath: config/aws_sdk_wfi32_iot_freertos
   name: FreeRTOSConfig.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 40CCF797AD9AF920D22F705655A856EC
-- generatedChecksum: 774011E09B9B257B4F572704E6AB9713
+  userChecksum: 0A210818DAE01EFAC7597B40DB6FC672
+- generatedChecksum: E44F224CDF5B12B127F4CF2B074AD35D
   logicalPath: FreeRTOS/Source/portable/MPLAB/PIC32MZ
   name: ISR_Support.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ
   security: NON_SECURE
   type: HEADER
-  userChecksum: 774011E09B9B257B4F572704E6AB9713
+  userChecksum: E44F224CDF5B12B127F4CF2B074AD35D
 - generatedChecksum: F2386B21ED11D9199C4D0257F0261C74
   logicalPath: wolfcrypt
   name: aes.h
@@ -2561,13 +2596,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F18EBACF5A587D5E164EFFDFADEC07AE
-- generatedChecksum: 98728009D49AEDEBECC28140AF59DB54
+- generatedChecksum: 2709BE5CD31DEA3E6E95B9EAFB459465
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: arp.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 98728009D49AEDEBECC28140AF59DB54
+  userChecksum: 2709BE5CD31DEA3E6E95B9EAFB459465
 - generatedChecksum: 07F35B7ECD80D544D58903ABE1F64F86
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: arp_manager.h
@@ -2575,13 +2610,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 07F35B7ECD80D544D58903ABE1F64F86
-- generatedChecksum: 95E6C92780ECEF554D27B0C15E3ADF3B
+- generatedChecksum: D0C763149DFEA26198F5F598DD308663
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: arp_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 95E6C92780ECEF554D27B0C15E3ADF3B
+  userChecksum: D0C763149DFEA26198F5F598DD308663
 - generatedChecksum: 53AD660A5E0B2834C105637C495C71AF
   logicalPath: wolfcrypt
   name: asn.h
@@ -2596,27 +2631,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3DE5BE06F587E5BB1F331E2EDF5B350B
-- generatedChecksum: F6F6758A0A399F22609494A0A480DCEF
+- generatedChecksum: 7124AD848A87C4CE32AB9C34B7371BDE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib
   name: atca_config.h
   physicalPath: library/cryptoauthlib
   security: NON_SECURE
   type: HEADER
-  userChecksum: F6F6758A0A399F22609494A0A480DCEF
-- generatedChecksum: 4D5B02D44EF03BD1C8E8B1D40392CBFD
+  userChecksum: 7124AD848A87C4CE32AB9C34B7371BDE
+- generatedChecksum: F0FEC11883266C663101B473DBB9C745
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: berkeley_api.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4D5B02D44EF03BD1C8E8B1D40392CBFD
-- generatedChecksum: D24505F81C0F11274D502E0135E16982
+  userChecksum: F0FEC11883266C663101B473DBB9C745
+- generatedChecksum: 7774A96BC3229FF92454D22B75D94FA3
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: berkeley_manager.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: D24505F81C0F11274D502E0135E16982
+  userChecksum: 7774A96BC3229FF92454D22B75D94FA3
 - generatedChecksum: 1A67F67E9EC3D162A8128ACD5B9A2523
   logicalPath: wolfcrypt
   name: blake2-impl.h
@@ -2708,13 +2743,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 15AB6693CC2E1EE7AB845EE42A6AC762
-- generatedChecksum: AF304A7C31A4DE9B28E54C9B42060956
+- generatedChecksum: C617687FF7AB0EC9FB74CB9F7238BD92
   logicalPath: config/aws_sdk_wfi32_iot_freertos
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: AF304A7C31A4DE9B28E54C9B42060956
+  userChecksum: C617687FF7AB0EC9FB74CB9F7238BD92
 - generatedChecksum: 66CDC9B1DAB0393100A835676816E8BF
   logicalPath: wolfcrypt
   name: cpuid.h
@@ -2729,13 +2764,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6AE4D6CA8EFC5B7E3D5715229141E18B
-- generatedChecksum: 48B661D8C967C6BC397001F10FB43D1D
+- generatedChecksum: 4B11D1A616E95BDD37123685C8434FCF
   logicalPath: FreeRTOS/Source/include
   name: croutine.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 48B661D8C967C6BC397001F10FB43D1D
+  userChecksum: 4B11D1A616E95BDD37123685C8434FCF
 - generatedChecksum: B0EA96907330C52D7AAF105D31330A75
   logicalPath: wolfcrypt/port
   name: crypt_aes_hw.h
@@ -2939,20 +2974,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7959E2B94CEE186632B984636D40C252
-- generatedChecksum: 78C8FABCD34CAD8CA866D76072153D99
+- generatedChecksum: BB720206204933AECF943BC8961BCC0C
   logicalPath: config/aws_sdk_wfi32_iot_freertos
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 78C8FABCD34CAD8CA866D76072153D99
-- generatedChecksum: 1EA4EDD5EA90F43EC407DE32441159A9
+  userChecksum: BB720206204933AECF943BC8961BCC0C
+- generatedChecksum: ACB7AD12FD525895ABA47C26F4F9A683
   logicalPath: FreeRTOS/Source/include
   name: deprecated_definitions.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1EA4EDD5EA90F43EC407DE32441159A9
+  userChecksum: ACB7AD12FD525895ABA47C26F4F9A683
 - generatedChecksum: A751C19ADEECD5B90ADA51DD19DB417D
   logicalPath: wolfcrypt
   name: des3.h
@@ -2981,13 +3016,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 60E43401834751DF9A8A7402E46250CA
-- generatedChecksum: 5E971E300C0F3C184D3940F39DE029E3
+- generatedChecksum: 309956DF6DBAC8661AA8C62A273FD710
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: dhcp.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5E971E300C0F3C184D3940F39DE029E3
+  userChecksum: 309956DF6DBAC8661AA8C62A273FD710
 - generatedChecksum: 02E33F9BAEBC7C50595F9615084EB0F5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dhcp_manager.h
@@ -2995,20 +3030,41 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 02E33F9BAEBC7C50595F9615084EB0F5
-- generatedChecksum: 9341D2B7667B93086E81BF9AC28788B5
+- generatedChecksum: 0B6369D6AF87E82A559058C5E0B4EF77
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dhcp_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9341D2B7667B93086E81BF9AC28788B5
-- generatedChecksum: BF0A01B5943F9E5AAE23E5CBF99D2DFB
+  userChecksum: 0B6369D6AF87E82A559058C5E0B4EF77
+- generatedChecksum: 3F5CF4A3D11FB82D55EA0B34176914B9
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
+  name: dhcp_server.h
+  physicalPath: library/tcpip
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 3F5CF4A3D11FB82D55EA0B34176914B9
+- generatedChecksum: 9EFF17CC1F25051E5560AF13932C16D1
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
+  name: dhcp_server_manager.h
+  physicalPath: library/tcpip/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9EFF17CC1F25051E5560AF13932C16D1
+- generatedChecksum: 4F947FAA7C2802F3C4C16336111B2716
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
+  name: dhcp_server_private.h
+  physicalPath: library/tcpip/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 4F947FAA7C2802F3C4C16336111B2716
+- generatedChecksum: E1D8C77E0B7F57C8A5F614C38EBA5EB1
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: dhcps.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: BF0A01B5943F9E5AAE23E5CBF99D2DFB
+  userChecksum: E1D8C77E0B7F57C8A5F614C38EBA5EB1
 - generatedChecksum: E4B4C8DE8FA457275D1BB5F0200142E7
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dhcps_manager.h
@@ -3016,13 +3072,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: E4B4C8DE8FA457275D1BB5F0200142E7
-- generatedChecksum: 825A2C0B9CFEA1C03AA7B7177F74F0BB
+- generatedChecksum: 6F3792EACF9CEA5B0CD4A4AF9D1D02D7
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dhcps_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 825A2C0B9CFEA1C03AA7B7177F74F0BB
+  userChecksum: 6F3792EACF9CEA5B0CD4A4AF9D1D02D7
 - generatedChecksum: 00F1A25D4FAE40690DED25BCAD3A935F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: dhcpv6.h
@@ -3037,13 +3093,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 0C8653B6A722BB2AD0B8B397E7543AE8
-- generatedChecksum: D314761ACC1B11280620BA93731BB3DC
+- generatedChecksum: 2D4F76C315C644DE5B899FC521DE31C6
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dhcpv6_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: D314761ACC1B11280620BA93731BB3DC
+  userChecksum: 44E6BE08AEDF1F64EB9E7E1FCFC41437
 - generatedChecksum: 630DFA1824A5279838B4330DA2FF3E5E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/hardware_access
   name: diskio.h
@@ -3051,13 +3107,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 630DFA1824A5279838B4330DA2FF3E5E
-- generatedChecksum: 5123AFE76FCBF3EDC0AD747B127D4432
+- generatedChecksum: 7D5AE1A255B35717CC2284753437C2C2
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: dns.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5123AFE76FCBF3EDC0AD747B127D4432
+  userChecksum: 7D5AE1A255B35717CC2284753437C2C2
 - generatedChecksum: 3C30E019511126511DD7756487D1E1A6
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dns_manager.h
@@ -3065,20 +3121,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3C30E019511126511DD7756487D1E1A6
-- generatedChecksum: B8DD388997E63177A68C8164326B7E95
+- generatedChecksum: 8075114F740CB3C74C1D65BFF09F1591
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dns_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: B8DD388997E63177A68C8164326B7E95
-- generatedChecksum: C4F7D4F4F9302B3A6B508B4F114B12ED
+  userChecksum: 8075114F740CB3C74C1D65BFF09F1591
+- generatedChecksum: 327EBAFAAC13A6BFEE9F2CB17387EA7C
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: dnss.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: C4F7D4F4F9302B3A6B508B4F114B12ED
+  userChecksum: 327EBAFAAC13A6BFEE9F2CB17387EA7C
 - generatedChecksum: 8A2B8243A615F65E164074224CF0D649
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: dnss_manager.h
@@ -3128,34 +3184,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 70F69BDC225E4D1A7B5135C6357C4897
-- generatedChecksum: 3C6689B8800C6234028EC2FBE82E25CF
+- generatedChecksum: B6AB8544AD4BE514E35118AEF97D6889
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/i2c
   name: drv_i2c.h
   physicalPath: driver/i2c
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3C6689B8800C6234028EC2FBE82E25CF
-- generatedChecksum: 260EF469FECCFEF9418D6268909EE2F8
+  userChecksum: B6AB8544AD4BE514E35118AEF97D6889
+- generatedChecksum: CF547E44C3B38B83586D3BAF44DAD439
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/i2c
   name: drv_i2c_definitions.h
   physicalPath: driver/i2c
   security: NON_SECURE
   type: HEADER
-  userChecksum: 260EF469FECCFEF9418D6268909EE2F8
-- generatedChecksum: EFD9CC847D820C0DCC84B3877B8FA415
+  userChecksum: CF547E44C3B38B83586D3BAF44DAD439
+- generatedChecksum: 64EA07D284832B8E56C403AE90B52CD5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/memory
   name: drv_memory.h
   physicalPath: driver/memory
   security: NON_SECURE
   type: HEADER
-  userChecksum: EFD9CC847D820C0DCC84B3877B8FA415
-- generatedChecksum: 8BF1EFFCD7DC02480C27F3DE35FB5009
+  userChecksum: 64EA07D284832B8E56C403AE90B52CD5
+- generatedChecksum: B37635A7E5516B08B10146BB58A6C2D9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/memory
   name: drv_memory_definitions.h
   physicalPath: driver/memory
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8BF1EFFCD7DC02480C27F3DE35FB5009
+  userChecksum: B37635A7E5516B08B10146BB58A6C2D9
 - generatedChecksum: 2E25CEFA28CCA2CD66BA9DF6B4C66621
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/memory
   name: drv_memory_local.h
@@ -3163,27 +3219,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2E25CEFA28CCA2CD66BA9DF6B4C66621
-- generatedChecksum: 2F179FF9CCD93B68A7C23A2768F96AD6
+- generatedChecksum: 63B8609905714DBC21D6D6AE0CFA51A7
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: drv_pic32mzw1.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2F179FF9CCD93B68A7C23A2768F96AD6
-- generatedChecksum: DDD131AAE2C978645E64A718960A8B77
+  userChecksum: 63B8609905714DBC21D6D6AE0CFA51A7
+- generatedChecksum: 3DA1B20D05C0E95E7E018F7366FEF8DF
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: drv_pic32mzw1_crypto.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: DDD131AAE2C978645E64A718960A8B77
-- generatedChecksum: F454D5E0E6162B53958549B1D524C549
+  userChecksum: 3DA1B20D05C0E95E7E018F7366FEF8DF
+- generatedChecksum: A06B5A811BC100542F5454AF17F14031
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
+  name: drv_pic32mzw1_tls.h
+  physicalPath: driver/wifi/pic32mzw1/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A06B5A811BC100542F5454AF17F14031
+- generatedChecksum: 9F75B6689BFA73CB5D96A71849B200F5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/spi
   name: drv_spi.h
   physicalPath: driver/spi
   security: NON_SECURE
   type: HEADER
-  userChecksum: F454D5E0E6162B53958549B1D524C549
+  userChecksum: 9F75B6689BFA73CB5D96A71849B200F5
 - generatedChecksum: 03B5FD96CE8BC455B1A1BF7EF19E6D29
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/spi
   name: drv_spi_definitions.h
@@ -3191,27 +3254,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 03B5FD96CE8BC455B1A1BF7EF19E6D29
-- generatedChecksum: 8EAE086FFBCC60C4343BAA26620B1204
+- generatedChecksum: B15A01670F19BDF4E85A411D4E7513D9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/sst26
   name: drv_sst26.h
   physicalPath: driver/sst26
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8EAE086FFBCC60C4343BAA26620B1204
-- generatedChecksum: E33CB96258AD0A16961987965221090E
+  userChecksum: B15A01670F19BDF4E85A411D4E7513D9
+- generatedChecksum: 54DD0FD85CC2B3565EF8BD278FF58496
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/sst26
   name: drv_sst26_definitions.h
   physicalPath: driver/sst26
   security: NON_SECURE
   type: HEADER
-  userChecksum: E33CB96258AD0A16961987965221090E
-- generatedChecksum: 5B915DFB2B75B9A111AB0317C1CC159D
+  userChecksum: 54DD0FD85CC2B3565EF8BD278FF58496
+- generatedChecksum: 5F4E3A1D5B1B18BCB42B4A7B4A96183E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/sst26
   name: drv_sst26_local.h
   physicalPath: driver/sst26/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5B915DFB2B75B9A111AB0317C1CC159D
+  userChecksum: 5F4E3A1D5B1B18BCB42B4A7B4A96183E
+- generatedChecksum: 866CB0A84BAC9BA2712B4D2535D6A854
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/sst26
+  name: drv_sst26_spi_interface.h
+  physicalPath: driver/sst26/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 866CB0A84BAC9BA2712B4D2535D6A854
 - generatedChecksum: DF147276AE56CA76E3E9BEB8447620AB
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/usb
   name: drv_usb.h
@@ -3289,13 +3359,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9A481B7E3822C94527EDDE5DC6247992
-- generatedChecksum: B1D1D455E111FA70C46AD40562D78CE2
+- generatedChecksum: DE52B71A2D274138117243B700F40B11
   logicalPath: FreeRTOS/Source/include
   name: event_groups.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: B1D1D455E111FA70C46AD40562D78CE2
+  userChecksum: DE52B71A2D274138117243B700F40B11
 - generatedChecksum: 3D4AFD7F081219EE8D4455F548324CDC
   logicalPath: wolfcrypt
   name: fe_448.h
@@ -3310,20 +3380,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F3786539D22D8678BAC2E433212F9726
-- generatedChecksum: 2D3A9FC37968F5000CB45C6B4AD965D6
+- generatedChecksum: 187EFA39553617C34D670BFA3AA15C5F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/file_system
   name: ff.h
   physicalPath: system/fs/fat_fs/file_system
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2D3A9FC37968F5000CB45C6B4AD965D6
-- generatedChecksum: D9A040CE610ED3F9283F4BA6A13DADF9
+  userChecksum: 187EFA39553617C34D670BFA3AA15C5F
+- generatedChecksum: 9F4DBFA9DB71BC032616F80B06BF53B7
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/file_system
   name: ffconf.h
   physicalPath: system/fs/fat_fs/file_system
   security: NON_SECURE
   type: HEADER
-  userChecksum: D9A040CE610ED3F9283F4BA6A13DADF9
+  userChecksum: 9F4DBFA9DB71BC032616F80B06BF53B7
 - generatedChecksum: 8016A8BEE5B269941D8362B249B001FC
   logicalPath: wolfcrypt
   name: fips_test.h
@@ -3345,13 +3415,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 5A8851F0B5D80D8FAB646A0D767DEB31
-- generatedChecksum: B7DB07DC340F68E60C5D9710A6415E19
+- generatedChecksum: A0645D2D20ADA0DAA6480AAD10D526F9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: ftp_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: B7DB07DC340F68E60C5D9710A6415E19
+  userChecksum: A0645D2D20ADA0DAA6480AAD10D526F9
 - generatedChecksum: 85874DE4D83B37A38D471945EE99CB67
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: ftpc.h
@@ -3428,7 +3498,7 @@ files:
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: F463D75CFC0C272C50306100AAA5DAE8
+  userChecksum: 543F27C8CAD47F32BDB57D5E19B9A71D
 - generatedChecksum: A283D25AF7C2CD5942A50D786EC51EA7
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: http_manager.h
@@ -3436,13 +3506,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: A283D25AF7C2CD5942A50D786EC51EA7
-- generatedChecksum: FF835EB7D118EF855E6E57875D34E366
+- generatedChecksum: 015009740C98A8F697B7B7CE1589C647
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: http_net.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: FF835EB7D118EF855E6E57875D34E366
+  userChecksum: 554E5D20667C123EAAB101BA2559997F
 - generatedChecksum: 9DCEB3DF03BECF42A9DFC59911C2F460
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: http_net_manager.h
@@ -3464,13 +3534,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F1FC0858028996C745F3DDA19CB3428F
-- generatedChecksum: 3E2E6BADEAD6620ADCF4552348245C90
+- generatedChecksum: 93D1E1E2E1E5A86F9502AE32000EB680
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: icmp.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3E2E6BADEAD6620ADCF4552348245C90
+  userChecksum: 93D1E1E2E1E5A86F9502AE32000EB680
 - generatedChecksum: DD88B589790400244B3F011223EF63E8
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: icmp_manager.h
@@ -3485,13 +3555,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: C4D437BDABCF208DD607105E4EDDE9E3
-- generatedChecksum: AAFC48C1FFCF7499840E4B9E3113EF83
+- generatedChecksum: 1440F95D128CE7918C74E46AC16A42E3
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: icmpv6_manager.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: AAFC48C1FFCF7499840E4B9E3113EF83
+  userChecksum: 1440F95D128CE7918C74E46AC16A42E3
 - generatedChecksum: 16B92289AA9606720627C1461F3B7FBD
   logicalPath: wolfcrypt
   name: idea.h
@@ -3505,7 +3575,7 @@ files:
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0AE492D7EAE1B78F3216E99A50DE6450
+  userChecksum: B8703A41F995B21956E98A6CB21B7EAF
 - generatedChecksum: 25C07C460FA1705F6B3CDE09928E1D3C
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: igmp_manager.h
@@ -3513,13 +3583,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 25C07C460FA1705F6B3CDE09928E1D3C
-- generatedChecksum: 0806BF73F691B5525254092B97810BAD
+- generatedChecksum: E483D94FDF38E11A37653D16DCF2261A
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: igmp_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0806BF73F691B5525254092B97810BAD
+  userChecksum: E483D94FDF38E11A37653D16DCF2261A
 - generatedChecksum: C492FEAFD776B304917664DD0F4F8C11
   logicalPath: wolfcrypt
   name: integer.h
@@ -3555,34 +3625,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 4D85CCC6B81B358A4BBA15FFDB03BD23
-- generatedChecksum: 4AF5AFEB8DD29C37B7F92636F3F7109E
+- generatedChecksum: 27E94F52D3AE95A9A4F5A71E78D246F4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: ipv4.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4AF5AFEB8DD29C37B7F92636F3F7109E
-- generatedChecksum: 703326FC6C157BCAFF01E7A6FC6EC5FA
+  userChecksum: 27E94F52D3AE95A9A4F5A71E78D246F4
+- generatedChecksum: CD30466652A3555A714C4366A01ADCA4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: ipv4_manager.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 703326FC6C157BCAFF01E7A6FC6EC5FA
-- generatedChecksum: 5C258EB1DCC7371E66352C5D9ECC6B16
+  userChecksum: CD30466652A3555A714C4366A01ADCA4
+- generatedChecksum: 7E412586F5D649FE535CA680095D8073
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: ipv4_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5C258EB1DCC7371E66352C5D9ECC6B16
-- generatedChecksum: 60F0C9CE1871A3B85F04CE67BA983C26
+  userChecksum: 7E412586F5D649FE535CA680095D8073
+- generatedChecksum: 882FE98ABC43412C37B5C5B942696054
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: ipv6.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 60F0C9CE1871A3B85F04CE67BA983C26
+  userChecksum: 882FE98ABC43412C37B5C5B942696054
 - generatedChecksum: 5A8BAED78CF961169B211E15AE4C94FC
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: ipv6_manager.h
@@ -3604,13 +3674,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F2C9FCDD2BC6947D734604AD47740798
-- generatedChecksum: FE17D325A06479D956285C5438994B83
+- generatedChecksum: 58875A2FBF6B0502B6D3B8B5C47F3815
   logicalPath: FreeRTOS/Source/include
   name: list.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: FE17D325A06479D956285C5438994B83
+  userChecksum: 58875A2FBF6B0502B6D3B8B5C47F3815
 - generatedChecksum: D89BA50A67F1BBB1D108A4C6E527FC2F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: lldp.h
@@ -3632,13 +3702,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3BB97AA63C2C749A8E0E0CCB71069EE5
-- generatedChecksum: A7A8FCDA6746F7EEC2CAFD8F9AAC56CC
+- generatedChecksum: 38843E3789FC642552BCA71C39116136
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: lldp_tlv.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: A7A8FCDA6746F7EEC2CAFD8F9AAC56CC
+  userChecksum: 38843E3789FC642552BCA71C39116136
 - generatedChecksum: 2348BF7387F890D25AAB0E4B4F107215
   logicalPath: wolfcrypt
   name: logging.h
@@ -3681,13 +3751,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 344941DFE4CB6FCCA3D93A729A09D156
-- generatedChecksum: DDE2C9D46642D120A0202AC851E1A777
+- generatedChecksum: 5D9D0A05D32C97E2E625020E1795C7F1
   logicalPath: FreeRTOS/Source/include
   name: message_buffer.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: DDE2C9D46642D120A0202AC851E1A777
+  userChecksum: 5D9D0A05D32C97E2E625020E1795C7F1
 - generatedChecksum: A2DE43F62D9FFAF4A9B0A0EDF9BDB565
   logicalPath: wolfcrypt
   name: misc.h
@@ -3709,20 +3779,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3FE83099BC4E11035B3D6063263271B2
-- generatedChecksum: 2D674B8B1FCF07504AF90FA5CE2F9A23
+- generatedChecksum: A34AAAD9F0BD596E8FF78D86FD64F869
   logicalPath: FreeRTOS/Source/include
   name: mpu_prototypes.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2D674B8B1FCF07504AF90FA5CE2F9A23
-- generatedChecksum: 953D372D8F7991D4F86AD4ABD42AE4CE
+  userChecksum: A34AAAD9F0BD596E8FF78D86FD64F869
+- generatedChecksum: 2ECEDD5114F296955777187904C449C7
   logicalPath: FreeRTOS/Source/include
   name: mpu_wrappers.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 953D372D8F7991D4F86AD4ABD42AE4CE
+  userChecksum: 2ECEDD5114F296955777187904C449C7
 - generatedChecksum: F74D8EB5B501CEF184B30ED0D76F7AFB
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: nbns.h
@@ -3744,13 +3814,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: E81B3F9FF5B79705C997CC58E4FEB816
-- generatedChecksum: 9C0599472AD184EF50F644AE2A69E5D8
+- generatedChecksum: 21FB337F6D1F4C064D3603A92A88E3DE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: ndp_manager.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9C0599472AD184EF50F644AE2A69E5D8
+  userChecksum: 21FB337F6D1F4C064D3603A92A88E3DE
 - generatedChecksum: 6E73DB6B8412D0A3D6A5948633037D9B
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: ndp_private.h
@@ -3814,13 +3884,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 49A48E22747D17062EF09B0458744E2F
-- generatedChecksum: 45C4C4D08709EDD0770476830B1ABB4D
+- generatedChecksum: A0F6CC80F1D784640339E67F3532A62F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: oahash.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 45C4C4D08709EDD0770476830B1ABB4D
+  userChecksum: A0F6CC80F1D784640339E67F3532A62F
 - generatedChecksum: 5427487A122797141058639A06EF825E
   logicalPath: wolfssl
   name: ocsp.h
@@ -3912,27 +3982,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 4A6B9DAAC2733B35710DC4A5C33A361D
-- generatedChecksum: 85D84EFCDDF8566F35AC47C0ABB57CCA
+- generatedChecksum: 6BD2354B766468AB44169522667DB6FE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 85D84EFCDDF8566F35AC47C0ABB57CCA
-- generatedChecksum: 407D8CE5F0C091BCEBB78967FECBE53E
+  userChecksum: 6BD2354B766468AB44169522667DB6FE
+- generatedChecksum: 62FBC878743DB699BADD3CF9BC5D10AD
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/i2c/master
   name: plib_i2c1_master.h
   physicalPath: peripheral/i2c/master
   security: NON_SECURE
   type: HEADER
-  userChecksum: 407D8CE5F0C091BCEBB78967FECBE53E
-- generatedChecksum: 092C94C5559AFFB03C3483EE129E0E91
+  userChecksum: 62FBC878743DB699BADD3CF9BC5D10AD
+- generatedChecksum: 98DDD931F1A3452F1369FD2708D64EEA
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/i2c/master
   name: plib_i2c2_master.h
   physicalPath: peripheral/i2c/master
   security: NON_SECURE
   type: HEADER
-  userChecksum: 092C94C5559AFFB03C3483EE129E0E91
+  userChecksum: 98DDD931F1A3452F1369FD2708D64EEA
 - generatedChecksum: B963C6FE44292A1C4A14C3BA5BE95AEE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/i2c/master
   name: plib_i2c_master_common.h
@@ -3940,13 +4010,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: B963C6FE44292A1C4A14C3BA5BE95AEE
-- generatedChecksum: 4DA2B0725ED9CE2D614341B200B05D2F
+- generatedChecksum: 71E49D4F47F8764F635BAFE58809F3A3
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/power
   name: plib_power.h
   physicalPath: peripheral/power
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4DA2B0725ED9CE2D614341B200B05D2F
+  userChecksum: 71E49D4F47F8764F635BAFE58809F3A3
 - generatedChecksum: 2D9E373A39FB85C5243574B8D2F7EA52
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/rcon
   name: plib_rcon.h
@@ -3982,13 +4052,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: CFA758C8B7258190473EF7C60C4BA4E9
-- generatedChecksum: D5B124F7B292B92BE6CA0A7BDFD6F62F
+- generatedChecksum: 3EAAE65089C3F691641586CF2CD60190
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/uart
   name: plib_uart1.h
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: HEADER
-  userChecksum: D5B124F7B292B92BE6CA0A7BDFD6F62F
+  userChecksum: 3EAAE65089C3F691641586CF2CD60190
 - generatedChecksum: C3E172123FA6B8CBAFBC2F6526F4D5A7
   logicalPath: config/aws_sdk_wfi32_iot_freertos/peripheral/uart
   name: plib_uart3.h
@@ -4003,20 +4073,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 67EEAF539A53B6B8FD7B600ACCB3F3CA
-- generatedChecksum: 3224466D03D8DDF1B5307028B2E5583F
+- generatedChecksum: 7AFFC4178335897ED9D5804CAB531BCF
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/usb/usbfs/src
   name: plib_usbfs.h
   physicalPath: driver/usb/usbfs/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3224466D03D8DDF1B5307028B2E5583F
-- generatedChecksum: 3822D4C43CB11882404ECB2B28DD61EA
+  userChecksum: 7AFFC4178335897ED9D5804CAB531BCF
+- generatedChecksum: 9B4B2B2E7722D50697564E6D6E4F9E04
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/usb/usbfs/src
   name: plib_usbfs_header.h
   physicalPath: driver/usb/usbfs/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3822D4C43CB11882404ECB2B28DD61EA
+  userChecksum: 9B4B2B2E7722D50697564E6D6E4F9E04
 - generatedChecksum: 5D0C040C975701D3CDA4BBA6A6BA630D
   logicalPath: wolfcrypt
   name: poly1305.h
@@ -4024,27 +4094,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 5D0C040C975701D3CDA4BBA6A6BA630D
-- generatedChecksum: 5A686FF678CBFBB4A1FEB86B66DCEC98
+- generatedChecksum: 8DD6C24BF18C96BDC016D9165DF88FEB
   logicalPath: FreeRTOS/Source/include
   name: portable.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5A686FF678CBFBB4A1FEB86B66DCEC98
-- generatedChecksum: 6E4E1E4FD0B92BD15236DAA237ABCCAB
+  userChecksum: 8DD6C24BF18C96BDC016D9165DF88FEB
+- generatedChecksum: 94F2A78A46AC9F36C974B8E7BA09919F
   logicalPath: FreeRTOS/Source/portable/MPLAB/PIC32MZ
   name: portmacro.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6E4E1E4FD0B92BD15236DAA237ABCCAB
-- generatedChecksum: 696F66B2428CC530389C53B5FE617CE1
+  userChecksum: 94F2A78A46AC9F36C974B8E7BA09919F
+- generatedChecksum: 99A9BD4D90230B49C97BBCEE121C1182
   logicalPath: FreeRTOS/Source/include
   name: projdefs.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 696F66B2428CC530389C53B5FE617CE1
+  userChecksum: 99A9BD4D90230B49C97BBCEE121C1182
 - generatedChecksum: 3EC14D9B16EC8F16847440F97233E8F2
   logicalPath: wolfcrypt
   name: pwdbased.h
@@ -4052,13 +4122,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3EC14D9B16EC8F16847440F97233E8F2
-- generatedChecksum: 6CB1FF8C27E6755C63D75369D1D7A37A
+- generatedChecksum: F917F55E280C54C23A7541A76AC34225
   logicalPath: FreeRTOS/Source/include
   name: queue.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6CB1FF8C27E6755C63D75369D1D7A37A
+  userChecksum: F917F55E280C54C23A7541A76AC34225
 - generatedChecksum: 8B671DBD9F7BED6BEF8099BD66E5B761
   logicalPath: wolfcrypt
   name: rabbit.h
@@ -4108,20 +4178,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6A53E2A2CE545AEABFD2DB3600529665
-- generatedChecksum: 9F1AE7D29D09ED8CC21F3DA08049FB79
+- generatedChecksum: D7426A4807316E4BB5540458F6F4C68F
   logicalPath: FreeRTOS/Source/include
   name: semphr.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9F1AE7D29D09ED8CC21F3DA08049FB79
-- generatedChecksum: 000D1072E65C7F154751FA14DF5F7028
+  userChecksum: D7426A4807316E4BB5540458F6F4C68F
+- generatedChecksum: 8F3CAA24D47FC0D04409AE3E779FDC0A
   logicalPath: wolfcrypt
   name: settings.h
   physicalPath: ../../third_party/wolfssl/wolfssl/wolfcrypt
   security: NON_SECURE
   type: HEADER
-  userChecksum: 000D1072E65C7F154751FA14DF5F7028
+  userChecksum: 8F3CAA24D47FC0D04409AE3E779FDC0A
 - generatedChecksum: D0717E591FA5C33AFA39AE41284A1D5F
   logicalPath: wolfcrypt
   name: sha.h
@@ -4233,7 +4303,7 @@ files:
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7C5B70974FFD5BFF1370DFCCA9CC7D1B
+  userChecksum: D5D7A5439690FA65D0FED07A33818B58
 - generatedChecksum: 3337D044F519EA39F86B10A570514DE4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: snmpv3_private.h
@@ -4241,13 +4311,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3337D044F519EA39F86B10A570514DE4
-- generatedChecksum: B84BE4564C3D4A01E79D50799B3B7F80
+- generatedChecksum: 1B619FAD725FD94C7875701747E847DB
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: sntp.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: B84BE4564C3D4A01E79D50799B3B7F80
+  userChecksum: 1B619FAD725FD94C7875701747E847DB
 - generatedChecksum: E7848F0E802A91F23FCACF31EB9320C6
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: sntp_manager.h
@@ -4275,7 +4345,7 @@ files:
   physicalPath: ../../third_party/wolfssl/wolfssl/wolfcrypt
   security: NON_SECURE
   type: HEADER
-  userChecksum: 08516DCC4CD196BA11F41BDB743FD56A
+  userChecksum: B1D5F128C7BA9DA4F5D171F727BDA02F
 - generatedChecksum: 7FC136253FF41A08E1DEDA11C868FCEE
   logicalPath: wolfssl
   name: ssl.h
@@ -4283,20 +4353,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7FC136253FF41A08E1DEDA11C868FCEE
-- generatedChecksum: D0D11C3D2D1BD585018AE271E1AC3B8F
+- generatedChecksum: 634A3DF879F184ABC5F96107F46AC4B2
   logicalPath: FreeRTOS/Source/include
   name: stack_macros.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: D0D11C3D2D1BD585018AE271E1AC3B8F
-- generatedChecksum: 7C71A9D2BEF16AC21C17ED5C2452C263
+  userChecksum: 634A3DF879F184ABC5F96107F46AC4B2
+- generatedChecksum: A652AC7D4938BE16F535BA3C90C86463
   logicalPath: FreeRTOS/Source/include
   name: stream_buffer.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7C71A9D2BEF16AC21C17ED5C2452C263
+  userChecksum: A652AC7D4938BE16F535BA3C90C86463
 - generatedChecksum: AFAAF7D896D57569CA4CF73BB3339481
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/cache
   name: sys_cache.h
@@ -4311,41 +4381,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 712D1407BC82CB6B3C4C44FED4F14D26
-- generatedChecksum: 91CB36F6EC29DAA7C584282A875E5CBA
+- generatedChecksum: 3AE819DFC5376F6E9AD0427596F24644
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/console
   name: sys_console.h
   physicalPath: system/console
   security: NON_SECURE
   type: HEADER
-  userChecksum: 91CB36F6EC29DAA7C584282A875E5CBA
-- generatedChecksum: 6972608768DDBE6E37A2D81B83DF490B
+  userChecksum: 3AE819DFC5376F6E9AD0427596F24644
+- generatedChecksum: FADDA086C6C4E8FD7EBCE117438767A6
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/debug
   name: sys_debug.h
   physicalPath: system/debug
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6972608768DDBE6E37A2D81B83DF490B
-- generatedChecksum: 45C173FBC598D95FA76B147486A15177
-  logicalPath: config/aws_sdk_wfi32_iot_freertos/system/dma
-  name: sys_dma.h
-  physicalPath: system/dma
-  security: NON_SECURE
-  type: HEADER
-  userChecksum: 45C173FBC598D95FA76B147486A15177
-- generatedChecksum: 42E557EFE638D7A736FB88AA84F085F1
-  logicalPath: config/aws_sdk_wfi32_iot_freertos/system/dma
-  name: sys_dma_mapping.h
-  physicalPath: system/dma
-  security: NON_SECURE
-  type: HEADER
-  userChecksum: 42E557EFE638D7A736FB88AA84F085F1
-- generatedChecksum: 4A8DA7BC60B438CE161462CB299CCC9D
+  userChecksum: FADDA086C6C4E8FD7EBCE117438767A6
+- generatedChecksum: E26A0B284DD5F09B84709E5BE6F3E425
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs
   name: sys_fs.h
   physicalPath: system/fs
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4A8DA7BC60B438CE161462CB299CCC9D
+  userChecksum: E26A0B284DD5F09B84709E5BE6F3E425
 - generatedChecksum: 0D9FE9035E3AA8082C5657240106F2DC
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs
   name: sys_fs_fat_interface.h
@@ -4360,13 +4416,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 0D162D1868A187FDC092657020E668D8
-- generatedChecksum: D0DEC824B933722219A05F00A4CD5BB4
+- generatedChecksum: C57A4CE87A00A891A99A4248ADEE0D2E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs
   name: sys_fs_media_manager.h
   physicalPath: system/fs
   security: NON_SECURE
   type: HEADER
-  userChecksum: D0DEC824B933722219A05F00A4CD5BB4
+  userChecksum: C57A4CE87A00A891A99A4248ADEE0D2E
 - generatedChecksum: E50782BD59B15F2EAAF53AAD818793EE
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/fs
   name: sys_fs_media_manager_local.h
@@ -4409,13 +4465,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BC6E1661BF4CAC21B70F5F56A0D7BBDB
-- generatedChecksum: CC82E295FFA4816608E4FBD92054673A
+- generatedChecksum: 89A2BB1ACE0A3BCFDBEC1528E5F76FC0
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system
   name: sys_random_h2_adapter.h
   physicalPath: system
   security: NON_SECURE
   type: HEADER
-  userChecksum: CC82E295FFA4816608E4FBD92054673A
+  userChecksum: 89A2BB1ACE0A3BCFDBEC1528E5F76FC0
 - generatedChecksum: 8E43BD17134E69982826F202D0AB42C5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/reset
   name: sys_reset.h
@@ -4444,13 +4500,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 5759BC3BC97149366A972C56C337B7C0
-- generatedChecksum: 62F39464265EC34979649F761FB4FE57
+- generatedChecksum: C7A6D8C5408A42EB1CD2CB277E6EFBF4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system/time
   name: sys_time_local.h
   physicalPath: system/time/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 62F39464265EC34979649F761FB4FE57
+  userChecksum: C7A6D8C5408A42EB1CD2CB277E6EFBF4
 - generatedChecksum: BE95B4F134C5C929787B9DA6FDBF3501
   logicalPath: config/aws_sdk_wfi32_iot_freertos/system
   name: system.h
@@ -4493,41 +4549,41 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 1C75A8A6B60598A2FD0D533F57839B72
-- generatedChecksum: 84B3224817BDD8B37961BB3B3441E134
+- generatedChecksum: 0A58B32A7058D0599EC5F6E3B33D42E6
   logicalPath: FreeRTOS/Source/include
   name: task.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 84B3224817BDD8B37961BB3B3441E134
-- generatedChecksum: F779E377BF46D856247D545681CD753A
+  userChecksum: 0A58B32A7058D0599EC5F6E3B33D42E6
+- generatedChecksum: 3994BECFD7FB92AB29BC3499BEC66F40
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tcp.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: F779E377BF46D856247D545681CD753A
-- generatedChecksum: CFFB51E0D54B26C90B61FEEDE2A1CF68
+  userChecksum: 3994BECFD7FB92AB29BC3499BEC66F40
+- generatedChecksum: 503C152D38F9AC23E029DE786FFE29EA
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcp_manager.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: CFFB51E0D54B26C90B61FEEDE2A1CF68
-- generatedChecksum: 2CAF6C5D06D5DBE937D8FA1E3A2A37A2
+  userChecksum: 503C152D38F9AC23E029DE786FFE29EA
+- generatedChecksum: B08B1392542365A5E9A327B6C21155EC
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcp_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2CAF6C5D06D5DBE937D8FA1E3A2A37A2
-- generatedChecksum: D2614A2B1818D60D2F0C30CDED6C63D3
+  userChecksum: B08B1392542365A5E9A327B6C21155EC
+- generatedChecksum: DEA2DFCFB676383CA2E23D8B803FC9C5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tcpip.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: D2614A2B1818D60D2F0C30CDED6C63D3
+  userChecksum: DEA2DFCFB676383CA2E23D8B803FC9C5
 - generatedChecksum: 60B94F95E8C1F65E61E54288D55B0319
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tcpip_announce.h
@@ -4598,20 +4654,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 3FB4AF6DF0E1AFAAC7AB7D042672EC20
-- generatedChecksum: 1CD194FD08DB3210706416F182E80CC2
+- generatedChecksum: C2639B76AA3ED555DE0E35E023356ADF
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tcpip_mac.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1CD194FD08DB3210706416F182E80CC2
-- generatedChecksum: B7D36B1790981F64981959105D89F6BF
+  userChecksum: C2639B76AA3ED555DE0E35E023356ADF
+- generatedChecksum: F7969FE2EDC637424E363FD8D5F894E4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tcpip_mac_bridge.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: B7D36B1790981F64981959105D89F6BF
+  userChecksum: F7969FE2EDC637424E363FD8D5F894E4
 - generatedChecksum: E293518EF5BA0DF251C449FAA69D54A5
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_mac_bridge_manager.h
@@ -4626,13 +4682,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2E946E4B94B4E221CBF8379C477C8C0F
-- generatedChecksum: 4A677072FE7CB4B37767226CF9F19E5C
+- generatedChecksum: 6A790F9F331FF58F80B14C201FBCCED9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tcpip_mac_object.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4A677072FE7CB4B37767226CF9F19E5C
+  userChecksum: 6A790F9F331FF58F80B14C201FBCCED9
 - generatedChecksum: DF4A57443EEF976E1564F28FE4FDBD52
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tcpip_manager.h
@@ -4640,13 +4696,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: DF4A57443EEF976E1564F28FE4FDBD52
-- generatedChecksum: B5B45B6AB4198A8677CFC7207BA8A8C1
+- generatedChecksum: 90AE2EB0B93F3F0E910C4E96878E6D89
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_manager_control.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: B5B45B6AB4198A8677CFC7207BA8A8C1
+  userChecksum: 90AE2EB0B93F3F0E910C4E96878E6D89
 - generatedChecksum: 5851ABD4B6100EED203CA27DFB90C598
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_module_manager.h
@@ -4661,20 +4717,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: B35526101B0CB88DB7C403BE62AEEAAF
-- generatedChecksum: 1550A33FF53B128BB73DD937F610E51B
+- generatedChecksum: 3DBAA4F039E31AF2D181FA01A817E728
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_packet.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1550A33FF53B128BB73DD937F610E51B
-- generatedChecksum: F689E15E4ECF7F411030796CCF7D3444
+  userChecksum: 3DBAA4F039E31AF2D181FA01A817E728
+- generatedChecksum: E05A81EE6DB9F0C00B5CCDF1F2D24077
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tcpip_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: F689E15E4ECF7F411030796CCF7D3444
+  userChecksum: E05A81EE6DB9F0C00B5CCDF1F2D24077
 - generatedChecksum: 1359095D6A60712C36D5DA1C8DC53BE3
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tcpip_reboot.h
@@ -4716,7 +4772,7 @@ files:
   physicalPath: ../../third_party/wolfssl/wolfssl
   security: NON_SECURE
   type: HEADER
-  userChecksum: F73607743870983E5A18136777F2B6BF
+  userChecksum: 22A873BC52C10FB7617122B0B00511BB
 - generatedChecksum: 73C239EC3FD91415ECE351A061B96C15
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng
   name: tflxtls_cert_def_4_device.h
@@ -4745,13 +4801,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 58971D61817236E727FF8264989191AA
-- generatedChecksum: C2AAC713674159F9D3E194CF34D2B07B
+- generatedChecksum: 5FE8DAC31F9D4252CA982B8AE6E7232A
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: tftpc_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: C2AAC713674159F9D3E194CF34D2B07B
+  userChecksum: 5FE8DAC31F9D4252CA982B8AE6E7232A
 - generatedChecksum: 24B5F4E19C395CDB02D5EE3AFC463C17
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: tftps.h
@@ -4773,13 +4829,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 93955E68585F91EE382E3EFCEDB120EE
-- generatedChecksum: C8BB70E2423A57902E9FDC0C9EC81F8D
+- generatedChecksum: 41176F771D22559EFCE82398FCF33668
   logicalPath: FreeRTOS/Source/include
   name: timers.h
   physicalPath: ../../third_party/rtos/FreeRTOS/Source/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: C8BB70E2423A57902E9FDC0C9EC81F8D
+  userChecksum: 41176F771D22559EFCE82398FCF33668
 - generatedChecksum: C6ED28594DBB017DE1BB694D53A4EF0F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng
   name: tng_atca.h
@@ -4808,13 +4864,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F1DB7071A952A5682208B061982F4680
-- generatedChecksum: E5E154EF2A6AE8AD92DC67F5153730A9
+- generatedChecksum: 096575DA8225A5238AD064F18960430E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng
   name: tnglora_cert_def_2_device.h
   physicalPath: library/cryptoauthlib/tng
   security: NON_SECURE
   type: HEADER
-  userChecksum: E5E154EF2A6AE8AD92DC67F5153730A9
+  userChecksum: 096575DA8225A5238AD064F18960430E
 - generatedChecksum: CA9929DCB6D228B9DC6BB0754BF8DB72
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng
   name: tnglora_cert_def_4_device.h
@@ -4857,27 +4913,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: CA8D9CC28FDE2D7169ED3DD85B3599A4
-- generatedChecksum: 23248DE45F9EC71D5484DF1895031B07
+- generatedChecksum: B494DA024D227F3ADEB75149D586B89C
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip
   name: udp.h
   physicalPath: library/tcpip
   security: NON_SECURE
   type: HEADER
-  userChecksum: 23248DE45F9EC71D5484DF1895031B07
-- generatedChecksum: 4FCF3368C518DD173D08099B1DFB89D5
+  userChecksum: B494DA024D227F3ADEB75149D586B89C
+- generatedChecksum: 1D7FBFA79EAE512971BD54237F6F71F4
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: udp_manager.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4FCF3368C518DD173D08099B1DFB89D5
-- generatedChecksum: C99E758A00938DD4FF1F7209697D49E5
+  userChecksum: 1D7FBFA79EAE512971BD54237F6F71F4
+- generatedChecksum: D65791C7FC2FB24860DB02F5E3978688
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: udp_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: C99E758A00938DD4FF1F7209697D49E5
+  userChecksum: D65791C7FC2FB24860DB02F5E3978688
 - generatedChecksum: 7614490532C606BCAFEC5F729FDBEDAD
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/usb/usbfs/src/templates
   name: usb_ALL_Interrupt_Default.h
@@ -5795,13 +5851,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 129B8E568BEF776BA0869B71C7774A15
-- generatedChecksum: D785872311E731C718F49DBB845D95A6
+- generatedChecksum: 5D74558225AE7E444B5E7761985C6F9D
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: D785872311E731C718F49DBB845D95A6
+  userChecksum: 5D74558225AE7E444B5E7761985C6F9D
 - generatedChecksum: 9E636CC2C18F82E2DF63BA89528C89BD
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_api.h
@@ -5809,20 +5865,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9E636CC2C18F82E2DF63BA89528C89BD
-- generatedChecksum: B10689873C108601633B41809AA4FDD9
+- generatedChecksum: 4620F37F4A5B8083FE60A62153765F8F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_assoc.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: B10689873C108601633B41809AA4FDD9
-- generatedChecksum: 656A10637E6C121AADF91D8332DDD8B0
+  userChecksum: 4620F37F4A5B8083FE60A62153765F8F
+- generatedChecksum: 55742B4690B3E656033A28405FAD63AC
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_authctx.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 656A10637E6C121AADF91D8332DDD8B0
+  userChecksum: 55742B4690B3E656033A28405FAD63AC
 - generatedChecksum: 42DBECB70EDDA2D221982CA1EA184819
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_bssctx.h
@@ -5837,13 +5893,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 11A8BA738A4BD2266387CE4481CF079C
-- generatedChecksum: 334B232FEE0909337FC8F0E14EF9610A
+- generatedChecksum: 7A9AD00D28EA4609F8E31C388B4D2C3D
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_cfg.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 334B232FEE0909337FC8F0E14EF9610A
+  userChecksum: 7A9AD00D28EA4609F8E31C388B4D2C3D
 - generatedChecksum: FAF3A540B4398D7EC136E4B050B0553E
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_client_api.h
@@ -5851,20 +5907,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: FAF3A540B4398D7EC136E4B050B0553E
-- generatedChecksum: D9C32D56B6C15A91CB0E4B90A01278BC
+- generatedChecksum: 0C8FF93D2677E6FA06934CC0C5005AD8
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_common.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: D9C32D56B6C15A91CB0E4B90A01278BC
-- generatedChecksum: C22A35B572E432056D8BFE17208F7C15
+  userChecksum: 0C8FF93D2677E6FA06934CC0C5005AD8
+- generatedChecksum: 3C5C9333B2BFDBE4F5685BB231F0FBFD
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_custie.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: C22A35B572E432056D8BFE17208F7C15
+  userChecksum: 3C5C9333B2BFDBE4F5685BB231F0FBFD
 - generatedChecksum: 72E9F045ACD0A287CE37BCCF6B212756
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_debug.h
@@ -5872,6 +5928,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 72E9F045ACD0A287CE37BCCF6B212756
+- generatedChecksum: 4CB7B660A3BA28F8604D4A34D7281357
+  logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
+  name: wdrv_pic32mzw_ie.h
+  physicalPath: driver/wifi/pic32mzw1/include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 4CB7B660A3BA28F8604D4A34D7281357
 - generatedChecksum: 94B9E2F0B10B2535CFB50856C02672B0
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_mac.h
@@ -5879,34 +5942,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 94B9E2F0B10B2535CFB50856C02672B0
-- generatedChecksum: D3902837652382E379C419F8C7F5C2D6
+- generatedChecksum: 349A8C919171EDB9131B3E0B8AFCB2AA
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_ps.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: D3902837652382E379C419F8C7F5C2D6
-- generatedChecksum: EB43FE6B568A7A787C5DABD46F3B5EBF
+  userChecksum: 349A8C919171EDB9131B3E0B8AFCB2AA
+- generatedChecksum: 0BF4863F75E4B0D180A3845A91B954AF
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_regdomain.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: EB43FE6B568A7A787C5DABD46F3B5EBF
-- generatedChecksum: E76FC8F36DDEBDD1ACB54987FEEAA64F
+  userChecksum: 0BF4863F75E4B0D180A3845A91B954AF
+- generatedChecksum: 046C2DD685AA5309F8FA439B50CA9096
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_softap.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: E76FC8F36DDEBDD1ACB54987FEEAA64F
-- generatedChecksum: 09995F4D93DBFCAA09C33260BC36F132
+  userChecksum: 046C2DD685AA5309F8FA439B50CA9096
+- generatedChecksum: 42684B99A8077519793E07C4DE41F3F9
   logicalPath: config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include
   name: wdrv_pic32mzw_sta.h
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 09995F4D93DBFCAA09C33260BC36F132
+  userChecksum: 42684B99A8077519793E07C4DE41F3F9
 - generatedChecksum: 7BA0E120CC2D9C1FC867F4C211D47BF3
   logicalPath: wolfcrypt
   name: wolfevent.h
@@ -5942,13 +6005,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 0E950005D87D16C0541FF1A9A2B6F3D0
-- generatedChecksum: FB4820371DD01C777345A47950B59C25
+- generatedChecksum: 69D1F5AD6F50719F20AB32B4D1308C5F
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: zero_conf_link_local_private.h
   physicalPath: library/tcpip/src
   security: NON_SECURE
   type: HEADER
-  userChecksum: FB4820371DD01C777345A47950B59C25
+  userChecksum: 69D1F5AD6F50719F20AB32B4D1308C5F
 - generatedChecksum: E7D07DA850B2609D51D1BF383B3DCA73
   logicalPath: config/aws_sdk_wfi32_iot_freertos/library/tcpip/src
   name: zero_conf_manager.h
@@ -5989,6 +6052,12 @@ settings:
   key: extra-include-directories
   security: NON_SECURE
   value: ../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/;
+- append: true
+  category: C32
+  delimiter: ;
+  key: extra-include-directories
+  security: NON_SECURE
+  value: ../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng
 - append: true
   category: C32
   delimiter: ;

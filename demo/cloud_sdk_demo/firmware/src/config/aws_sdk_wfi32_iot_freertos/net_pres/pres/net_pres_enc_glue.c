@@ -124,7 +124,7 @@ bool NET_PRES_EncProviderStreamClientInit0(NET_PRES_TransportObject * transObjec
         _net_pres_wolfsslUsers++;
     }
     net_pres_wolfSSLInfoStreamClient0.transObject = transObject;
-    net_pres_wolfSSLInfoStreamClient0.context = wolfSSL_CTX_new(wolfSSLv23_client_method());
+	net_pres_wolfSSLInfoStreamClient0.context = wolfSSL_CTX_new(wolfSSLv23_client_method());
     if (net_pres_wolfSSLInfoStreamClient0.context == 0)
     {
         return false;
@@ -140,6 +140,7 @@ bool NET_PRES_EncProviderStreamClientInit0(NET_PRES_TransportObject * transObjec
     }
     // Turn off verification, because SNTP is usually blocked by a firewall
     wolfSSL_CTX_set_verify(net_pres_wolfSSLInfoStreamClient0.context, SSL_VERIFY_NONE, 0);
+
 #ifdef WOLFSSL_ATECC_TNGTLS
    atcatls_set_callbacks(net_pres_wolfSSLInfoStreamClient0.context);
    /*Use TLS extension since we support only P256R1 with 608*/
@@ -152,6 +153,7 @@ bool NET_PRES_EncProviderStreamClientInit0(NET_PRES_TransportObject * transObjec
         //SYS_CONSOLE_PRINT("SNI set to %s\r\n", g_Cloud_Endpoint);
     }
 #endif //WOLFSSL_ATECC_PKCB
+
     net_pres_wolfSSLInfoStreamClient0.isInited = true;
     return true;
 }
@@ -160,6 +162,7 @@ bool NET_PRES_EncProviderStreamClientDeinit0(void)
 #ifdef WOLFSSL_ATECC_TNGTLS
    atmel_finish();
 #endif //WOLFSSL_ATECC_PKCB
+
     wolfSSL_CTX_free(net_pres_wolfSSLInfoStreamClient0.context);
     net_pres_wolfSSLInfoStreamClient0.isInited = false;
     _net_pres_wolfsslUsers--;

@@ -5,13 +5,19 @@
 /* MPLAB Harmony Common Include */
 #include "definitions.h"
 
-
 #ifndef ATCA_HAL_I2C
 #define ATCA_HAL_I2C
 #endif
 
+
+
 /** Include Device Support Options */
 #define ATCA_ATECC608_SUPPORT
+
+/** TA100 Specific - Enable auth sessions that require AES (CMAC/GCM) from
+   an external library */
+#define ATCA_TA100_AES_AUTH_SUPPORT
+
 
 
 /* Polling Configuration Options  */
@@ -30,10 +36,15 @@
 #define ATCA_NO_HEAP
 #endif
 
+/** Define platform malloc/free */
+#define ATCA_PLATFORM_MALLOC    OSAL_Malloc
+#define ATCA_PLATFORM_FREE      OSAL_Free
+
 /** Use RTOS timers (i.e. delays that yield when the scheduler is running) */
 #ifndef ATCA_USE_RTOS_TIMER
 #define ATCA_USE_RTOS_TIMER     (1)
 #endif
+
 #define atca_delay_ms   hal_rtos_delay_ms
 #define atca_delay_us   hal_delay_us
 
@@ -59,7 +70,7 @@ typedef bool (* atca_i2c_plib_is_busy)( void );
 typedef PLIB_I2C_ERROR (* atca_i2c_error_get)( void );
 typedef bool (* atca_i2c_plib_transfer_setup)(PLIB_I2C_TRANSFER_SETUP* setup, uint32_t srcClkFreq);
 
-typedef struct atca_plib_api
+typedef struct atca_plib_i2c_api
 {
     atca_i2c_plib_read              read;
     atca_i2c_plib_write             write;
@@ -67,6 +78,9 @@ typedef struct atca_plib_api
     atca_i2c_error_get              error_get;
     atca_i2c_plib_transfer_setup    transfer_setup;
 } atca_plib_i2c_api_t;
+
+
+
 
 extern atca_plib_i2c_api_t i2c2_plib_i2c_api;
 
@@ -76,6 +90,8 @@ extern atca_plib_i2c_api_t i2c2_plib_i2c_api;
 /** Define Software Crypto Library to Use - if none are defined use the
     cryptoauthlib version where applicable */
 #define ATCA_WOLFSSL
+
+#define ATCA_TEST_MULTIPLE_INSTANCES
 
 
 #endif // ATCA_CONFIG_H

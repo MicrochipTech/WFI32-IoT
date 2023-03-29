@@ -15,6 +15,17 @@ children:
         - type: Values
           children:
           - {type: Value, value: ATECC608}
+  - type: ListEntry
+    attributes: {id: CAL_DEV_CFG_LIST_ENTRIES}
+    children:
+    - type: Attributes
+      children:
+      - type: StringArray
+        attributes: {id: values}
+        children:
+        - type: Values
+          children:
+          - {type: Value, value: atecc608_0_init_data}
   - type: Boolean
     attributes: {id: CAL_ENABLE_RTOS}
     children:
@@ -23,30 +34,26 @@ children:
       - type: Dynamic
         attributes: {id: cryptoauthlib, value: 'true'}
   - type: Boolean
+    attributes: {id: CAL_ENABLE_TA100_AES_AUTH}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: cryptoauthlib, value: 'true'}
+  - type: Boolean
+    attributes: {id: CAL_ENABLE_TA100_FCE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: cryptoauthlib, value: 'false'}
+  - type: Boolean
     attributes: {id: CAL_ENABLE_WOLFCRYPTO}
     children:
     - type: Values
       children:
       - type: Dynamic
         attributes: {id: cryptoauthlib, value: 'true'}
-  - type: File
-    attributes: {id: CAL_FILE_SRC_39}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'true'}
-  - type: File
-    attributes: {id: CAL_FILE_SRC_40}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'true'}
   - type: File
     attributes: {id: CAL_FILE_SRC_41}
     children:
@@ -462,6 +469,33 @@ children:
         children:
         - {type: Value, value: 'true'}
   - type: File
+    attributes: {id: CAL_FILE_SRC_87}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: CAL_FILE_SRC_88}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: CAL_FILE_SRC_89}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
     attributes: {id: CAL_FILE_SRC_FREERTOS}
     children:
     - type: Attributes
@@ -488,6 +522,17 @@ children:
         attributes: {id: enabled}
         children:
         - {type: Value, value: 'true'}
+  - type: ListEntry
+    attributes: {id: CAL_HAL_LIST_ENTRIES}
+    children:
+    - type: Attributes
+      children:
+      - type: StringArray
+        attributes: {id: values}
+        children:
+        - type: Values
+          children:
+          - {type: Value, value: I2C}
   - type: ListEntry
     attributes: {id: CAL_PLIB_LIST_ENTRIES}
     children:

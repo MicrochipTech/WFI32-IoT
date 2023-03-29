@@ -153,7 +153,7 @@ children:
           - type: Pair
             attributes: {description: 'TRUE', value: '2', key: ENABLE_SYS_PORTS}
           - type: Pair
-            attributes: {description: 'TRUE', value: '1', key: ENABLE_SYS_DMA}
+            attributes: {description: 'TRUE', value: '0', key: ENABLE_SYS_DMA}
           - type: Pair
             attributes: {description: 'FALSE', value: '0', key: ENABLE_SYS_RESET}
   - type: File
@@ -173,7 +173,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
   - type: File
     attributes: {id: DMA_HEADER}
     children:
@@ -182,7 +182,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
   - type: File
     attributes: {id: DMA_MAPPING}
     children:
@@ -191,7 +191,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
   - type: File
     attributes: {id: DMA_SOURCE}
     children:
@@ -200,7 +200,7 @@ children:
       - type: Boolean
         attributes: {id: enabled}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
   - type: File
     attributes: {id: DRIVER_COMMON}
     children:
@@ -276,11 +276,11 @@ children:
       - type: Boolean
         attributes: {id: readOnly}
         children:
-        - {type: Value, value: 'true'}
+        - {type: Value, value: 'false'}
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: HarmonyCore, value: 'true'}
+        attributes: {id: HarmonyCore, value: 'false'}
   - type: Boolean
     attributes: {id: ENABLE_SYS_INT}
     children:

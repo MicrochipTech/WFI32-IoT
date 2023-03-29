@@ -216,6 +216,9 @@ static IotMqttError_t _getIncomingPacket( void * pNetworkConnection,
         IotLogError( "(MQTT connection %p) Unknown packet type %02x received.",
                      pMqttConnection,
                      pIncomingPacket->type );
+        SYS_CONSOLE_PRINT( "(MQTT connection %p) Unknown packet type %02x received.\r\n",
+                     pMqttConnection,
+                     pIncomingPacket->type );
 
         IOT_SET_AND_GOTO_CLEANUP( IOT_MQTT_BAD_RESPONSE );
     }

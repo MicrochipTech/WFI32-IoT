@@ -19,6 +19,15 @@ children:
       - type: User
         attributes: {value: 'true'}
   - type: Boolean
+    attributes: {id: TCPIP_AUTOCONFIG_ENABLE_DHCP_SERVER_V2}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Boolean
     attributes: {id: TCPIP_AUTOCONFIG_ENABLE_DNS_CLIENT}
     children:
     - type: Values

@@ -26,4 +26,4 @@ children:
       - type: Dynamic
         attributes: {id: cryptoauthlib_tng, value: 'true'}
 - type: ElementPosition
-  attributes: {x: '680', y: '247', id: cryptoauthlib_tng}
+  attributes: {x: '646', y: '250', id: cryptoauthlib_tng}

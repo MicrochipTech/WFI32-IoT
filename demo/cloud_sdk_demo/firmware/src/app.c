@@ -52,11 +52,13 @@ static void wifiConnectCallback(DRV_HANDLE handle, WDRV_PIC32MZW_ASSOC_HANDLE as
             appData.assocHandle = assocHandle;
             APP_OLEDNotify(APP_OLED_PARAM_WIFI, true);
             WIFI_CONNECTED;
-            
+
             WDRV_PIC32MZW_PowerSaveBroadcastTrackingSet(appData.wdrvHandle,true);
             WDRV_PIC32MZW_PowerSaveModeSet(appData.wdrvHandle,
                     WDRV_PIC32MZW_POWERSAVE_WSM_MODE,
-                    WDRV_PIC32MZW_POWERSAVE_PIC_ASYNC_MODE);
+                    WDRV_PIC32MZW_POWERSAVE_PIC_ASYNC_MODE,
+                    NULL);
+
             break;
         case WDRV_PIC32MZW_CONN_STATE_FAILED:
             APP_PRNT("WiFi connection failed\r\n");
@@ -184,7 +186,7 @@ void ledStartupPattern(){
 void psInit() {
     RCON_RESET_CAUSE resetCause = RCON_ResetCauseGet();
     
-    POWER_ReleaseGPIO();
+    POWER_DS_ReleaseGPIO();
     
     /* Check if RESET was after deep sleep wakeup */
     if (((resetCause & RCON_RESET_CAUSE_DPSLP) == RCON_RESET_CAUSE_DPSLP))
@@ -192,11 +194,11 @@ void psInit() {
         RCON_ResetCauseClear(RCON_RESET_CAUSE_DPSLP);      
     }
     
-    if (POWER_WakeupSourceGet() == POWER_WAKEUP_SOURCE_DSRTC)
+    if (POWER_DS_WakeupSourceGet() == POWER_DS_WAKEUP_SOURCE_DSRTC)
     {
         APP_PRNT("\r\n\r\nDevice woke up after XDS/DS mode Using RTCC\r\n");
     }
-    else if (POWER_WakeupSourceGet() == POWER_WAKEUP_SOURCE_DSINT0)
+    else if (POWER_DS_WakeupSourceGet() == POWER_DS_WAKEUP_SOURCE_DSINT0)
     {
         APP_PRNT("\r\n\r\nDevice woke up after XDS/DS mode Using EXT INT0(SW1 button press)\r\n");
     }

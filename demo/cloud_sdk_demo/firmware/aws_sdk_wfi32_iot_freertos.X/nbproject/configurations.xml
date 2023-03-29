@@ -172,6 +172,7 @@
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/sst26/drv_sst26.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/sst26/src/drv_sst26_local.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/sst26/drv_sst26_definitions.h</itemPath>
+              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/sst26/src/drv_sst26_spi_interface.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f2" displayName="usb" projectFiles="true">
               <logicalFolder name="f1" displayName="usbfs" projectFiles="true">
@@ -320,6 +321,8 @@
                   <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/wdrv_pic32mzw_sta.h</itemPath>
                   <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/wdrv_pic32mzw_ps.h</itemPath>
                   <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/wdrv_pic32mzw_custie.h</itemPath>
+                  <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/drv_pic32mzw1_tls.h</itemPath>
+                  <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/wdrv_pic32mzw_ie.h</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
@@ -328,6 +331,20 @@
           </logicalFolder>
           <logicalFolder name="f7" displayName="library" projectFiles="true">
             <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
+              <logicalFolder name="atcacert" displayName="atcacert" projectFiles="true">
+              </logicalFolder>
+              <logicalFolder name="calib" displayName="calib" projectFiles="true">
+              </logicalFolder>
+              <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
+                <logicalFolder name="hashes" displayName="hashes" projectFiles="true">
+                </logicalFolder>
+              </logicalFolder>
+              <logicalFolder name="hal" displayName="hal" projectFiles="true">
+              </logicalFolder>
+              <logicalFolder name="host" displayName="host" projectFiles="true">
+              </logicalFolder>
+              <logicalFolder name="jwt" displayName="jwt" projectFiles="true">
+              </logicalFolder>
               <logicalFolder name="f1" displayName="tng" projectFiles="true">
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng/tnglora_cert_def_1_signer.h</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng/tnglora_cert_def_2_device.h</itemPath>
@@ -420,6 +437,8 @@
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src/lldp_tlv.h</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src/tcpip_mac_bridge_manager.h</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src/tcpip_mac_bridge_private.h</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src/dhcp_server_manager.h</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src/dhcp_server_private.h</itemPath>
               </logicalFolder>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/tcpip_common_ports.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/tcpip_mac.h</itemPath>
@@ -466,6 +485,7 @@
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/tcpip.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/tcpip_ethernet.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/tcpip_mac_bridge.h</itemPath>
+              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/dhcp_server.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f8" displayName="net_pres" projectFiles="true">
@@ -545,10 +565,6 @@
             </logicalFolder>
             <logicalFolder name="f4" displayName="debug" projectFiles="true">
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/system/debug/sys_debug.h</itemPath>
-            </logicalFolder>
-            <logicalFolder name="f9" displayName="dma" projectFiles="true">
-              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/system/dma/sys_dma.h</itemPath>
-              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/system/dma/sys_dma_mapping.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f5" displayName="fs" projectFiles="true">
               <logicalFolder name="f1" displayName="fat_fs" projectFiles="true">
@@ -747,9 +763,7 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ge_448.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ge_operations.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/hash.h</itemPath>
-        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/hc128.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/hmac.h</itemPath>
-        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/idea.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/integer.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/logging.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/md2.h</itemPath>
@@ -765,7 +779,6 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/pkcs7.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/poly1305.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/pwdbased.h</itemPath>
-        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/rabbit.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/random.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ripemd.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/rsa.h</itemPath>
@@ -789,6 +802,9 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/sha512.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/wc_port.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/rc2.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/hc128.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/rabbit.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/idea.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="wolfssl" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/callbacks.h</itemPath>
@@ -993,6 +1009,7 @@
             </logicalFolder>
             <logicalFolder name="f4" displayName="sst26" projectFiles="true">
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/sst26/src/drv_sst26.c</itemPath>
+              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/sst26/src/drv_sst26_spi_interface.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f2" displayName="usb" projectFiles="true">
               <logicalFolder name="f1" displayName="usbfs" projectFiles="true">
@@ -1017,6 +1034,8 @@
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/wdrv_pic32mzw_sta.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/wdrv_pic32mzw_ps.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/wdrv_pic32mzw_custie.c</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/drv_pic32mzw1_tls.c</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/wdrv_pic32mzw_ie.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -1071,6 +1090,7 @@
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib/calib_updateextra.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib/calib_verify.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib/calib_write.c</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib/calib_helpers.c</itemPath>
               </logicalFolder>
               <logicalFolder name="f4" displayName="crypto" projectFiles="true">
                 <logicalFolder name="f1" displayName="hashes" projectFiles="true">
@@ -1092,17 +1112,19 @@
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cbc.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cmac.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_hw_aes_ctr.c</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cbcmac.c</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_hw_aes_ccm.c</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto/atca_crypto_pbkdf2.c</itemPath>
               </logicalFolder>
               <logicalFolder name="f1" displayName="hal" projectFiles="true">
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/hal_i2c_harmony.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/atca_hal.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/atca_hal.h</itemPath>
-                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/atca_start_config.h</itemPath>
-                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/atca_start_iface.h</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/hal_freertos.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/hal_pic32_delay.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/hal_harmony_init.c</itemPath>
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/ATECC608_0.c</itemPath>
+                <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/hal/hal_gpio_harmony.c</itemPath>
               </logicalFolder>
               <logicalFolder name="f5" displayName="host" projectFiles="true">
                 <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/host/atca_host.c</itemPath>
@@ -1130,8 +1152,6 @@
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_bool.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_cfgs.c</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_cfgs.h</itemPath>
-              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_command.c</itemPath>
-              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_command.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_compiler.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_device.c</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_device.h</itemPath>
@@ -1147,6 +1167,7 @@
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_debug.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_helpers.c</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_helpers.h</itemPath>
+              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_utils_sizes.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f1" displayName="tcpip" projectFiles="true">
               <logicalFolder name="f1" displayName="src" projectFiles="true">
@@ -1251,9 +1272,6 @@
             <logicalFolder name="f7" displayName="debug" projectFiles="true">
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/system/debug/src/sys_debug_local.h</itemPath>
               <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/system/debug/src/sys_debug.c</itemPath>
-            </logicalFolder>
-            <logicalFolder name="f8" displayName="dma" projectFiles="true">
-              <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/system/dma/sys_dma.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f5" displayName="fs" projectFiles="true">
               <logicalFolder name="f1" displayName="fat_fs" projectFiles="true">
@@ -1374,9 +1392,7 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ge_low_mem.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ge_operations.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/hash.c</itemPath>
-        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/hc128.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/hmac.c</itemPath>
-        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/idea.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/integer.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/logging.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/md2.c</itemPath>
@@ -1387,7 +1403,6 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/pkcs7.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/poly1305.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/pwdbased.c</itemPath>
-        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/rabbit.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ripemd.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/rsa.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha3.c</itemPath>
@@ -1416,6 +1431,9 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha256.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha512.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/rc2.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/rabbit.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/idea.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/hc128.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="wolfssl" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/src/crl.c</itemPath>
@@ -1452,6 +1470,7 @@
             <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/aws_sdk_wfi32_iot_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDhcp.yml</itemPath>
             <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/aws_sdk_wfi32_iot_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDhcps.yml</itemPath>
             <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/aws_sdk_wfi32_iot_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipDns.yml</itemPath>
+            <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/aws_sdk_wfi32_iot_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipIcmp.yml</itemPath>
             <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/aws_sdk_wfi32_iot_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpipSntp.yml</itemPath>
             <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/aws_sdk_wfi32_iot_freertos.mhc/TCP_IP_STACK/APPLICATION_LAYER/tcpip_apps_config.yml</itemPath>
           </logicalFolder>
@@ -1527,6 +1546,7 @@
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/aws_sdk_wfi32_iot_freertos/harmony-manifest-success.yml</itemPath>
+      <itemPath>aws_sdk_wfi32_iot_freertos.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -1542,11 +1562,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <languageToolchainVersion>3.01</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32MZ-W_DFP" vendor="Microchip" version="1.4.193"/>
+        <pack name="PIC32MZ-W_DFP" vendor="Microchip" version="1.6.220"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1579,13 +1599,14 @@
       <C32>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/aws_sdk_wfi32_iot_freertos;../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/;../src/config/aws_sdk_wfi32_iot_freertos/library;../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib;../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto;../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/pkcs11;../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src;../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src/common;../src/config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/file_system;../src/config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/hardware_access;../src/third_party/aws/libraries;../src/third_party/aws/libraries/aws/common/include;../src/third_party/aws/libraries/aws/defender/include;../src/third_party/aws/libraries/aws/jobs/include;../src/third_party/aws/libraries/aws/shadow/include;../src/third_party/aws/libraries/cbor;../src/third_party/aws/libraries/platform;../src/third_party/aws/libraries/platform/types;../src/third_party/aws/libraries/standard/common/include;../src/third_party/aws/libraries/standard/mqtt/include;../src/third_party/aws/libraries/standard/serializer/include;../src/third_party/aws/ports;../src/third_party/aws/ports/common/include;../src/third_party/aws/ports/pic32mzw1/include;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl"/>
+                  value="../src;../src/config/aws_sdk_wfi32_iot_freertos;../src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/;../src/config/aws_sdk_wfi32_iot_freertos/library;../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib;../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/crypto;../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/pkcs11;../src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng;../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src;../src/config/aws_sdk_wfi32_iot_freertos/library/tcpip/src/common;../src/config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/file_system;../src/config/aws_sdk_wfi32_iot_freertos/system/fs/fat_fs/hardware_access;../src/third_party/aws/libraries;../src/third_party/aws/libraries/aws/common/include;../src/third_party/aws/libraries/aws/defender/include;../src/third_party/aws/libraries/aws/jobs/include;../src/third_party/aws/libraries/aws/shadow/include;../src/third_party/aws/libraries/cbor;../src/third_party/aws/libraries/platform;../src/third_party/aws/libraries/platform/types;../src/third_party/aws/libraries/standard/common/include;../src/third_party/aws/libraries/standard/mqtt/include;../src/third_party/aws/libraries/standard/serializer/include;../src/third_party/aws/ports;../src/third_party/aws/ports/common/include;../src/third_party/aws/ports/pic32mzw1/include;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1609,6 +1630,7 @@
         <property key="additional-options-chop-files" value="false"/>
       </C32-AR>
       <C32-AS>
+        <property key="appendMe" value=""/>
         <property key="assembler-symbols" value=""/>
         <property key="enable-symbols" value="true"/>
         <property key="exclude-floating-point-library" value="false"/>
@@ -1638,6 +1660,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -1677,6 +1700,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -2020,6 +2044,8 @@
                   value="${communication.interface.default}"/>
         <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="${communication.speed.default}"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="freeze.timers" value="false"/>
@@ -2036,9 +2062,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="10000000-100fffff"/>
-        <property key="memories.rww" value="true"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/microchip/harmony_3/w/apps/rio2_h3_cloudO/cloud_sdk_demo/firmware/aws_sdk_wfi32_iot_freertos.X/debug/aws_sdk_wfi32_iot_freertos/aws_sdk_wfi32_iot_freertos_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
@@ -2051,6 +2074,7 @@
         <property key="programoptions.preserveprogram.ranges" value="100fffff-100fffff"/>
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>

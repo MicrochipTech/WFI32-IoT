@@ -112,7 +112,7 @@ extern "C" {
 #define SYS_FS_STACK_SIZE                 1024
 #define SYS_FS_PRIORITY                   1
 
-#define SYS_FS_FAT_VERSION                "v0.14a"
+#define SYS_FS_FAT_VERSION                "v0.14b"
 #define SYS_FS_FAT_READONLY               false
 #define SYS_FS_FAT_CODE_PAGE              437
 #define SYS_FS_FAT_MAX_SS                 SYS_FS_MEDIA_MAX_BLOCK_SIZE
@@ -140,7 +140,7 @@ extern "C" {
 
 
 #define SYS_CONSOLE_DEVICE_MAX_INSTANCES   			1
-#define SYS_CONSOLE_UART_MAX_INSTANCES 	   			1
+#define SYS_CONSOLE_UART_MAX_INSTANCES 	   			2
 #define SYS_CONSOLE_USB_CDC_MAX_INSTANCES 	   		0
 #define SYS_CONSOLE_PRINT_BUFFER_SIZE        		400
 
@@ -192,8 +192,9 @@ extern "C" {
 
 /*** WiFi PIC32MZW1 Driver Configuration ***/
 #define WDRV_PIC32MZW1_DEVICE_USE_SYS_DEBUG
-#define WDRV_PIC32MZW_WPA3_SUPPORT
+#define WDRV_PIC32MZW_WPA3_PERSONAL_SUPPORT
 #define WDRV_PIC32MZW_BA414E_SUPPORT
+#define WDRV_PIC32MZW_BIGINTSW_SUPPORT
 #define WDRV_PIC32MZW_ALARM_PERIOD_1MS          390
 #define WDRV_PIC32MZW_ALARM_PERIOD_MAX          168
 
@@ -203,6 +204,18 @@ extern "C" {
 // Section: Middleware & Other Library Configuration
 // *****************************************************************************
 // *****************************************************************************
+
+/*** ICMPv4 Server Configuration ***/
+#define TCPIP_STACK_USE_ICMP_SERVER
+#define TCPIP_ICMP_ECHO_ALLOW_BROADCASTS    false
+
+/*** ICMPv4 Client Configuration ***/
+#define TCPIP_STACK_USE_ICMP_CLIENT
+#define TCPIP_ICMP_ECHO_REQUEST_TIMEOUT        500
+#define TCPIP_ICMP_TASK_TICK_RATE              33
+#define TCPIP_STACK_MAX_CLIENT_ECHO_REQUESTS   4
+#define TCPIP_ICMP_COMMAND_ENABLE              false
+
 /******************************************************************************/
 /*wolfSSL TLS Layer Configuration*/
 /******************************************************************************/
@@ -228,7 +241,7 @@ extern "C" {
 #define NO_OLD_TLS
 #define USE_FAST_MATH
 #define NO_WOLFSSL_SERVER
-
+    
 
 /*** TCP Configuration ***/
 #define TCPIP_TCP_MAX_SEG_SIZE_TX		        	1460
@@ -251,6 +264,7 @@ extern "C" {
 #define TCPIP_TCP_QUIET_TIME		        	    0
 #define TCPIP_TCP_COMMANDS   false
 #define TCPIP_TCP_EXTERN_PACKET_PROCESS   false
+#define TCPIP_TCP_DISABLE_CRYPTO_USAGE		        	    false
 
 
 
@@ -329,8 +343,7 @@ extern "C" {
 #define TCPIP_DNS_CLIENT_CACHE_PER_IPV6_ADDRESS		1
 #define TCPIP_DNS_CLIENT_ADDRESS_TYPE			    IP_ADDRESS_TYPE_IPV4
 #define TCPIP_DNS_CLIENT_CACHE_DEFAULT_TTL_VAL		1200
-#define TCPIP_DNS_CLIENT_CACHE_UNSOLVED_ENTRY_TMO	10
-#define TCPIP_DNS_CLIENT_LOOKUP_RETRY_TMO			5
+#define TCPIP_DNS_CLIENT_LOOKUP_RETRY_TMO			2
 #define TCPIP_DNS_CLIENT_MAX_HOSTNAME_LEN			100
 #define TCPIP_DNS_CLIENT_MAX_SELECT_INTERFACES		4
 #define TCPIP_DNS_CLIENT_DELETE_OLD_ENTRIES			true
@@ -379,6 +392,8 @@ extern "C" {
 #define TCPIP_DHCP_TIME_SERVER_ADDRESSES            0
 #define TCPIP_DHCP_USE_OPTION_NTP_SERVER            0
 #define TCPIP_DHCP_NTP_SERVER_ADDRESSES             0
+#define TCPIP_DHCP_ARP_LEASE_CHECK_TMO              1000
+#define TCPIP_DHCP_WAIT_ARP_FAIL_CHECK_TMO          10
 
 
 
@@ -420,11 +435,12 @@ extern "C" {
 
 /*** DHCP Server Configuration ***/
 #define TCPIP_STACK_USE_DHCP_SERVER
-#define TCPIP_DHCPS_TASK_PROCESS_RATE                               200
-#define TCPIP_DHCPS_LEASE_ENTRIES_DEFAULT                           15
-#define TCPIP_DHCPS_LEASE_SOLVED_ENTRY_TMO                          1200
-#define TCPIP_DHCPS_LEASE_REMOVED_BEFORE_ACK                        5
-#define TCPIP_DHCP_SERVER_DELETE_OLD_ENTRIES                        true
+#define TCPIP_DHCPS_TASK_PROCESS_RATE                     	200
+#define TCPIP_DHCPS_MAX_NUMBER_INSTANCES					1
+#define TCPIP_DHCPS_LEASE_ENTRIES_DEFAULT                   15
+#define TCPIP_DHCPS_LEASE_SOLVED_ENTRY_TMO                  1200
+#define TCPIP_DHCPS_LEASE_REMOVED_BEFORE_ACK                5
+#define TCPIP_DHCP_SERVER_DELETE_OLD_ENTRIES              	true
 #define TCPIP_DHCPS_LEASE_DURATION	TCPIP_DHCPS_LEASE_SOLVED_ENTRY_TMO
 
 /*** DHCP Server Instance 0 Configuration ***/
@@ -443,6 +459,8 @@ extern "C" {
 #define TCPIP_DHCP_SERVER_INTERFACE_INDEX_IDX0                      0
 
 #define TCPIP_DHCP_SERVER_POOL_ENABLED_IDX0                         true
+
+#define TCPIP_DHCP_SERVER_POOL_INDEX_IDX0								0
 
 
 
@@ -582,6 +600,9 @@ extern "C" {
 /* Number of Logical Units */
 #define USB_DEVICE_MSD_LUNS_NUMBER      1
 
+
+
+#define TCPIP_STACK_NETWORK_INTERAFCE_COUNT  	1
 
 
 

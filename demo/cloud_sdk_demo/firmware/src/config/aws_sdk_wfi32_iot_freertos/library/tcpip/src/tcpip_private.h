@@ -91,6 +91,7 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 #include "tcpip/src/tcpip_manager_control.h"
 
 #include "tcpip/src/ipv4_manager.h"
+#include "tcpip/src/icmp_manager.h"
 #include "tcpip/src/dhcp_manager.h"
 #include "tcpip/src/dhcps_manager.h"
 #include "tcpip/src/arp_manager.h"
