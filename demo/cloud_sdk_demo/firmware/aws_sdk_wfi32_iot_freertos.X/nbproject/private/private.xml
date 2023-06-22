@@ -3,40 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/net_pres/pres/net_pres_enc_glue.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/user.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/aws/libraries/standard/mqtt/src/iot_mqtt_api.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/app_aws.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_basic.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/calib/calib_ecdh.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/aws/libraries/aws/jobs/src/aws_iot_jobs_operation.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/app_usb_msd.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/aws/libraries/aws/defender/include/aws_iot_defender.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/initialization.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/error-ssl.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/aws/libraries/standard/mqtt/src/iot_mqtt_operation.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/app_usb_msd.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/wolfcrypt/asn_public.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/aws/ports/common/include/iot_network_wolfssl.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/net_pres/pres/src/net_pres.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/src/tls13.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/atca_status.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/configuration.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/tasks.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/wolfcrypt/src/asn.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/wolfcrypt/src/ecc.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/wolfcrypt/error-crypt.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/aws/libraries/standard/mqtt/src/iot_mqtt_network.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/app.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/iot_config.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/ssl.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/wolfcrypt/src/error.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/driver/wifi/pic32mzw1/include/wdrv_pic32mzw_api.h</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/src/ssl.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/peripheral/i2c/master/plib_i2c2_master.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/aws/ports/common/src/iot_network_wolfssl.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/wolfcrypt/port/atmel/atmel.c</file>
-            <file>file:/C:/E/Work/github/WFI32-IoT_230313/demo/cloud_sdk_demo/firmware/src/third_party/wolfssl/wolfssl/wolfcrypt/port/atmel/atmel.h</file>
+            <file>file:/C:/E/Work/github/WFI32-IoT/demo/cloud_sdk_demo/firmware/src/app_usb_msd.c</file>
+            <file>file:/C:/E/Work/github/WFI32-IoT/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/peripheral/clk/plib_clk.c</file>
+            <file>file:/C:/E/Work/github/WFI32-IoT/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng/tng_atcacert_client.c</file>
+            <file>file:/C:/E/Work/github/WFI32-IoT/demo/cloud_sdk_demo/firmware/src/third_party/aws/libraries/standard/common/include/iot_init.h</file>
+            <file>file:/C:/E/Work/github/WFI32-IoT/demo/cloud_sdk_demo/firmware/src/third_party/aws/libraries/standard/common/src/iot_init.c</file>
+            <file>file:/C:/E/Work/github/WFI32-IoT/demo/cloud_sdk_demo/firmware/src/app_aws.c</file>
+            <file>file:/C:/E/Work/github/WFI32-IoT/demo/cloud_sdk_demo/firmware/src/config/aws_sdk_wfi32_iot_freertos/library/cryptoauthlib/tng/tng_atcacert_client.h</file>
         </group>
     </open-files>
 </project-private>
