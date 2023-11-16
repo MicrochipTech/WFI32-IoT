@@ -832,6 +832,7 @@
       <itemPath>../src/OLEDB.h</itemPath>
       <itemPath>../src/app_oled.h</itemPath>
       <itemPath>../src/app_ps.h</itemPath>
+      <itemPath>../src/cert_header.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"

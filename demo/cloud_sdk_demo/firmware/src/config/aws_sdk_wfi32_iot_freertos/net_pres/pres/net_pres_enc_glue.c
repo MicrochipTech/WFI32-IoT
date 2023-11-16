@@ -139,7 +139,7 @@ bool NET_PRES_EncProviderStreamClientInit0(NET_PRES_TransportObject * transObjec
         return false;
     }
     // Turn off verification, because SNTP is usually blocked by a firewall
-    wolfSSL_CTX_set_verify(net_pres_wolfSSLInfoStreamClient0.context, SSL_VERIFY_NONE, 0);
+    wolfSSL_CTX_set_verify(net_pres_wolfSSLInfoStreamClient0.context, WOLFSSL_VERIFY_PEER, 0);
 
 #ifdef WOLFSSL_ATECC_TNGTLS
    atcatls_set_callbacks(net_pres_wolfSSLInfoStreamClient0.context);
