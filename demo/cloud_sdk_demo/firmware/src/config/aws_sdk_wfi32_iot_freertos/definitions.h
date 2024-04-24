@@ -53,8 +53,8 @@
 #include "usb/usb_device_msd.h"
 #include "usb/usb_msd.h"
 #include "driver/memory/drv_memory.h"
-#include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
+#include "driver/i2c/drv_i2c.h"
 #include "peripheral/coretimer/plib_coretimer.h"
 #include "peripheral/spi/spi_master/plib_spi2_master.h"
 #include "peripheral/spi/spi_master/plib_spi1_master.h"
@@ -62,11 +62,16 @@
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
 #include "system/cache/sys_cache.h"
+#include "system/dma/sys_dma.h"
 #include "system/reset/sys_reset.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
 #include "peripheral/i2c/master/plib_i2c1_master.h"
 #include "peripheral/i2c/master/plib_i2c2_master.h"
+#include "net_pres/pres/net_pres.h"
+#include "net_pres/pres/net_pres_encryptionproviderapi.h"
+#include "net_pres/pres/net_pres_transportapi.h"
+#include "net_pres/pres/net_pres_socketapi.h"
 #include "system/fs/sys_fs.h"
 #include "system/fs/sys_fs_media_manager.h"
 #include "system/fs/sys_fs_fat_interface.h"
@@ -81,10 +86,6 @@
 #include "peripheral/uart/plib_uart1.h"
 #include "bsp/bsp.h"
 #include "driver/usb/usbfs/drv_usbfs.h"
-#include "net_pres/pres/net_pres.h"
-#include "net_pres/pres/net_pres_encryptionproviderapi.h"
-#include "net_pres/pres/net_pres_transportapi.h"
-#include "net_pres/pres/net_pres_socketapi.h"
 #include "library/tcpip/tcpip.h"
 #include "system/sys_time_h2_adapter.h"
 #include "system/sys_random_h2_adapter.h"
@@ -94,8 +95,8 @@
 #include "peripheral/cache/plib_cache.h"
 #include "peripheral/evic/plib_evic.h"
 #include "driver/sst26/drv_sst26.h"
-#include "peripheral/power/plib_power.h"
 #include "wolfssl/wolfcrypt/port/pic32/crypt_wolfcryptcb.h"
+#include "peripheral/power/plib_power.h"
 #include "driver/wifi/pic32mzw1/include/wdrv_pic32mzw_api.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
@@ -117,6 +118,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32MZ1025W104132"
+#define DEVICE_ARCH			 "MIPS"
+#define DEVICE_FAMILY		 "PIC32MZW"
+#define DEVICE_SERIES		 "PIC32MZW"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 200000000
@@ -237,15 +244,15 @@ typedef struct
     SYS_MODULE_OBJ  sysTime;
     SYS_MODULE_OBJ  sysConsole0;
 
+    SYS_MODULE_OBJ  netPres;
+
 
     SYS_MODULE_OBJ  ba414e;
 
-	SYS_MODULE_OBJ  usbDevObject0;
+    SYS_MODULE_OBJ  usbDevObject0;
 
     SYS_MODULE_OBJ  drvMemory0;
-	SYS_MODULE_OBJ  drvUSBFSObject;
-
-    SYS_MODULE_OBJ  netPres;
+    SYS_MODULE_OBJ  drvUSBFSObject;
 
 
     SYS_MODULE_OBJ  tcpip;
@@ -255,7 +262,9 @@ typedef struct
     SYS_MODULE_OBJ  drvSST26;
     SYS_MODULE_OBJ  sysDebug;
 
+
     SYS_MODULE_OBJ  drvWifiPIC32MZW1;
+
 
 } SYSTEM_OBJECTS;
 

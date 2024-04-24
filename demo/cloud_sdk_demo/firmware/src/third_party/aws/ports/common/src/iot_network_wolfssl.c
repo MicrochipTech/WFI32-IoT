@@ -34,9 +34,10 @@
 
 
 
-
 /* WolfSSL network include. */
 #include "iot_network_wolfssl.h"
+
+typedef int socklen_t ;
 
 /* Platform threads include. */
 #include "platform/iot_threads.h"
